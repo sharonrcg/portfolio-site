@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import {NavContext} from '../context/NavContext'
 
 const NavLink = ({
@@ -14,6 +14,10 @@ const NavLink = ({
 		setActiveNavLinkId(navLinkId)
 		document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
 	}
+
+	useEffect(() => {
+		document.getElementById('homeContainer')?.scrollIntoView()
+	}, [])
 
 	return (
 		<span

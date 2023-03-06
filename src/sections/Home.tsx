@@ -1,19 +1,26 @@
 import React from 'react'
 import {useNav} from '../hooks/useNav'
+import styles from './Home.module.css'
 
 const Home = () => {
 	const homeRef = useNav('Home')
 
 	return (
-		<section ref={homeRef} id='homeContainer'>
-			{/* eslint-disable-next-line @next/next/no-img-element */}
-			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
-			/>
+		<section ref={homeRef} id='homeContainer' className={styles.Home}>
 			<div>
-				<h3>HOME</h3>
-				<p>This is the home section</p>
+				<h1>Sharon Gomez</h1>
+				<p className={styles.paragraph}>
+					Lorem ipsum hello world Lorem ipsum hello world Lorem ipsum hello world
+					Lorem ipsum hello world Lorem ipsum hello world
+				</p>
+			</div>
+			<div>
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img
+					alt="Sharon's avatar"
+					className={styles.avatar}
+					src='https://avatars.githubusercontent.com/u/22580495'
+				/>
 			</div>
 		</section>
 	)
