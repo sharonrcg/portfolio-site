@@ -1,5 +1,5 @@
-import React from 'react';
-import { Home, About, Contact } from './';
+import React from 'react'
+import {Home, About, Contact} from './'
 
 const Main = () => (
 	<main>
@@ -7,6 +7,6 @@ const Main = () => (
 		<About />
 		<Contact />
 	</main>
-);
+)
 
-export default Main;
+export default Main

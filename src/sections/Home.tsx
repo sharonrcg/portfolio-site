@@ -1,8 +1,8 @@
-import React from 'react';
-import { useNav } from '../hooks/useNav';
+import React from 'react'
+import {useNav} from '../hooks/useNav'
 
 const Home = () => {
-	const homeRef = useNav('Home');
+	const homeRef = useNav('Home')
 
 	return (
 		<section ref={homeRef} id='homeContainer'>
@@ -16,7 +16,7 @@ const Home = () => {
 				<p>This is the home section</p>
 			</div>
 		</section>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home

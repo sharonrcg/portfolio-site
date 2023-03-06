@@ -1,13 +1,19 @@
-import React, { useContext } from 'react';
-import { NavContext } from '../context/NavContext';
+import React, {useContext} from 'react'
+import {NavContext} from '../context/NavContext'
 
-const NavLink = ({ navLinkId, scrollToId }: {navLinkId: string, scrollToId: string}) => {
-	const { activeNavLinkId, setActiveNavLinkId } = useContext(NavContext);
+const NavLink = ({
+	navLinkId,
+	scrollToId,
+}: {
+	navLinkId: string
+	scrollToId: string
+}) => {
+	const {activeNavLinkId, setActiveNavLinkId} = useContext(NavContext)
 
 	const handleClick = () => {
-		setActiveNavLinkId(navLinkId);
-		document.getElementById(scrollToId)?.scrollIntoView({ behavior: 'smooth' });
-	};
+		setActiveNavLinkId(navLinkId)
+		document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
+	}
 
 	return (
 		<span
@@ -17,7 +23,7 @@ const NavLink = ({ navLinkId, scrollToId }: {navLinkId: string, scrollToId: stri
 		>
 			{navLinkId}
 		</span>
-	);
-};
+	)
+}
 
-export default NavLink;
+export default NavLink

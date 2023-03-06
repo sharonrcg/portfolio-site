@@ -1,5 +1,5 @@
-import { Nav } from './nav'
-import { Main } from './sections'
+import {Nav} from './nav'
+import {Main} from './sections'
 import NavProvider from './context/NavContext'
 
 function App() {
