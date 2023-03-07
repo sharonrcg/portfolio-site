@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import '../sections/Section.css'
+import '../styles/Section.css'
 import '../nav/Nav.css'
 import type {AppProps} from 'next/app'
 

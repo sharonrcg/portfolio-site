@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNav} from '../hooks/useNav'
-import styles from './Home.module.css'
+import styles from '../styles/Home.module.css'
 
 const Home = () => {
 	const homeRef = useNav('Home')
@@ -8,10 +8,10 @@ const Home = () => {
 	return (
 		<section ref={homeRef} id='homeContainer' className={styles.Home}>
 			<div>
-				<h1>Sharon Gomez</h1>
+				<h1 className={styles.title}>Sharon Gomez</h1>
 				<p className={styles.paragraph}>
-					Lorem ipsum hello world Lorem ipsum hello world Lorem ipsum hello world
-					Lorem ipsum hello world Lorem ipsum hello world
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 			</div>
 			<div>
@@ -19,7 +19,7 @@ const Home = () => {
 				<img
 					alt="Sharon's avatar"
 					className={styles.avatar}
-					src='https://avatars.githubusercontent.com/u/22580495'
+					src='/images/avatar.png'
 				/>
 			</div>
 		</section>

@@ -1,0 +1,26 @@
+.Home {
+	background-color: beige;
+	padding: 3rem;
+	display: flex;
+}
+
+.title {
+	font-family: 'DM Serif Display', serif;
+	line-height: 1.2;
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.paragraph {
+	font-size: 1.7rem;
+	line-height: 1.5;
+	margin: 0 0 1.5rem;
+	max-width: 75%;
+	text-align: center;
+}
+
+.avatar {
+	width: 48%;
+	border-radius: 100%;
+	background: white;
+}

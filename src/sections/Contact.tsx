@@ -6,15 +6,15 @@ const Contact = () => {
 
 	return (
 		<section ref={contactRef} id='contactContainer'>
+			<div>
+				<h3>CONTACT</h3>
+				<p>This is the contact section</p>
+			</div>
 			{/* eslint-disable-next-line @next/next/no-img-element */}
 			<img
 				src='https://source.unsplash.com/random/600x600/?nature,water'
 				alt='unsplash-img'
 			/>
-			<div>
-				<h3>CONTACT</h3>
-				<p>This is the contact section</p>
-			</div>
 		</section>
 	)
 }
