@@ -1,0 +1,11 @@
+.Projects {
+	background-color: rgb(133, 75, 75);
+	display: flex;
+}
+
+.title {
+	font-family: 'DM Serif Display', serif;
+	line-height: 1.2;
+	font-size: 3.2rem;
+	text-align: center;
+}
