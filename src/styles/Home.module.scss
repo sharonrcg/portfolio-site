@@ -4,6 +4,7 @@
 	background-color: $grey;
 	padding: $xl;
 	display: flex;
+	scroll-snap-align: start;
 }
 
 .title {
@@ -24,5 +25,5 @@
 .avatar {
 	width: 48%;
 	border-radius: 100%;
-	background: white;
+	background: $white;
 }

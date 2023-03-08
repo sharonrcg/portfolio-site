@@ -1,4 +1,4 @@
-import {Nav} from './nav'
+import {Nav, SectionDots} from './nav'
 import {Main} from './sections'
 import NavProvider from './context/NavContext'
 
@@ -7,6 +7,7 @@ function App() {
 		<div className='appContainer'>
 			<NavProvider>
 				<Nav />
+				<SectionDots />
 				<Main />
 			</NavProvider>
 		</div>

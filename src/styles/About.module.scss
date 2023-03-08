@@ -3,6 +3,7 @@
 .About {
 	background-color: rgb(103, 83, 83);
 	display: flex;
+	scroll-snap-align: start;
 }
 
 .title {

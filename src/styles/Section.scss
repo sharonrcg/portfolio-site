@@ -33,7 +33,7 @@ section div {
 @media screen and (max-width: 900px) {
 	section,
 	section:nth-child(even) {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	section img {

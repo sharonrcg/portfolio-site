@@ -3,6 +3,7 @@
 .Projects {
 	background-color: rgb(133, 75, 75);
 	display: flex;
+	scroll-snap-align: start;
 }
 
 .title {
