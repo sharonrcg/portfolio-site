@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNav} from '../hooks/useNav'
-import styles from '../styles/About.module.css'
+import styles from '../styles/About.module.scss'
 
 const About = () => {
 	const aboutRef = useNav('About')

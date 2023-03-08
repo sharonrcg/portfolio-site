@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNav} from '../hooks/useNav'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const Home = () => {
 	const homeRef = useNav('Home')

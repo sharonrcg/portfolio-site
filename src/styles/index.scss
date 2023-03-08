@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import './_var.scss';
 
 :root {
 	--darkAccent: rgba(2, 0, 36, 1);
@@ -11,7 +12,7 @@
 
 *,
 html {
-	line-height: 1em;
+	line-height: $xxs;
 	padding: 0;
 	margin: 0;
 	font-family: 'Libre Franklin', sans-serif;
@@ -31,8 +32,8 @@ code {
 }
 
 h3 {
-	font-size: 2.6em;
+	font-size: $xxl;
 	text-align: center;
-	padding: 1em;
+	padding: $xxs;
 	font-weight: 500;
 }

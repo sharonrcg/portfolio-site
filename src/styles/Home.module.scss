@@ -1,20 +1,22 @@
+@import './_var.scss';
+
 .Home {
-	background-color: beige;
-	padding: 3rem;
+	background-color: $grey;
+	padding: $xl;
 	display: flex;
 }
 
 .title {
 	font-family: 'DM Serif Display', serif;
 	line-height: 1.2;
-	font-size: 3.2rem;
+	font-size: $xxl;
 	text-align: center;
 }
 
 .paragraph {
-	font-size: 1.7rem;
+	font-size: $m;
 	line-height: 1.5;
-	margin: 0 0 1.5rem;
+	margin: 0 0 $s;
 	max-width: 75%;
 	text-align: center;
 }
