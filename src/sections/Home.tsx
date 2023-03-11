@@ -7,7 +7,7 @@ const Home = () => {
 
 	return (
 		<section ref={homeRef} id='homeContainer' className={styles.Home}>
-			<div>
+			<div className={styles.homeContent}>
 				<h1 className={styles.title}>Sharon Gomez</h1>
 				<p className={styles.paragraph}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

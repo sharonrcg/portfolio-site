@@ -1,14 +1,17 @@
 @import './_var.scss';
 
 nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 	width: 100%;
-	position: sticky;
+	position: absolute;
 	z-index: 10;
 	top: 0;
 	padding: $xs 0;
 	color: $white;
 	background-color: var(--darkAccent);
-	max-height: $xxxl;
+	max-height: $nav-height;
 }
 
 nav span {

@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNav} from '../hooks/useNav'
 import styles from '../styles/About.module.scss'
+import sharon_and_kai from '../../public/images/sharon_and_kai.jpg'
 
 const About = () => {
 	const aboutRef = useNav('About')
@@ -17,10 +18,7 @@ const About = () => {
 				</p>
 			</div>
 			{/* eslint-disable-next-line @next/next/no-img-element */}
-			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
-			/>
+			<img className={styles.image} src={sharon_and_kai.src} alt='unsplash-img' />
 		</section>
 	)
 }

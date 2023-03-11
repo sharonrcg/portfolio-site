@@ -14,10 +14,6 @@ const NavLink = ({
 		document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
 	}
 
-	useEffect(() => {
-		document.getElementById('homeContainer')?.scrollIntoView()
-	}, [])
-
 	return (
 		<span
 			id={navLinkId}

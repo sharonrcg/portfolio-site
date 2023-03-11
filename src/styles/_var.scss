@@ -22,7 +22,11 @@ $xl: 3rem;
 $xxl: 3.2rem;
 $xxxl: 4rem;
 
-// media queries
-$breakpoint-mobile: 480px;
-$breakpoint-tablet: 768px;
+// breakpoints
+$breakpoint-mini: 480px;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 900px;
 $breakpoint-desktop: 1024px;
+
+// nav
+$nav-height: 55px;
