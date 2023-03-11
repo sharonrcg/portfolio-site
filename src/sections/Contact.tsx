@@ -13,7 +13,7 @@ const Contact = () => {
 			</div>
 			{/* eslint-disable-next-line @next/next/no-img-element */}
 			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
+				src='https://source.unsplash.com/random/600x600/?corgi'
 				alt='unsplash-img'
 			/>
 		</section>
