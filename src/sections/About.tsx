@@ -1,5 +1,5 @@
 import React from 'react'
-import {useNav} from '../hooks/useNav'
+import {useNav} from '../hooks'
 import styles from '../styles/About.module.scss'
 import sharon_and_kai from '../../public/images/sharon_and_kai.jpg'
 

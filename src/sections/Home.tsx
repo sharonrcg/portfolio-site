@@ -1,5 +1,5 @@
 import React from 'react'
-import {useNav} from '../hooks/useNav'
+import {useNav} from '../hooks'
 import styles from '../styles/Home.module.scss'
 
 const Home = () => {

@@ -5,7 +5,7 @@ nav {
 	align-items: center;
 	justify-content: flex-end;
 	width: 100%;
-	position: absolute;
+	position: sticky;
 	z-index: 10;
 	top: 0;
 	padding: $xs 0;

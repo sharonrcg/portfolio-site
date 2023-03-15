@@ -8,7 +8,7 @@ const NavLink = ({
 	navLinkId: string
 	scrollToId: string
 }) => {
-	const {activeNavLinkId, setActiveNavLinkId} = useContext(NavContext)
+	const {activeNavLinkId} = useContext(NavContext)
 
 	const handleClick = () => {
 		document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})

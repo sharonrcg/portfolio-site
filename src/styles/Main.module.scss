@@ -1,10 +1,8 @@
 .container {
 	flex-basis: 50%;
 	max-height: 100vh;
-	overflow-y: scroll;
-	border: 1px solid gray;
-	scroll-snap-type: y mandatory;
-	&.proximity {
-		scroll-snap-type: y proximity;
-	}
+	overflow: auto;
+}
+.container::-webkit-scrollbar {
+	display: none;
 }
