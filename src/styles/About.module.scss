@@ -1,7 +1,7 @@
 @import './_var.scss';
 
 .About {
-	background-color: rgb(103, 83, 83);
+	background-color: $light;
 	display: flex;
 	scroll-snap-align: start;
 }
@@ -11,6 +11,7 @@
 	line-height: 1.2;
 	font-size: $xxl;
 	text-align: center;
+	color: $off-black;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -24,6 +25,7 @@
 	line-height: 1.5;
 	margin: 0 0 $xxs;
 	max-width: 75%;
+	color: $off-black;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {

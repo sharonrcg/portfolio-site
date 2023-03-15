@@ -1,7 +1,7 @@
 @import './_var.scss';
 
 .Contact {
-	background-color: rgb(103, 83, 83);
+	background-color: $dark;
 	display: flex;
 	scroll-snap-align: start;
 }

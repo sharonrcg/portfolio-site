@@ -9,8 +9,8 @@ nav {
 	z-index: 10;
 	top: 0;
 	padding: $xs 0;
-	color: $white;
-	background-color: var(--darkAccent);
+	color: $off-black;
+	background-color: $darkest;
 	max-height: $nav-height;
 }
 
@@ -25,17 +25,9 @@ nav span {
 
 nav span:hover {
 	cursor: pointer;
-	border-bottom: 1px solid $white;
-}
-
-nav span:hover i {
-	color: gold;
-}
-
-nav span.activeClass i {
-	color: gold;
+	border-bottom: 1px solid $off-white;
 }
 
 nav span.activeClass {
-	border-bottom-color: var(--lightAccent);
+	border-bottom-color: $off-black;
 }
