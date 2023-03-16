@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import {NavContext} from '../context/NavContext'
 
 const NavLink = ({
@@ -17,13 +17,13 @@ const NavLink = ({
 	}
 
 	return (
-		<span
+		<button
 			id={navLinkId}
-			className={activeNavLinkId === navLinkId ? className : ''}
+			className={`${activeNavLinkId === navLinkId ? className : ''}`}
 			onClick={handleClick}
 		>
 			{navLinkId}
-		</span>
+		</button>
 	)
 }
 

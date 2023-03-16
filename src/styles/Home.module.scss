@@ -43,6 +43,7 @@
 	width: 48%;
 	border-radius: 100%;
 	background: $white;
+	transition: background 0.5s ease-in-out;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
