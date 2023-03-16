@@ -1,0 +1,108 @@
+@import './var';
+
+.ContactForm {
+	background: $white;
+	border-radius: 6px;
+	box-shadow: 1px 1px 5px $shadow;
+	padding: 40px;
+	transition: background 0.5s ease-in-out;
+	width: 100%;
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		& {
+			margin: 0;
+		}
+	}
+}
+
+.form {
+	width: 100%;
+}
+
+.formTitle {
+	color: $off-black;
+	padding-bottom: 25px;
+}
+
+.label {
+	color: $darker-grey;
+	display: block;
+	margin: 1.2rem 0 0.2rem 0;
+}
+
+.input {
+	border: none;
+	border-bottom: 1px solid $light-grey;
+	color: $off-black;
+	font-size: inherit;
+	line-height: 2.2;
+	transition: background 0.5s ease-in-out;
+	width: 100%;
+}
+
+.input:focus {
+	outline: 2px solid $off-white;
+	border-radius: 4px;
+}
+
+.message {
+	border: none;
+	border-bottom: 1px solid $light-grey;
+	color: $off-black;
+	font-size: inherit;
+	line-height: 1.2;
+	transition: background 0.5s ease-in-out;
+	width: 100%;
+}
+
+.message:focus {
+	outline: 2px solid $off-white;
+	border-radius: 4px;
+}
+
+.submitButton {
+	align-items: flex-end;
+}
+
+.submitButton button {
+	background: $darker-grey;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: $xs;
+	padding: 0.5rem 1rem;
+	margin-top: 1.2rem;
+	transition: background 0.5s ease-in-out;
+}
+
+.dark {
+	&.ContactForm {
+		background: $blue-grey;
+		box-shadow: 1px 1px 5px $d-shadow;
+	}
+
+	.formTitle {
+		color: $off-white;
+	}
+
+	.label {
+		color: $off-white;
+	}
+
+	.input {
+		background: $blue-grey;
+		border-bottom: 1px solid $lighter-grey;
+		color: $white;
+	}
+
+	.message {
+		background: $blue-grey;
+		border-bottom: 1px solid $lighter-grey;
+		color: $white;
+	}
+
+	.submitButton button {
+		background: $off-white;
+		color: $off-black;
+	}
+}

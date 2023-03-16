@@ -1,18 +1,34 @@
-@import './_var.scss';
+@import './var';
 
-.Contact {
+.contactContainer {
 	background-color: $dark;
-	display: flex;
-	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
 }
 
+.Contact {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1250px;
+	scroll-snap-align: start;
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		& {
+			flex-direction: column;
+			justify-content: center;
+			padding: 3rem;
+		}
+	}
+}
+
+.titleContainer {
+	align-items: start;
+}
+
 .title {
-	font-family: 'DM Serif Display', serif;
-	line-height: 1.2;
-	font-size: $xxl;
-	text-align: center;
 	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $xxl;
+	line-height: 1.2;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -21,12 +37,24 @@
 	}
 }
 
+.paragraph {
+	color: $off-black;
+	font-size: $xxs;
+	line-height: 1.5;
+	margin: 0 auto 0 0;
+	width: 85%;
+}
+
 .dark {
-	.Contact {
+	&.contactContainer {
 		background-color: $d-darkest;
 	}
 
 	.title {
+		color: $off-white;
+	}
+
+	.paragraph {
 		color: $off-white;
 	}
 }

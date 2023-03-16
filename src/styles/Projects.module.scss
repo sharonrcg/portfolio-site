@@ -1,4 +1,4 @@
-@import './_var.scss';
+@import './var';
 
 .Projects {
 	background-color: $medium;
@@ -9,11 +9,11 @@
 }
 
 .title {
-	font-family: 'DM Serif Display', serif;
-	line-height: 1.2;
-	font-size: $xxl;
-	text-align: center;
 	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $xxl;
+	line-height: 1.2;
+	text-align: center;
 }
 
 .dark {

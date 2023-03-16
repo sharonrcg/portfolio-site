@@ -1,4 +1,4 @@
-@import './_var.scss';
+@import './var';
 
 section {
 	display: flex;
@@ -6,10 +6,6 @@ section {
 	justify-content: space-evenly;
 	height: 100vh;
 	width: 100%;
-}
-
-section:nth-child(even) {
-	flex-direction: row-reverse;
 }
 
 section img,

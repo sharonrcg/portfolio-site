@@ -1,12 +1,12 @@
-@import '../styles/var';
+@import './var';
 
 .dotNav {
-	position: fixed;
-	top: 45%;
-	right: 1%;
 	bottom: 0;
 	display: block;
 	height: 50%;
+	position: fixed;
+	right: 1%;
+	top: 45%;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
@@ -17,20 +17,20 @@
 
 .dotNav ul {
 	display: inline-block;
-	position: relative;
 	line-height: 0;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 .dotNav li {
-	position: relative;
 	background-color: #9e9e9e;
+	border-radius: 25px;
 	height: 0.6rem;
-	width: 0.6rem;
 	list-style: none;
 	margin: 10px 0;
-	border-radius: 25px;
+	position: relative;
+	width: 0.6rem;
 
 	&.active {
 		background-color: $white;

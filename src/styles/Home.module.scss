@@ -1,19 +1,19 @@
-@import './_var.scss';
+@import './var';
 
 .Home {
 	background-color: $lightest;
-	padding: $xl;
 	display: flex;
+	padding: $xl;
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
 }
 
 .title {
-	font-family: 'DM Serif Display', serif;
-	line-height: 1.2;
-	font-size: $xxl;
-	text-align: center;
 	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $xxl;
+	line-height: 1.2;
+	text-align: center;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -23,12 +23,12 @@
 }
 
 .paragraph {
+	color: $off-black;
 	font-size: $m;
 	line-height: 1.5;
 	margin: 0 0 $s;
 	max-width: 75%;
 	text-align: center;
-	color: $off-black;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -40,10 +40,11 @@
 }
 
 .avatar {
-	width: 48%;
-	border-radius: 100%;
 	background: $white;
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px $shadow;
 	transition: background 0.5s ease-in-out;
+	width: 48%;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
@@ -78,6 +79,7 @@
 	}
 
 	.avatar {
-		background-color: #414157;
+		background-color: $blue-grey;
+		box-shadow: 1px 1px 5px $d-shadow;
 	}
 }

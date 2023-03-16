@@ -1,7 +1,7 @@
 import {Nav, SectionDots} from './nav'
 import {Main} from './sections'
-import NavProvider from './context/NavContext'
-import ThemeProvider from './context/ThemeContext'
+import {NavProvider} from './context'
+import {ThemeProvider} from './context'
 
 function App() {
 	return (

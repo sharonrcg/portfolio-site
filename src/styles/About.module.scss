@@ -1,4 +1,4 @@
-@import './_var.scss';
+@import './var';
 
 .About {
 	background-color: $light;
@@ -9,11 +9,11 @@
 }
 
 .title {
-	font-family: 'DM Serif Display', serif;
-	line-height: 1.2;
-	font-size: $xxl;
-	text-align: center;
 	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $xxl;
+	line-height: 1.2;
+	text-align: center;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -23,11 +23,11 @@
 }
 
 .paragraph {
+	color: $off-black;
 	font-size: $s;
 	line-height: 1.5;
 	margin: 0 0 $xxs;
 	max-width: 75%;
-	color: $off-black;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -40,10 +40,11 @@
 }
 
 .image {
-	width: auto;
+	border-radius: 30px;
+	box-shadow: 1px 1px 5px $shadow;
 	height: 55vh;
 	margin: auto 8%;
-	border-radius: 30px;
+	width: auto;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -63,5 +64,9 @@
 
 	.paragraph {
 		color: $off-white;
+	}
+
+	.image {
+		box-shadow: 1px 1px 5px $d-shadow;
 	}
 }
