@@ -6,7 +6,7 @@ import darkModeIcon from '../../public/images/darkModeIcon.svg'
 import styles from '../styles/ThemeButton.module.scss'
 
 const ThemeButton = () => {
-	const {isDarkMode, theme, toggleTheme} = useContext(ThemeContext)
+	const {isDarkMode, toggleTheme} = useContext(ThemeContext)
 
 	return (
 		<button
