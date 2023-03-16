@@ -1,16 +1,17 @@
 import {Nav, SectionDots} from './nav'
 import {Main} from './sections'
 import NavProvider from './context/NavContext'
+import ThemeProvider from './context/ThemeContext'
 
 function App() {
 	return (
-		<div className='appContainer'>
+		<ThemeProvider>
 			<NavProvider>
 				<Nav />
 				<SectionDots />
 				<Main />
 			</NavProvider>
-		</div>
+		</ThemeProvider>
 	)
 }
 

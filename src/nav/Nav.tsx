@@ -1,13 +1,31 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import NavLink from './NavLink'
 import {navLinks} from './navLinks'
+import {ThemeButton} from '.'
+import {NavContext, ThemeContext} from '../context'
+import styles from '../styles/Nav.module.scss'
 
 const Nav = () => {
+	const {isDarkMode} = useContext(ThemeContext)
+	const {activeNavLinkId} = useContext(NavContext)
+
 	return (
-		<nav>
-			{navLinks.map(({navLinkId, scrollToId}, idx) => (
-				<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
-			))}
+		<nav
+			className={`${styles.Nav} ${isDarkMode ? styles.dark : ''} ${
+				styles[activeNavLinkId]
+			}`}
+		>
+			{navLinks.map(({navLinkId, scrollToId}, idx) =>
+				scrollToId ? (
+					<NavLink
+						key={idx}
+						navLinkId={navLinkId}
+						scrollToId={scrollToId}
+						className={styles.activeClass}
+					/>
+				) : null,
+			)}
+			<ThemeButton />
 		</nav>
 	)
 }

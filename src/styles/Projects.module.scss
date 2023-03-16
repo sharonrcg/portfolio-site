@@ -5,6 +5,7 @@
 	display: flex;
 	scroll-snap-align: start;
 	scroll-padding: 100px;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .title {
@@ -13,4 +14,14 @@
 	font-size: $xxl;
 	text-align: center;
 	color: $off-black;
+}
+
+.dark {
+	.Projects {
+		background-color: $d-dark;
+	}
+
+	.title {
+		color: $off-white;
+	}
 }

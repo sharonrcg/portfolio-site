@@ -4,9 +4,11 @@ import {NavContext} from '../context/NavContext'
 const NavLink = ({
 	navLinkId,
 	scrollToId,
+	className,
 }: {
 	navLinkId: string
 	scrollToId: string
+	className: string
 }) => {
 	const {activeNavLinkId} = useContext(NavContext)
 
@@ -17,7 +19,7 @@ const NavLink = ({
 	return (
 		<span
 			id={navLinkId}
-			className={activeNavLinkId === navLinkId ? 'activeClass' : ''}
+			className={activeNavLinkId === navLinkId ? className : ''}
 			onClick={handleClick}
 		>
 			{navLinkId}

@@ -1,0 +1,83 @@
+@import './_var.scss';
+
+.Nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	padding: $xs 0;
+	max-height: $nav-height;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.Nav.Home {
+	background-color: $lightest;
+}
+
+.Nav.About {
+	background-color: $light;
+}
+
+.Nav.Projects {
+	background-color: $medium;
+}
+
+.Nav.Contact {
+	background-color: $dark;
+}
+
+.Nav span {
+	color: $off-black;
+}
+
+.Nav span {
+	font-size: 18px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s ease;
+	transition-delay: 0.25s;
+	margin: $xxs;
+	padding-bottom: $xxxs;
+}
+
+.Nav span:hover {
+	cursor: pointer;
+	border-bottom: 1px solid $off-black; // change to softer black
+}
+
+.Nav span.activeClass {
+	border-bottom-color: $black; // change to softer black
+}
+
+.dark {
+	&.Nav.Home {
+		background-color: $d-light;
+	}
+
+	&.Nav.About {
+		background-color: $d-medium;
+	}
+
+	&.Nav.Projects {
+		background-color: $d-dark;
+	}
+
+	&.Nav.Contact {
+		background-color: $d-darkest;
+	}
+
+	&.Nav span {
+		color: $off-white;
+	}
+
+	&.Nav span:hover {
+		cursor: pointer;
+		border-bottom: 1px solid $off-white;
+	}
+
+	&.Nav span.activeClass {
+		border-bottom-color: $white;
+	}
+}

@@ -4,4 +4,29 @@
 	background-color: $dark;
 	display: flex;
 	scroll-snap-align: start;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.title {
+	font-family: 'DM Serif Display', serif;
+	line-height: 1.2;
+	font-size: $xxl;
+	text-align: center;
+	color: $off-black;
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		& {
+			font-size: $l;
+		}
+	}
+}
+
+.dark {
+	.Contact {
+		background-color: $d-darkest;
+	}
+
+	.title {
+		color: $off-white;
+	}
 }

@@ -1,0 +1,20 @@
+@import '../styles/var';
+
+.ThemeButton {
+	background: none;
+	border: none;
+	margin-right: 20px;
+}
+
+.ThemeButton img {
+	color: $off-black;
+	filter: none;
+	height: auto;
+	width: 20px;
+}
+
+.darkModeIcon img {
+	color: $off-white;
+	filter: invert(1);
+	width: 22px;
+}

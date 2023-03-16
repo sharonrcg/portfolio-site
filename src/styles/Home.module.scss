@@ -5,6 +5,7 @@
 	padding: $xl;
 	display: flex;
 	scroll-snap-align: start;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .title {
@@ -59,5 +60,23 @@
 		& {
 			width: 55%;
 		}
+	}
+}
+
+.dark {
+	.Home {
+		background-color: $d-light;
+	}
+
+	.title {
+		color: $off-white;
+	}
+
+	.paragraph {
+		color: $off-white;
+	}
+
+	.avatar {
+		background-color: #414157;
 	}
 }

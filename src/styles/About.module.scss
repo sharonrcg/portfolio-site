@@ -3,7 +3,9 @@
 .About {
 	background-color: $light;
 	display: flex;
+	flex-direction: row-reverse;
 	scroll-snap-align: start;
+	transition: background-color 0.5s ease-in-out;
 }
 
 .title {
@@ -47,5 +49,19 @@
 		& {
 			display: none;
 		}
+	}
+}
+
+.dark {
+	.About {
+		background-color: $d-medium;
+	}
+
+	.title {
+		color: $off-white;
+	}
+
+	.paragraph {
+		color: $off-white;
 	}
 }
