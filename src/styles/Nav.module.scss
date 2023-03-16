@@ -41,6 +41,10 @@
 	padding-bottom: $xxxs;
 }
 
+.Nav button:nth-last-child(2) {
+	margin-right: 0.5rem;
+}
+
 .Nav button:hover {
 	cursor: pointer;
 	border-bottom: 1px solid $dark-grey;
