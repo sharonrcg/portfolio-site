@@ -15,8 +15,10 @@ const Snackbar = (props: SnackbarProps) => {
 				isSuccessful ? styles.success : styles.error
 			}`}
 		>
+			<button className={styles.button} onClick={handleClose}>
+				x
+			</button>
 			<p>{message}</p>
-			<button onClick={handleClose}>x</button>
 		</div>
 	)
 }

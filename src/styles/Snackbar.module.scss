@@ -1,11 +1,44 @@
 @import './var';
 
 .Snackbar {
-	background: $white;
+	align-items: center;
 	border-radius: 4px;
+	bottom: 1rem;
 	box-shadow: 0 0 10px $shadow;
 	color: $off-black;
+	display: flex;
+	flex-direction: row;
 	font-size: $xs;
+	justify-content: space-evenly;
 	left: 50%;
-	padding: 1rem;
+	padding: 1.2rem 0 1rem;
+	position: fixed;
+	text-align: center;
+	transform: translateX(-50%);
+	width: 500px;
+	z-index: 100;
+
+	&.success {
+		background: #c6ebc6;
+	}
+
+	&.error {
+		background: #ebc6c6;
+	}
+}
+
+.button {
+	background: none;
+	border: none;
+	color: $off-black;
+	cursor: pointer;
+	font-size: 1rem;
+	position: fixed;
+	top: 0.6rem;
+	right: 0.6rem;
+}
+
+.button:hover {
+	cursor: pointer;
+	color: $darker-grey;
 }

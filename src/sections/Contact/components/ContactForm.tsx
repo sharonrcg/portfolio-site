@@ -161,7 +161,10 @@ const ContactForm = () => {
 					message={
 						isSuccessful ? 'Message sent!' : 'Something went wrong. Please try again'
 					}
-					handleClose={() => setShowSnackbar(false)}
+					handleClose={() => {
+						setShowSnackbar(false)
+						setIsSuccessful(false)
+					}}
 				/>
 			)}
 		</>

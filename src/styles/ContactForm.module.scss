@@ -4,6 +4,7 @@
 	background: $white;
 	border-radius: 6px;
 	box-shadow: 1px 1px 5px $shadow;
+	margin-bottom: 1rem;
 	padding: 40px;
 	transition: background 0.5s ease-in-out;
 	width: 100%;
@@ -52,20 +53,6 @@
 	padding-top: 4px;
 }
 
-.snackbarError {
-	background-color: red;
-	color: white;
-	font-size: 14px;
-	padding: 10px;
-}
-
-.snackbarSuccess {
-	background-color: green;
-	color: white;
-	font-size: 14px;
-	padding: 10px;
-}
-
 .message {
 	border: none;
 	border-bottom: 1px solid $light-grey;
@@ -99,7 +86,9 @@
 
 .submitButton button:hover {
 	background-color: $dark-grey;
+	transition: none;
 }
+
 .submitButton:disabled {
 	opacity: 0.5;
 }
