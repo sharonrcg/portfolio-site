@@ -36,13 +36,34 @@
 	color: $off-black;
 	font-size: inherit;
 	line-height: 2.2;
+	padding: 0 10px;
 	transition: background 0.5s ease-in-out;
 	width: 100%;
 }
 
 .input:focus {
-	outline: 2px solid $off-white;
 	border-radius: 4px;
+	outline: 2px solid $off-white;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	padding-top: 4px;
+}
+
+.snackbarError {
+	background-color: red;
+	color: white;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.snackbarSuccess {
+	background-color: green;
+	color: white;
+	font-size: 14px;
+	padding: 10px;
 }
 
 .message {
@@ -51,6 +72,7 @@
 	color: $off-black;
 	font-size: inherit;
 	line-height: 1.2;
+	padding: 10px 10px 0;
 	transition: background 0.5s ease-in-out;
 	width: 100%;
 }
@@ -70,9 +92,16 @@
 	border-radius: 6px;
 	color: white;
 	font-size: $xs;
-	padding: 0.5rem 1rem;
+	padding: 0.6rem 1rem;
 	margin-top: 1.2rem;
 	transition: background 0.5s ease-in-out;
+}
+
+.submitButton button:hover {
+	background-color: $dark-grey;
+}
+.submitButton:disabled {
+	opacity: 0.5;
 }
 
 .dark {
