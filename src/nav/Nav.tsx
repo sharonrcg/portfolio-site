@@ -9,6 +9,11 @@ const Nav = () => {
 	const {isDarkMode} = useContext(ThemeContext)
 	const {activeNavLinkId} = useContext(NavContext)
 
+	React.useEffect(() => {
+		const homeSection = document.getElementById('homeContainer')
+		homeSection?.scrollIntoView({behavior: 'smooth'})
+	}, [])
+
 	return (
 		<nav
 			className={`${styles.Nav} ${isDarkMode ? styles.dark : ''} ${

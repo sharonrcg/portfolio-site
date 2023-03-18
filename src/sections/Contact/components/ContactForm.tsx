@@ -159,7 +159,7 @@ const ContactForm = () => {
 				<Snackbar
 					isSuccessful={isSuccessful}
 					message={
-						isSuccessful ? 'Message sent!' : 'Something went wrong. Please try again'
+						isSuccessful ? 'Message sent!' : 'Please fill out required fields'
 					}
 					handleClose={() => {
 						setShowSnackbar(false)

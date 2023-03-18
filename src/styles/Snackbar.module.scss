@@ -2,7 +2,7 @@
 
 .Snackbar {
 	align-items: center;
-	border-radius: 4px;
+	border-radius: 6px;
 	bottom: 1rem;
 	box-shadow: 0 0 10px $shadow;
 	color: $off-black;
@@ -19,26 +19,45 @@
 	z-index: 100;
 
 	&.success {
-		background: #c6ebc6;
+		background: $success;
 	}
 
 	&.error {
-		background: #ebc6c6;
+		background: $error-light;
+		color: $off-white;
+	}
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		& {
+			width: 100%;
+			border-radius: unset;
+			bottom: 0;
+			box-shadow: 0 0 5px $shadow;
+			font-size: 15px;
+		}
 	}
 }
 
-.button {
+.closeButton {
 	background: none;
 	border: none;
-	color: $off-black;
+	opacity: 0.8;
 	cursor: pointer;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	position: fixed;
 	top: 0.6rem;
 	right: 0.6rem;
+
+	&.success {
+		color: $off-black;
+	}
+
+	&.error {
+		color: $off-white;
+	}
 }
 
-.button:hover {
+.closeButton:hover {
 	cursor: pointer;
 	color: $darker-grey;
 }

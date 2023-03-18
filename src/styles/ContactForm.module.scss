@@ -4,7 +4,6 @@
 	background: $white;
 	border-radius: 6px;
 	box-shadow: 1px 1px 5px $shadow;
-	margin-bottom: 1rem;
 	padding: 40px;
 	transition: background 0.5s ease-in-out;
 	width: 100%;
@@ -12,6 +11,13 @@
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			margin: 0;
+			padding: 30px;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		& {
+			padding: 20px;
 		}
 	}
 }
@@ -22,13 +28,31 @@
 
 .formTitle {
 	color: $off-black;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 .label {
 	color: $darker-grey;
 	display: block;
 	margin: 1.2rem 0 0.2rem 0;
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		& {
+			margin: 0.5rem 0 0.2rem 0;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 0.8rem;
+		}
+	}
 }
 
 .input {
@@ -48,7 +72,7 @@
 }
 
 .error {
-	color: red;
+	color: $error;
 	font-size: 12px;
 	padding-top: 4px;
 }
@@ -71,6 +95,12 @@
 
 .submitButton {
 	align-items: flex-end;
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			padding: 0;
+		}
+	}
 }
 
 .submitButton button {
@@ -82,6 +112,14 @@
 	padding: 0.6rem 1rem;
 	margin-top: 1.2rem;
 	transition: background 0.5s ease-in-out;
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 1rem;
+			padding: 0.4rem 0.8rem;
+			width: 100%;
+		}
+	}
 }
 
 .submitButton button:hover {
