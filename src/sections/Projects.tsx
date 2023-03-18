@@ -1,7 +1,7 @@
 import React from 'react'
-import {useNav} from '../hooks'
-import styles from '../styles/Projects.module.scss'
-import {ThemeContext} from '../context'
+import {useNav} from '@/hooks'
+import styles from '@/styles/Projects.module.scss'
+import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 
 const Projects = () => {

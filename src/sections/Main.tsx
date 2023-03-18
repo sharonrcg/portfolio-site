@@ -1,7 +1,7 @@
 import React from 'react'
 import {Home, About, Contact, Projects} from './'
-import styles from '../styles/Main.module.scss'
-import {useScrollSnap} from '../hooks'
+import styles from '@/styles/Main.module.scss'
+import {useScrollSnap} from '@/hooks'
 
 const Main = () => {
 	const mainRef = useScrollSnap()

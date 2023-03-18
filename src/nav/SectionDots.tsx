@@ -1,6 +1,6 @@
-import {NavContext} from '../context/NavContext'
+import {NavContext} from '@/context/NavContext'
 import React, {useContext} from 'react'
-import styles from '../styles/SectionDots.module.scss'
+import styles from '@/styles/SectionDots.module.scss'
 import {navLinks} from './navLinks'
 
 const SectionDots = () => {

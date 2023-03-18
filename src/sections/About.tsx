@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import {useNav} from '../hooks'
-import styles from '../styles/About.module.scss'
+import {useNav} from '@/hooks'
+import styles from '@/styles/About.module.scss'
 import sharon_and_kai from '../../public/images/sharon_and_kai.jpg'
-import {ThemeContext} from '../context'
+import {ThemeContext} from '@/context'
 
 const About = () => {
 	const aboutRef = useNav('About')

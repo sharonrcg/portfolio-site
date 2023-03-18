@@ -1,6 +1,6 @@
 import {useContext, useState} from 'react'
 import styles from '@/styles/ContactForm.module.scss'
-import {ThemeContext} from '../../../context'
+import {ThemeContext} from '@/context'
 import Snackbar from './Snackbar'
 
 const ContactForm = () => {

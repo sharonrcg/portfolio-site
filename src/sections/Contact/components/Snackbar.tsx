@@ -1,4 +1,6 @@
+import {ThemeContext} from '@/context'
 import styles from '@/styles/Snackbar.module.scss'
+import {useContext} from 'react'
 
 type SnackbarProps = {
 	isSuccessful: boolean
@@ -8,6 +10,7 @@ type SnackbarProps = {
 
 const Snackbar = (props: SnackbarProps) => {
 	const {isSuccessful, message, handleClose} = props
+	const {isDarkMode} = useContext(ThemeContext)
 
 	return (
 		<div
