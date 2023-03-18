@@ -16,7 +16,7 @@ const Snackbar = (props: SnackbarProps) => {
 		<div
 			className={`${styles.Snackbar} ${
 				isSuccessful ? styles.success : styles.error
-			}`}
+			} ${isDarkMode ? styles.dark : ''}`}
 		>
 			<button
 				className={`${styles.closeButton} ${
