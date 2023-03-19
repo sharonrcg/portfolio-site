@@ -43,15 +43,22 @@ const Nav = () => {
 				<ThemeButton />
 			</nav>
 
-			<nav className={styles.menuButton}>
-				<button onClick={handleMenuClick}>☰</button>
-			</nav>
+			<button
+				className={`${styles.menuButton} ${isDarkMode ? styles.dark : ''}`}
+				onClick={handleMenuClick}
+			>
+				☰
+			</button>
 
 			{isMenuOpen && (
-				<nav className={`${styles.popover} ${styles[activeNavLinkId]}`}>
+				<nav
+					className={`${styles.popover} ${isDarkMode ? styles.dark : ''} ${
+						styles[activeNavLinkId]
+					}`}
+				>
 					<ul className={styles.sectionsList}>
 						{renderNavLinks()}
-						{/* <ThemeButton /> */}
+						<ThemeButton />
 					</ul>
 				</nav>
 			)}
