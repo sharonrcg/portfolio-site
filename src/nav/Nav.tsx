@@ -27,6 +27,7 @@ const Nav = () => {
 					navLinkId={navLinkId}
 					scrollToId={scrollToId}
 					className={styles.activeClass}
+					onClick={() => setIsMenuOpen(false)}
 				/>
 			) : null,
 		)
