@@ -6,6 +6,7 @@
 	padding: $xl;
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
+	justify-content: center;
 }
 
 .title {
@@ -14,6 +15,7 @@
 	font-size: $xxl;
 	line-height: 1.2;
 	text-align: center;
+	margin-top: 1.5rem;
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
@@ -26,7 +28,7 @@
 	color: $off-black;
 	font-size: $m;
 	line-height: 1.5;
-	margin: 0 0 $s;
+	margin-bottom: $s;
 	max-width: 75%;
 	text-align: center;
 
@@ -34,7 +36,13 @@
 		& {
 			font-size: $s;
 			max-width: none;
-			padding: 4%;
+			padding: 2%;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 1.4rem;
 		}
 	}
 }
@@ -44,23 +52,17 @@
 	border-radius: 100%;
 	box-shadow: 1px 1px 5px $shadow;
 	transition: background 0.5s ease-in-out;
-	width: 48%;
+	width: 300px;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
-			width: 35%;
-		}
-	}
-
-	@media screen and (max-width: $breakpoint-mobile) {
-		& {
-			width: 45%;
+			width: 200px;
 		}
 	}
 
 	@media screen and (max-width: $breakpoint-mini) {
 		& {
-			width: 55%;
+			width: 150px;
 		}
 	}
 }

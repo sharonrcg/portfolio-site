@@ -11,12 +11,6 @@
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			margin: 0;
-			padding: 30px;
-		}
-	}
-
-	@media screen and (max-width: $breakpoint-mobile) {
-		& {
 			padding: 20px;
 		}
 	}
@@ -42,17 +36,17 @@
 	display: block;
 	margin: 1.2rem 0 0.2rem 0;
 
-	@media screen and (max-width: $breakpoint-mobile) {
-		& {
-			margin: 0.5rem 0 0.2rem 0;
-		}
-	}
+	// @media screen and (max-width: $breakpoint-mobile) {
+	// 	& {
+	// 		margin: 0.5rem 0 0.2rem 0;
+	// 	}
+	// }
 
-	@media screen and (max-width: $breakpoint-mini) {
-		& {
-			font-size: 0.8rem;
-		}
-	}
+	// @media screen and (max-width: $breakpoint-mini) {
+	// 	& {
+	// 		font-size: 0.8rem;
+	// 	}
+	// }
 }
 
 .input {
@@ -95,12 +89,6 @@
 
 .submitButton {
 	align-items: flex-end;
-
-	@media screen and (max-width: $breakpoint-mini) {
-		& {
-			padding: 0;
-		}
-	}
 }
 
 .submitButton button {
@@ -116,7 +104,7 @@
 	@media screen and (max-width: $breakpoint-mini) {
 		& {
 			font-size: 1rem;
-			padding: 0.4rem 0.8rem;
+			padding: 0.6rem 0.8rem;
 			width: 100%;
 		}
 	}
