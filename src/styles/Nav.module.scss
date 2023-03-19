@@ -11,6 +11,10 @@
 	top: 0;
 	width: 100%;
 	z-index: 10;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 }
 
 .Nav.Home {
@@ -52,6 +56,69 @@
 
 .Nav button.activeClass {
 	border-bottom-color: $off-black;
+}
+
+.menuButton {
+	align-items: center;
+	color: $off-black;
+	display: flex;
+	font-size: 2rem;
+	justify-content: flex-end;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+	button {
+		background: none;
+		border: none;
+		font-size: 2rem;
+
+		&:hover {
+			cursor: pointer;
+			color: $darker-grey;
+			transition: color 0.2s ease-in-out;
+		}
+	}
+
+	@media screen and (min-width: ($breakpoint-mobile + 1)) {
+		display: none;
+	}
+}
+
+.popover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(241, 236, 234, 0.95);
+
+	button {
+		color: $off-black;
+		background: none;
+		border: none;
+		font-size: 1.5rem;
+		padding: 0.5rem 0;
+
+		&:hover {
+			cursor: pointer;
+			color: $darker-grey;
+			transition: color 0.2s ease-in-out;
+			border-bottom: 1px solid $dark-grey;
+		}
+	}
+}
+
+.sectionsList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.sectionsListItem {
+	padding: 0.8rem 0;
 }
 
 .dark {
