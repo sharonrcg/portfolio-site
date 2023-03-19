@@ -143,7 +143,6 @@ const ContactForm = () => {
 						onChange={(e) => {
 							setMessage(e.target.value)
 						}}
-						rows={5}
 					></textarea>
 					{errors?.message && <p className={styles.error}>Please enter a message</p>}
 
