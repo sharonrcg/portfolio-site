@@ -11,17 +11,30 @@ const About = () => {
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
 			<section ref={aboutRef} id='aboutContainer' className={styles.About}>
-				<div>
-					<h1 className={styles.title}>About me</h1>
-					<p className={styles.paragraph}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
+				<div className={styles.container}>
+					<div>
+						<h1 className={styles.title}>About me</h1>
+						<p className={styles.paragraph}>
+							I am a passionate individual who enjoys creating beautiful, responsive
+							and intuitive web applications. I love learning new things and I&apos;m
+							always looking for opportunities to improve my skills.
+							<br />
+							I currently work at Casebook PBC as a front-end engineer. For the last 2+
+							years I&apos;ve helped build and maintain the Casebook platform, which
+							allows human services agencies to better serve their clients.
+							<br />
+							When I&apos;m not coding, I enjoy watching movies, playing video games,
+							and creating art. If you&apos;re interested in working with me, please
+							don&apos;t hesitate to reach out!
+						</p>
+					</div>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img
+						className={styles.image}
+						src={sharon_and_kai.src}
+						alt='unsplash-img'
+					/>
 				</div>
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img className={styles.image} src={sharon_and_kai.src} alt='unsplash-img' />
 			</section>
 		</div>
 	)

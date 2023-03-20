@@ -13,8 +13,8 @@ const Home = () => {
 				<div>
 					<h1 className={styles.title}>Sharon Gomez</h1>
 					<p className={styles.paragraph}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
+						Hi there, welcome to my portfolio! My name is Sharon and I&apos;m a
+						software engineer based in Westchester, NY.
 					</p>
 				</div>
 				<div>
