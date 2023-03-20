@@ -7,16 +7,19 @@ import sharon_and_juan from '../../../../public/images/sharon_and_juan.jpg'
 export const PolaroidStack = () => {
 	const polaroids = [
 		{
-			imageSrc: sharon.src,
+			displayText: 'Me',
 			imageAlt: 'A polaroid of me',
+			imageSrc: sharon.src,
 		},
 		{
-			imageSrc: kai.src,
+			displayText: 'My pup, Kai',
 			imageAlt: 'A polaroid of my dog, Kai',
+			imageSrc: kai.src,
 		},
 		{
-			imageSrc: sharon_and_juan.src,
+			displayText: 'Me and my husband, Juan',
 			imageAlt: 'A polaroid of me and my husband, Juan',
+			imageSrc: sharon_and_juan.src,
 		},
 	]
 
@@ -26,8 +29,9 @@ export const PolaroidStack = () => {
 				polaroids.map((polaroid, idx) => (
 					<Polaroid
 						key={idx}
-						imageSrc={polaroid.imageSrc}
+						displayText={polaroid.displayText}
 						imageAlt={polaroid.imageAlt}
+						imageSrc={polaroid.imageSrc}
 					/>
 				))}
 		</div>
