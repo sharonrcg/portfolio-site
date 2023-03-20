@@ -1,4 +1,4 @@
-export {default as About} from './About'
+export {About} from './About'
 export {Contact} from './Contact'
 export {default as Home} from './Home'
 export {default as Main} from './Main'

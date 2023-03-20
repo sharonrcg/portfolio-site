@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
 import styles from '@/styles/About.module.scss'
-import sharon_and_kai from '../../public/images/sharon_and_kai.jpg'
 import {ThemeContext} from '@/context'
+import {PolaroidStack} from './components/PolaroidStack'
 
 const About = () => {
 	const aboutRef = useNav('About')
@@ -28,12 +28,7 @@ const About = () => {
 							want to say hi), please don&apos;t hesitate to reach out!
 						</p>
 					</div>
-					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img
-						className={styles.image}
-						src={sharon_and_kai.src}
-						alt='unsplash-img'
-					/>
+					<PolaroidStack />
 				</div>
 			</section>
 		</div>

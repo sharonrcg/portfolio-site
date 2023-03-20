@@ -66,28 +66,6 @@
 	}
 }
 
-.image {
-	border-radius: 30px;
-	box-shadow: 1px 1px 5px $shadow;
-	height: 450px;
-	width: auto;
-	margin-left: 4rem;
-
-	@media screen and (max-width: $breakpoint-tablet) {
-		& {
-			height: 44vh;
-			margin: 2rem;
-		}
-	}
-
-	@media screen and (max-width: $breakpoint-mobile) {
-		& {
-			margin: 0.8rem auto;
-			height: 20%;
-		}
-	}
-}
-
 .dark {
 	.About {
 		background-color: $d-medium;
