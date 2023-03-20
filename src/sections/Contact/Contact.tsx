@@ -48,7 +48,7 @@ const Contact = () => {
 						</li>
 					</ul>
 					<p className={styles.mobileLinks}>
-						<a href='https://www.linkedin.com/in/sharonrcg/'>Email</a> |{' '}
+						<a href='mailto:me@sharongomez.com'>Email</a> |{' '}
 						<a href='https://www.linkedin.com/in/sharonrcg/' target='_blank'>
 							LinkedIn
 						</a>{' '}
