@@ -9,7 +9,7 @@
 .container {
 	display: flex;
 	flex-direction: row-reverse;
-	max-width: 1500px;
+	max-width: 1250px;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
@@ -37,7 +37,7 @@
 	color: $off-black;
 	font-size: 1.2rem;
 	line-height: 1.5;
-	max-width: 75%;
+	margin: 1rem 4rem;
 
 	br {
 		display: block;
@@ -71,7 +71,7 @@
 	box-shadow: 1px 1px 5px $shadow;
 	height: 450px;
 	width: auto;
-	margin: 0 2rem;
+	margin-left: 4rem;
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {

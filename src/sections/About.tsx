@@ -24,8 +24,8 @@ const About = () => {
 							allows human services agencies to better serve their clients.
 							<br />
 							When I&apos;m not coding, I enjoy watching movies, playing video games,
-							and creating art. If you&apos;re interested in working with me, please
-							don&apos;t hesitate to reach out!
+							and creating art. If you&apos;re interested in learning more (or just
+							want to say hi), please don&apos;t hesitate to reach out!
 						</p>
 					</div>
 					{/* eslint-disable-next-line @next/next/no-img-element */}

@@ -2,11 +2,22 @@
 
 .Home {
 	background-color: $lightest;
-	display: flex;
 	padding: $xl;
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
-	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	max-width: 1250px;
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		& {
+			flex-direction: column-reverse;
+			justify-content: center;
+		}
+	}
 }
 
 .title {
