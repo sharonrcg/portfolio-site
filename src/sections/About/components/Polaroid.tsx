@@ -1,16 +1,23 @@
 import styles from '@/styles/Polaroid.module.scss'
 
 type PolaroidProps = {
+	className?: string
+	displayText: string
 	imageSrc: string
 	imageAlt: string
+}
+
+export type Polaroid = {
 	displayText: string
+	imageAlt: string
+	imageSrc: string
 }
 
 export const Polaroid = (props: PolaroidProps) => {
-	const {displayText, imageSrc, imageAlt} = props
+	const {className, displayText, imageSrc, imageAlt} = props
 
 	return (
-		<div className={styles.Polaroid}>
+		<div className={className}>
 			{/* eslint-disable-next-line @next/next/no-img-element */}
 			<img
 				className={styles.image}

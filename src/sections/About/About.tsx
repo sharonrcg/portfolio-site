@@ -3,10 +3,39 @@ import {useNav} from '@/hooks'
 import styles from '@/styles/About.module.scss'
 import {ThemeContext} from '@/context'
 import {PolaroidStack} from './components/PolaroidStack'
+import {Polaroid} from './components/Polaroid'
+import {polaroids, rows} from '@/utils/constants'
 
 const About = () => {
 	const aboutRef = useNav('About')
 	const {isDarkMode} = useContext(ThemeContext)
+
+	const renderRow = (idx: number, paragraph: string, polaroid: Polaroid) => {
+		return (
+			<div className={styles.row} key={idx}>
+				<Polaroid
+					className={styles.polaroid}
+					displayText={polaroid.displayText}
+					imageAlt={polaroid.imageAlt}
+					imageSrc={polaroid.imageSrc}
+				/>
+				<p className={styles.paragraph}>{paragraph}</p>
+			</div>
+		)
+	}
+
+	const renderMobileRow = (polaroids: Polaroid[]) => {
+		return polaroids.map((polaroid, idx) => (
+			<div className={styles.mobileRow} key={idx}>
+				<Polaroid
+					className={styles.polaroid}
+					displayText={polaroid.displayText}
+					imageAlt={polaroid.imageAlt}
+					imageSrc={polaroid.imageSrc}
+				/>
+			</div>
+		))
+	}
 
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
@@ -14,21 +43,13 @@ const About = () => {
 				<div className={styles.container}>
 					<div>
 						<h1 className={styles.title}>About me</h1>
-						<p className={styles.paragraph}>
-							I am a passionate individual who enjoys creating beautiful, responsive
-							and intuitive web applications. I love learning new things and I&apos;m
-							always looking for opportunities to improve my skills.
-							<br />
-							I currently work at Casebook PBC as a front-end engineer. For the last 2+
-							years I&apos;ve helped build and maintain the Casebook platform, which
-							allows human services agencies to better serve their clients.
-							<br />
-							When I&apos;m not coding, I enjoy watching movies, playing video games,
-							and creating art. If you&apos;re interested in learning more (or just
-							want to say hi), please don&apos;t hesitate to reach out!
-						</p>
+						<div className={styles.mobileRowContainer}>
+							{renderMobileRow(polaroids)}
+						</div>
+
+						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
 					</div>
-					<PolaroidStack />
+					<PolaroidStack polaroids={polaroids} />
 				</div>
 			</section>
 		</div>

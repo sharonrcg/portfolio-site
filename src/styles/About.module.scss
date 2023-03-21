@@ -11,6 +11,14 @@
 	flex-direction: row-reverse;
 	max-width: 1250px;
 
+	.row:nth-last-child(2) {
+		.polaroid p {
+			bottom: -28px;
+			line-height: 1;
+			font-size: 0.8rem;
+		}
+	}
+
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			flex-direction: column-reverse;
@@ -31,37 +39,124 @@
 			font-size: 2.2rem;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 2rem;
+		}
+	}
 }
 
 .paragraph {
 	color: $off-black;
 	font-size: 1.2rem;
 	line-height: 1.5;
-	margin: 1rem 4rem;
+	margin: 0.8rem 4rem 0;
+	max-width: 525px;
 
-	br {
-		display: block;
-		content: '';
-		margin-top: 0.8rem;
-	}
-
-	@media screen and (max-width: $breakpoint-desktop) {
-		& {
-			max-width: 75%;
-		}
+	&:first-of-type {
+		margin-top: 1rem;
 	}
 
 	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			font-size: 1.1rem;
-			max-width: 90%;
 			line-height: 1.3;
+			margin: 0;
+			max-width: 468px;
 		}
 	}
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
-			margin: 0.8rem auto;
+			max-width: 54%;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-mini) {
+		& {
+			font-size: 1rem;
+			max-width: 85%;
+		}
+	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+
+	&:nth-of-type(3) {
+		flex-direction: row-reverse;
+
+		.polaroid {
+			-webkit-transform: rotate(2.5deg);
+			-moz-transform: rotate(2.5deg);
+			transform: rotate(2.5deg);
+		}
+	}
+}
+
+.mobileRowContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.mobileRow {
+	.polaroid {
+		border-bottom: 30px solid $off-white;
+		border-left: 10px solid $off-white;
+		border-right: 10px solid $off-white;
+		border-top: 10px solid $off-white;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+		display: block;
+		height: auto;
+		position: relative;
+		max-width: 120px;
+		-webkit-transform: none;
+		-moz-transform: none;
+		transform: none;
+
+		p {
+			bottom: -22px;
+		}
+
+		@media screen and (min-width: ($breakpoint-mini + 1)) {
+			& {
+				display: none;
+			}
+		}
+	}
+}
+
+.polaroid {
+	border-bottom: 30px solid $off-white;
+	border-left: 10px solid $off-white;
+	border-right: 10px solid $off-white;
+	border-top: 10px solid $off-white;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+	height: auto;
+	position: relative;
+	max-width: 150px;
+	-webkit-transform: rotate(-2.5deg);
+	-moz-transform: rotate(-2.5deg);
+	transform: rotate(-2.5deg);
+
+	@media screen and (min-width: ($breakpoint-tablet + 1)) {
+		display: none;
+	}
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		& {
+			max-width: 125px;
+		}
+	}
+
+	@media screen and (max-width: ($breakpoint-mini)) {
+		& {
+			display: none;
 		}
 	}
 }

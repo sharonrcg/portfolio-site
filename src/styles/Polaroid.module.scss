@@ -1,52 +1,5 @@
 @import './var';
 
-.Polaroid {
-	border-bottom: 45px solid $off-white;
-	border-left: 12px solid $off-white;
-	border-right: 12px solid $off-white;
-	border-top: 12px solid $off-white;
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
-	height: auto;
-	position: absolute;
-	transition: box-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out,
-		transform 0.3s ease-in-out, width 0.3s ease-in-out, z-index 0.3s ease-in-out;
-	width: 200px;
-
-	&:hover {
-		box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-		transform: none !important;
-		width: 250px;
-		z-index: 5;
-	}
-
-	&:nth-child(1) {
-		-webkit-transform: rotate(1.5deg);
-		-moz-transform: rotate(1.5deg);
-		bottom: -65px;
-		transform: rotate(1.5deg);
-	}
-
-	&:nth-child(2) {
-		-webkit-transform: rotate(3.5deg);
-		-moz-transform: rotate(3.5deg);
-		right: 55px;
-		top: -10px;
-		transform: rotate(3.5deg);
-	}
-
-	&:nth-child(3) {
-		-webkit-transform: rotate(-5.5deg);
-		-moz-transform: rotate(-5.5deg);
-		left: 55px;
-		top: 10px;
-		transform: rotate(-5.5deg);
-
-		p {
-			bottom: -36px;
-		}
-	}
-}
-
 .image {
 	width: 100%;
 	height: auto;
@@ -71,4 +24,10 @@
 	position: absolute;
 	text-align: center;
 	width: 100%;
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		& {
+			font-size: 1rem;
+		}
+	}
 }
