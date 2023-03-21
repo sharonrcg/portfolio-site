@@ -59,7 +59,7 @@ const Nav = () => {
 				>
 					<ul className={styles.sectionsList}>
 						{renderNavLinks()}
-						<ThemeButton />
+						<ThemeButton onClick={() => setIsMenuOpen(false)} />
 					</ul>
 				</nav>
 			)}

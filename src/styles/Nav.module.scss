@@ -10,7 +10,7 @@
 	top: 0;
 	transition: background-color 0.5s ease-in-out;
 	width: 100%;
-	z-index: 10;
+	z-index: 1000;
 
 	@media screen and (max-width: 768px) {
 		display: none;
@@ -86,6 +86,7 @@
 	height: 100%;
 	background: rgba(241, 236, 234, 0.95);
 	transition: background 0.5s ease-in-out;
+	z-index: 1000;
 
 	button {
 		color: $off-black;

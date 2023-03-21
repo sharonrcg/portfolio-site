@@ -5,13 +5,18 @@ import lightModeIcon from '../../public/images/lightModeIcon.svg'
 import darkModeIcon from '../../public/images/darkModeIcon.svg'
 import styles from '@/styles/ThemeButton.module.scss'
 
-const ThemeButton = () => {
+const ThemeButton = ({onClick}: {onClick?: () => void}) => {
 	const {isDarkMode, toggleTheme} = useContext(ThemeContext)
+
+	const handleClick = () => {
+		toggleTheme()
+		onClick?.()
+	}
 
 	return (
 		<button
 			className={`${styles.ThemeButton} ${isDarkMode ? styles.darkModeIcon : ''}`}
-			onClick={toggleTheme}
+			onClick={handleClick}
 		>
 			{isDarkMode ? (
 				<img src={lightModeIcon.src} alt='Light mode icon' />
