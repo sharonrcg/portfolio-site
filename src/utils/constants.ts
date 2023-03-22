@@ -24,17 +24,17 @@ export const polaroids = [
 export const rows = [
 	{
 		paragraph:
-			"I am a passionate individual who enjoys creating beautiful, responsive and intuitive web applications. I love learning new things and I'm always looking for opportunities to improve my skills.",
+			"I am a creative individual who enjoys building <span>beautiful, responsive, and intuitive</span> web applications. I love learning new things and I'm always looking for <span>opportunities</span> to improve my skills.",
 		polaroid: polaroids[0],
 	},
 	{
 		paragraph:
-			"I currently work at Casebook PBC as a front-end engineer. For the last 2+ years I've helped build and maintain the Casebook platform, which allows human services agencies to better serve their clients.",
+			"I currently work at Casebook PBC as a <span>front-end engineer</span>. For the last 2+ years I've helped build and maintain the Casebook platform, which allows human services agencies to better serve their clients.",
 		polaroid: polaroids[1],
 	},
 	{
 		paragraph:
-			"When I'm not coding, I enjoy watching movies, playing video games, and creating art. If you're interested in learning more (or just want to say hi), please don't hesitate to reach out!",
+			"When I'm not coding, I enjoy <span>watching movies, playing video games, and doodling</span>. If you're interested in learning more (or just want to say hi), please don't hesitate to shoot me a message!",
 		polaroid: polaroids[2],
 	},
 ]

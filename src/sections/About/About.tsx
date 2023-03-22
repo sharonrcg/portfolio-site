@@ -13,16 +13,30 @@ const About = () => {
 	const renderRow = (idx: number, paragraph: string, polaroid: Polaroid) => {
 		return (
 			<div className={styles.row} key={idx}>
-				<Polaroid
+				{/* <Polaroid
 					className={styles.polaroid}
 					displayText={polaroid.displayText}
 					imageAlt={polaroid.imageAlt}
 					imageSrc={polaroid.imageSrc}
+				/> */}
+				<p
+					className={styles.paragraph}
+					dangerouslySetInnerHTML={{__html: paragraph}}
 				/>
-				<p className={styles.paragraph}>{paragraph}</p>
 			</div>
 		)
 	}
+
+	const skills = [
+		'JavaScript',
+		'TypeScript',
+		'React',
+		'Next.js',
+		'GraphQL',
+		'Git',
+		'HTML',
+		'CSS',
+	]
 
 	// const renderMobileRow = (polaroids: Polaroid[]) => {
 	// 	return polaroids.map((polaroid, idx) => (
@@ -48,6 +62,14 @@ const About = () => {
 						</div> */}
 
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
+
+						<div className={styles.skills}>
+							{skills.map((skill, idx) => (
+								<div className={styles.skill} key={idx}>
+									<p>{skill}</p>
+								</div>
+							))}
+						</div>
 					</div>
 					<PolaroidStack polaroids={polaroids} />
 				</div>
