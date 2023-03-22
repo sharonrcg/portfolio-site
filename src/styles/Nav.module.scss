@@ -25,12 +25,16 @@
 	background-color: $light;
 }
 
-.Nav.Projects {
+.Nav.Experience {
 	background-color: $medium;
 }
 
-.Nav.Contact {
+.Nav.Projects {
 	background-color: $dark;
+}
+
+.Nav.Contact {
+	background-color: $darkest;
 }
 
 .Nav button {
@@ -135,10 +139,14 @@
 
 .dark {
 	&.Nav.Home {
-		background-color: $d-light;
+		background-color: $d-lightest;
 	}
 
 	&.Nav.About {
+		background-color: $d-light;
+	}
+
+	&.Nav.Experience {
 		background-color: $d-medium;
 	}
 
