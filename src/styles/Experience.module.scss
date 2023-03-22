@@ -1,0 +1,27 @@
+@import './var';
+
+.Experience {
+	background-color: $medium;
+	display: flex;
+	scroll-snap-align: start;
+	scroll-padding: 100px;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.title {
+	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $xxl;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.dark {
+	.Experience {
+		background-color: $d-dark;
+	}
+
+	.title {
+		color: $off-white;
+	}
+}

@@ -25,7 +25,7 @@
 	text-align: center;
 	width: 100%;
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			font-size: 1rem;
 			bottom: -22px;

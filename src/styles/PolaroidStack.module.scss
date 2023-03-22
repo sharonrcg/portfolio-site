@@ -4,7 +4,7 @@
 	max-width: 500px;
 	position: relative;
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		display: none;
 	}
 }

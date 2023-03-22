@@ -17,7 +17,7 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			flex-direction: column;
 			justify-content: center;
@@ -25,7 +25,7 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-mobile) {
+	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			max-width: 90%;
 		}
@@ -42,13 +42,13 @@
 	font-size: $xxl;
 	line-height: 1.2;
 
-	@media screen and (max-width: $breakpoint-mobile) {
+	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			font-size: $l;
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-mini) {
+	@media screen and (max-width: $breakpoint-mobile) {
 		& {
 			font-size: $m;
 		}
@@ -69,7 +69,7 @@
 		margin-top: 0.8rem;
 	}
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			width: 100%;
 			margin: 0;
@@ -80,20 +80,20 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-mobile) {
+	@media screen and (max-width: $breakpoint-tablet) {
 		& {
 			line-height: 1.2;
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-mini) {
+	@media screen and (max-width: $breakpoint-mobile) {
 		& {
 			font-size: 1.4rem;
 			padding: 0.8rem 0;
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-mini) {
+	@media screen and (max-width: $breakpoint-mobile) {
 		& {
 			line-height: 1.2;
 			font-size: 1.1rem;
@@ -121,7 +121,7 @@
 		}
 	}
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			display: none;
 		}
@@ -146,7 +146,7 @@
 		}
 	}
 
-	@media screen and (min-width: ($breakpoint-tablet + 1)) {
+	@media screen and (min-width: ($breakpoint-tablet-lg + 1)) {
 		& {
 			display: none;
 		}
@@ -154,7 +154,7 @@
 }
 
 .reachOutText {
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			display: none;
 		}

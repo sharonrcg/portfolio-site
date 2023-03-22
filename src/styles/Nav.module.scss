@@ -75,7 +75,7 @@
 		transition: color 0.2s ease-in-out;
 	}
 
-	@media screen and (min-width: ($breakpoint-mobile + 1)) {
+	@media screen and (min-width: ($breakpoint-tablet + 1)) {
 		display: none;
 	}
 }

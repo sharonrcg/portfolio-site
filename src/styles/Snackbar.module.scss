@@ -27,7 +27,7 @@
 		color: $off-white;
 	}
 
-	@media screen and (max-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			width: 100%;
 			border-radius: unset;
