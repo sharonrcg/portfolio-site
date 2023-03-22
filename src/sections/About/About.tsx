@@ -24,18 +24,18 @@ const About = () => {
 		)
 	}
 
-	const renderMobileRow = (polaroids: Polaroid[]) => {
-		return polaroids.map((polaroid, idx) => (
-			<div className={styles.mobileRow} key={idx}>
-				<Polaroid
-					className={styles.polaroid}
-					displayText={polaroid.displayText}
-					imageAlt={polaroid.imageAlt}
-					imageSrc={polaroid.imageSrc}
-				/>
-			</div>
-		))
-	}
+	// const renderMobileRow = (polaroids: Polaroid[]) => {
+	// 	return polaroids.map((polaroid, idx) => (
+	// 		<div className={styles.mobileRow} key={idx}>
+	// 			<Polaroid
+	// 				className={styles.polaroid}
+	// 				displayText={polaroid.displayText}
+	// 				imageAlt={polaroid.imageAlt}
+	// 				imageSrc={polaroid.imageSrc}
+	// 			/>
+	// 		</div>
+	// 	))
+	// }
 
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
@@ -43,9 +43,9 @@ const About = () => {
 				<div className={styles.container}>
 					<div>
 						<h1 className={styles.title}>About me</h1>
-						<div className={styles.mobileRowContainer}>
+						{/* <div className={styles.mobileRowContainer}>
 							{renderMobileRow(polaroids)}
-						</div>
+						</div> */}
 
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
 					</div>

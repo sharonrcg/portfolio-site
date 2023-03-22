@@ -67,7 +67,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	z-index: 10;
+	z-index: 101;
 
 	&:hover {
 		cursor: pointer;
@@ -86,7 +86,7 @@
 	height: 100%;
 	background: rgba(241, 236, 234, 0.95);
 	transition: background 0.5s ease-in-out;
-	z-index: 1000;
+	z-index: 100;
 
 	button {
 		color: $off-black;

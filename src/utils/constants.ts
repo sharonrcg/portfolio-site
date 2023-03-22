@@ -34,7 +34,7 @@ export const rows = [
 	},
 	{
 		paragraph:
-			"When I'm not coding, I enjoy watching movies, playing video games, and creating art. If you&apos;re interested in learning more (or just want to say hi), please don't hesitate to reach out!",
+			"When I'm not coding, I enjoy watching movies, playing video games, and creating art. If you're interested in learning more (or just want to say hi), please don't hesitate to reach out!",
 		polaroid: polaroids[2],
 	},
 ]
