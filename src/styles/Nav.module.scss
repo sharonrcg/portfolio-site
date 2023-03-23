@@ -109,19 +109,23 @@
 }
 
 .popover.Home {
-	background-color: rgba(241, 236, 234, 0.9);
+	background-color: $lightest-nav;
 }
 
 .popover.About {
-	background-color: rgba(226, 211, 204, 0.9);
+	background-color: $light-nav;
+}
+
+.popover.Experience {
+	background-color: $medium-nav;
 }
 
 .popover.Projects {
-	background-color: rgba(217, 198, 188, 0.9);
+	background-color: $dark-nav;
 }
 
 .popover.Contact {
-	background-color: rgba(208, 184, 172, 0.9);
+	background-color: $darkest-nav;
 }
 
 .sectionsList {
@@ -172,19 +176,23 @@
 	}
 
 	&.popover.Home {
-		background-color: rgba(49, 49, 70, 0.9);
+		background-color: $d-lightest-nav;
 	}
 
 	&.popover.About {
-		background-color: rgba(44, 44, 63, 0.9);
+		background-color: $d-light-nav;
+	}
+
+	&.popover.Experience {
+		background-color: $d-medium-nav;
 	}
 
 	&.popover.Projects {
-		background-color: rgba(39, 39, 56, 0.9);
+		background-color: $d-dark-nav;
 	}
 
 	&.popover.Contact {
-		background-color: rgba(34, 34, 49, 0.9);
+		background-color: $d-darkest-nav;
 	}
 
 	&.popover button {

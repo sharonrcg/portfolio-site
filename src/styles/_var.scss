@@ -6,26 +6,38 @@ $black: #000;
 
 // light mode
 $lightest: #f1ecea;
-$light: #ebe1dc;
-$medium: #e2d3cc;
-$dark: #d9c6bc;
-$darkest: #d0b8ac;
-$shadow: #bda89f;
+$light: #ece3df;
+$medium: #e6dad4;
+$dark: #e0d1c9;
+$darkest: #dac7be;
+$shadow: #b6a49c;
+
+$lightest-nav: rgba($lightest, 0.9);
+$light-nav: rgba($light, 0.9);
+$medium-nav: rgba($medium, 0.9);
+$dark-nav: rgba($dark, 0.9);
+$darkest-nav: rgba($darkest, 0.9);
 
 // dark mode
-$d-lightest: #323242;
-$d-light: #2f2f3f;
-$d-medium: #2c2c3b;
-$d-dark: #292937;
-$d-darkest: #262633;
-$d-shadow: #14141d;
+$d-lightest: #424250;
+$d-light: #494958;
+$d-medium: #3b3b48;
+$d-dark: #383844;
+$d-darkest: #343440;
+$d-shadow: #25252e;
+
+$d-lightest-nav: rgba($d-lightest, 0.9);
+$d-light-nav: rgba($d-light, 0.9);
+$d-medium-nav: rgba($d-medium, 0.9);
+$d-dark-nav: rgba($d-dark, 0.9);
+$d-darkest-nav: rgba($d-darkest, 0.9);
 
 // greys
 $darker-grey: #6c6c80;
 $dark-grey: #7e7e95;
 $light-grey: #c8c8c8;
 $lighter-grey: #e7e7e7;
-$blue-grey: #454556;
+$blue-grey: #4f4f5e;
 
 // sizes
 $xxxs: 0.4rem;
