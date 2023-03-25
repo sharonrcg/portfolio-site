@@ -9,8 +9,8 @@ interface CollapsibleSectionProps {
 	toggle: (arg?: number) => void
 }
 
-const upSymbol = '⌃'
-const downSymbol = '⌄'
+const upSymbol = '↑'
+const downSymbol = '↓'
 
 export const CollapsibleSection = (props: CollapsibleSectionProps) => {
 	const {children, open, index, title, toggle} = props
@@ -27,8 +27,8 @@ export const CollapsibleSection = (props: CollapsibleSectionProps) => {
 					className={styles.collapsibleSummary}
 					onClick={handleOpenSection}
 				>
-					<h6>{title}</h6>
-					<span className={styles.button}>{!open ? downSymbol : upSymbol}</span>
+					<h4>{title}</h4>
+					<span className={styles.arrow}>{!open ? downSymbol : upSymbol}</span>
 				</button>
 			</div>
 

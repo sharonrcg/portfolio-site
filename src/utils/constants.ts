@@ -88,7 +88,7 @@ const experiences = [
 ]
 
 const education = {
-	title: 'Bachelor of Arts - Computer Science & Mathematics',
+	title: 'BA - Computer Science & Mathematics',
 	orgName: 'Purchase College, SUNY',
 	dates: 'September 2013 - May 2017',
 	paragraphs: [

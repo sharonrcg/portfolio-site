@@ -203,11 +203,9 @@
 		background-color: $d-light;
 	}
 
-	.title {
-		color: $off-white;
-	}
-
-	.paragraph {
+	.title,
+	.paragraph,
+	.skill {
 		color: $off-white;
 	}
 
@@ -217,6 +215,5 @@
 
 	.skill {
 		background-color: $blue-grey;
-		color: $off-white;
 	}
 }

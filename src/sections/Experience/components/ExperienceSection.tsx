@@ -1,4 +1,4 @@
-import styles from '@/styles/Experiences.module.scss'
+import styles from '@/styles/ExperienceSection.module.scss'
 
 export type ExperienceSectionProps = {
 	title: string
@@ -8,7 +8,7 @@ export type ExperienceSectionProps = {
 export const ExperienceSection = (props: ExperienceSectionProps) => {
 	const {title, children} = props
 	return (
-		<div className={styles.section}>
+		<div className={styles.ExperienceSection}>
 			<h2 className={styles.sectionTitle}>{title}</h2>
 			<div className={styles.sectionList}>{children}</div>
 		</div>

@@ -1,0 +1,25 @@
+@import './var';
+
+.Experience {
+	flex-direction: column;
+	align-items: unset;
+	color: $off-black;
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.subtitle {
+	color: $d-light;
+	padding-top: 0.2rem;
+	font-size: 0.65rem;
+}
+
+.summary {
+	font-size: 0.8rem;
+	padding: 0.5rem 0 0 1rem;
+
+	li {
+		padding-bottom: 0.2rem;
+		list-style: circle;
+	}
+}

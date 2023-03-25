@@ -1,21 +1,23 @@
-import styles from '@/styles/Experiences.module.scss'
+import {ThemeContext} from '@/context'
+import styles from '@/styles/Experience.module.scss'
+import {useContext} from 'react'
 
 type ExperienceProps = {
-	title: string
 	orgName: string
 	dates: string
 	paragraphs: string[]
 }
 
 export const Experience = (props: ExperienceProps) => {
-	const {title, orgName, dates, paragraphs} = props
+	const {orgName, dates, paragraphs} = props
+	const {isDarkMode} = useContext(ThemeContext)
+
 	return (
-		<div className={styles.job}>
-			<h2 className={styles.jobTitle}>{title}</h2>
-			<span className={styles.jobSubtitle}>
+		<div className={`${styles.Experience} ${isDarkMode ? styles.dark : ''}`}>
+			<span className={styles.subtitle}>
 				<strong>{orgName}</strong>, <em>{dates}</em>
 			</span>
-			<ul className={styles.jobSummary}>
+			<ul className={styles.summary}>
 				{paragraphs.map((paragraph, idx) => (
 					<li key={idx}>{paragraph}</li>
 				))}

@@ -14,6 +14,10 @@ export default function Document() {
 					href='https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'
 					rel='stylesheet'
 				/>
+				<link
+					href='https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'
+					rel='stylesheet'
+				></link>
 			</Head>
 			<body>
 				<Main />

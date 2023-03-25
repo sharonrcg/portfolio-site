@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {useNav} from '@/hooks'
 import styles from '@/styles/Experiences.module.scss'
 import {ThemeContext} from '@/context'
@@ -22,7 +22,7 @@ const Experiences = () => {
 			<section
 				ref={experienceRef}
 				id='experienceContainer'
-				className={styles.Experience}
+				className={styles.Experiences}
 			>
 				<h1 className={styles.title}>Experience</h1>
 				<div className={styles.experienceContainer}>
@@ -36,7 +36,6 @@ const Experiences = () => {
 								toggle={toggleJobs}
 							>
 								<Experience
-									title={experience.title}
 									orgName={experience.orgName}
 									dates={experience.dates}
 									paragraphs={experience.paragraphs}
@@ -53,7 +52,6 @@ const Experiences = () => {
 							toggle={() => toggleJobs(10)}
 						>
 							<Experience
-								title={education.title}
 								orgName={education.orgName}
 								dates={education.dates}
 								paragraphs={education.paragraphs}
