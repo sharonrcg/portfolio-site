@@ -17,6 +17,8 @@ const Experiences = () => {
 		setIsOpen(isOpen !== idx ? idx : null)
 	}
 
+	const educationIndex = experiences.length
+
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
 			<section
@@ -46,10 +48,10 @@ const Experiences = () => {
 
 					<ExperienceSection title='Education'>
 						<CollapsibleSection
-							index={10}
-							open={isOpen === 10}
+							index={educationIndex}
+							open={isOpen === educationIndex}
 							title={education.title}
-							toggle={() => toggleJobs(10)}
+							toggle={() => toggleJobs(educationIndex)}
 						>
 							<Experience
 								orgName={education.orgName}

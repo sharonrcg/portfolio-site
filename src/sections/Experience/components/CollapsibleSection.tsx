@@ -32,9 +32,13 @@ export const CollapsibleSection = (props: CollapsibleSectionProps) => {
 				</button>
 			</div>
 
-			<div>
+			<div
+				className={`${styles.detailsContainer} ${
+					open ? styles.detailsContainerOpen : ''
+				}`}
+			>
 				<div>
-					{open && <div className={styles.collapsibleDetails}>{children}</div>}
+					<div className={styles.collapsibleDetails}>{children}</div>
 				</div>
 			</div>
 		</div>
