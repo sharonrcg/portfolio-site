@@ -61,8 +61,8 @@
 .avatar {
 	background: $white;
 	border-radius: 100%;
-	box-shadow: 1px 1px 5px $shadow;
-	transition: background 0.5s ease-in-out;
+	box-shadow: 1px 1px 1px 0 $shadow;
+	transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 	width: 300px;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
@@ -93,6 +93,6 @@
 
 	.avatar {
 		background-color: $light-blue-grey;
-		box-shadow: 1px 1px 5px $d-shadow;
+		box-shadow: 1px 1px 1px 0 $d-shadow;
 	}
 }

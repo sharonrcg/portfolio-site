@@ -3,7 +3,7 @@
 .ContactForm {
 	background: $white;
 	border-radius: 6px;
-	box-shadow: 1px 1px 5px $shadow;
+	box-shadow: 1px 1px 1px 0 $shadow;
 	padding: 40px;
 	transition: background 0.5s ease-in-out;
 	width: 100%;
@@ -35,18 +35,6 @@
 	color: $darker-grey;
 	display: block;
 	margin: 1.2rem 0 0.2rem 0;
-
-	// @media screen and (max-width: $breakpoint-tablet) {
-	// 	& {
-	// 		margin: 0.5rem 0 0.2rem 0;
-	// 	}
-	// }
-
-	// @media screen and (max-width: $breakpoint-mobile) {
-	// 	& {
-	// 		font-size: 0.8rem;
-	// 	}
-	// }
 }
 
 .input {
@@ -127,7 +115,7 @@
 .dark {
 	&.ContactForm {
 		background: $blue-grey;
-		box-shadow: 1px 1px 5px $d-shadow;
+		box-shadow: 1px 1px 1px 0 $d-shadow;
 	}
 
 	.formTitle {

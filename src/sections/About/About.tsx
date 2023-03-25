@@ -13,12 +13,6 @@ const About = () => {
 	const renderRow = (idx: number, paragraph: string, polaroid: Polaroid) => {
 		return (
 			<div className={styles.row} key={idx}>
-				{/* <Polaroid
-					className={styles.polaroid}
-					displayText={polaroid.displayText}
-					imageAlt={polaroid.imageAlt}
-					imageSrc={polaroid.imageSrc}
-				/> */}
 				<p
 					className={styles.paragraph}
 					dangerouslySetInnerHTML={{__html: paragraph}}
@@ -38,31 +32,13 @@ const About = () => {
 		'CSS',
 	]
 
-	// const renderMobileRow = (polaroids: Polaroid[]) => {
-	// 	return polaroids.map((polaroid, idx) => (
-	// 		<div className={styles.mobileRow} key={idx}>
-	// 			<Polaroid
-	// 				className={styles.polaroid}
-	// 				displayText={polaroid.displayText}
-	// 				imageAlt={polaroid.imageAlt}
-	// 				imageSrc={polaroid.imageSrc}
-	// 			/>
-	// 		</div>
-	// 	))
-	// }
-
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
 			<section ref={aboutRef} id='aboutContainer' className={styles.About}>
 				<div className={styles.container}>
 					<div>
 						<h1 className={styles.title}>About me</h1>
-						{/* <div className={styles.mobileRowContainer}>
-							{renderMobileRow(polaroids)}
-						</div> */}
-
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
-
 						<div className={styles.skills}>
 							{skills.map((skill, idx) => (
 								<div className={styles.skill} key={idx}>

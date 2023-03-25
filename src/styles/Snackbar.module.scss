@@ -4,7 +4,7 @@
 	align-items: center;
 	border-radius: 6px;
 	bottom: 1rem;
-	box-shadow: 0 0 10px $shadow;
+	box-shadow: 1px 1px 1px 0px $shadow;
 	color: $off-black;
 	display: flex;
 	flex-direction: row;
@@ -32,7 +32,7 @@
 			width: 100%;
 			border-radius: unset;
 			bottom: 0;
-			box-shadow: 0 0 5px $shadow;
+			box-shadow: -1px -1px 1px 0px $shadow;
 			font-size: 15px;
 		}
 	}
@@ -45,8 +45,8 @@
 	cursor: pointer;
 	font-size: 1.4rem;
 	position: fixed;
-	top: 0.6rem;
-	right: 0.6rem;
+	top: 1.2rem;
+	right: 1.2rem;
 
 	&.success {
 		color: $off-black;
@@ -64,6 +64,6 @@
 
 .dark {
 	&.Snackbar {
-		box-shadow: 0 0 10px $d-shadow;
+		box-shadow: 1px 1px 1px 0px $d-shadow;
 	}
 }
