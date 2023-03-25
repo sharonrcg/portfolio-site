@@ -32,6 +32,12 @@
 			width: 90%;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		& {
+			height: 70vh;
+		}
+	}
 }
 
 .dark {
