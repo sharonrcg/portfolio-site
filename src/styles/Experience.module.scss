@@ -21,3 +21,11 @@
 		list-style: circle;
 	}
 }
+
+.dark {
+	.Experience,
+	.subtitle,
+	.summary {
+		color: $off-white;
+	}
+}

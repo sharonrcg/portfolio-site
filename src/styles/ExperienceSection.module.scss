@@ -20,6 +20,12 @@
 	font-size: 0.8rem;
 	color: $d-light;
 	margin-bottom: 1rem;
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		& {
+			width: 100%;
+		}
+	}
 }
 
 .sectionList {
@@ -29,5 +35,12 @@
 		& {
 			width: 100%;
 		}
+	}
+}
+
+.dark {
+	.ExperienceSection,
+	.sectionTitle {
+		color: $off-white;
 	}
 }
