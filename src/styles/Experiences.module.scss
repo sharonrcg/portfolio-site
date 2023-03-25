@@ -1,0 +1,109 @@
+@import './var';
+
+.Experience {
+	background-color: $medium;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	scroll-snap-align: start;
+	scroll-padding: 100px;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.title {
+	color: $off-black;
+	font-family: 'DM Serif Display', serif;
+	font-size: $l;
+	text-align: center;
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		& {
+			font-size: 2rem;
+		}
+	}
+}
+
+.experienceContainer {
+	margin: 2rem auto 0;
+	width: 1000px;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		& {
+			width: 90%;
+		}
+	}
+}
+
+.section {
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: unset;
+		width: 100%;
+	}
+}
+
+.sectionTitle {
+	width: 100px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: $d-light;
+	margin-bottom: 1rem;
+}
+
+.sectionList {
+	width: 70%;
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		& {
+			width: 100%;
+		}
+	}
+}
+
+.job {
+	flex-direction: column;
+	align-items: unset;
+	color: $off-black;
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.jobTitle {
+	font-size: 1rem;
+}
+
+.jobSubtitle {
+	color: $d-light;
+	padding-top: 0.2rem;
+	font-size: 0.65rem;
+}
+
+.jobSummary {
+	font-size: 0.8rem;
+	padding: 0.5rem 0 0 1rem;
+
+	li {
+		padding-bottom: 0.2rem;
+		list-style: circle;
+	}
+}
+
+.dark {
+	.Experience {
+		background-color: $d-medium;
+	}
+
+	.experienceTitle,
+	.title,
+	.job,
+	.jobTitle,
+	.subtitle {
+		color: $off-white;
+	}
+}
