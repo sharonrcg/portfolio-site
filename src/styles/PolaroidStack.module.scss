@@ -55,3 +55,12 @@
 		transform: rotate(-5.5deg);
 	}
 }
+
+.dark {
+	.polaroid {
+		box-shadow: 0px 0px 4px $d-shadow;
+		&:hover {
+			box-shadow: 20px 20px 20px rgba($d-shadow, 0.2);
+		}
+	}
+}
