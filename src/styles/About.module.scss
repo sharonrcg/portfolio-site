@@ -121,7 +121,7 @@
 }
 
 .skill {
-	background-color: $off-white;
+	background-color: $white;
 	border-radius: 10px;
 	color: $off-black;
 	font-size: 0.8rem;
@@ -142,10 +142,6 @@
 	.paragraph,
 	.skill {
 		color: $off-white;
-	}
-
-	.image {
-		box-shadow: 1px 1px 5px $d-shadow;
 	}
 
 	.skill {

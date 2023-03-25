@@ -10,11 +10,11 @@
 }
 
 .polaroid {
-	border-bottom: 45px solid $off-white;
-	border-left: 12px solid $off-white;
-	border-right: 12px solid $off-white;
-	border-top: 12px solid $off-white;
-	box-shadow: 1px 1px 2px 0 $shadow;
+	border-bottom: 45px solid $white;
+	border-left: 12px solid $white;
+	border-right: 12px solid $white;
+	border-top: 12px solid $white;
+	box-shadow: 1px 1px 1px 0 $shadow;
 	height: auto;
 	position: absolute;
 	transition: box-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out,
@@ -22,7 +22,6 @@
 	width: 200px;
 
 	&:hover {
-		box-shadow: 20px 20px 15px 0 rgba($black, 0.15);
 		transform: none !important;
 		width: 250px;
 		z-index: 5;
@@ -58,10 +57,10 @@
 
 .dark {
 	.polaroid {
-		box-shadow: 1px 1px 2px 0 $d-shadow;
+		box-shadow: 1px 1px 1px 0 $d-shadow;
 
 		&:hover {
-			box-shadow: 20px 20px 15px 0 rgba($black, 0.15);
+			box-shadow: 15px 15px 10px 0 rgba($black, 0.15);
 		}
 	}
 }
