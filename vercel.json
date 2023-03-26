@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/gamerank",
-			"destination": "https://gamerank-u3lo.onrender.com/",
+			"destination": "https://gamerank-u3lo.onrender.com/"
 		}
 	]
 }
