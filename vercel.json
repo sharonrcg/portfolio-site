@@ -6,8 +6,8 @@
 					source: '/',
 					destination: 'https://gamerank-u3lo.onrender.com/',
 					has: [{ type: 'host', value: 'gamerank.sharongomez.com' }],
-				},
-		  ],
+				}
+		  ]
 		}
 	]
 }
