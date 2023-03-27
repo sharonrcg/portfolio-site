@@ -1,24 +1,13 @@
 {
 	"rewrites": [
 		{
-			"source": "/",
-			"has": [
+			"beforeFiles": [
 				{
-					"type": "host",
-					"value": "gamerank.sharongomez.com"
-				}
-			],
-			"destination": "https://gamerank-u3lo.onrender.com/"
-		},
-		{
-			"source": "/(.*)",
-			"has": [
-				{
-					"type": "host",
-					"value": "gamerank.sharongomez.com"
-				}
-			],
-			"destination": "https://gamerank-u3lo.onrender.com/$1"
+					source: '/',
+					destination: 'https://gamerank-u3lo.onrender.com/',
+					has: [{ type: 'host', value: 'gamerank.sharongomez.com' }],
+				},
+		  ],
 		}
 	]
 }
