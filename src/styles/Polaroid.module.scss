@@ -18,7 +18,7 @@
 	bottom: -28px;
 	color: $off-black;
 	font-family: 'Permanent Marker';
-	font-size: 1.2rem;
+	font-size: $xs;
 	font-weight: 600;
 	max-width: 150px;
 	position: absolute;
@@ -27,7 +27,7 @@
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
-			font-size: 1rem;
+			font-size: $xxs;
 			bottom: -22px;
 		}
 	}

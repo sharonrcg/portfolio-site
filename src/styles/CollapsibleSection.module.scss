@@ -3,7 +3,7 @@
 .CollapsibleSection {
 	border-radius: 6px;
 	box-shadow: 1px 1px 1px 0 $shadow;
-	margin-bottom: 1rem;
+	margin-bottom: $xxs;
 	overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
 
 .summaryTitle {
 	color: $off-black;
-	font-size: 1rem;
+	font-size: $xxs;
 }
 
 .arrow {

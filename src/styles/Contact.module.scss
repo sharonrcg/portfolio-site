@@ -61,7 +61,7 @@
 	line-height: 1.5;
 	margin: 0 auto 0 0;
 	width: 85%;
-	padding: 1rem 0 0.4rem;
+	padding: $xxs 0 $xxxs;
 
 	br {
 		display: block;
@@ -102,8 +102,8 @@
 }
 
 .list {
-	font-size: 1rem;
-	padding-left: 1rem;
+	font-size: $xxs;
+	padding-left: $xxs;
 
 	li {
 		line-height: 1.4;
@@ -132,7 +132,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 1rem;
+	padding-bottom: $xxs;
 	width: 100%;
 
 	a {

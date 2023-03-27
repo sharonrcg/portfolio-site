@@ -18,13 +18,13 @@
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
-			font-size: 2rem;
+			font-size: $l;
 		}
 	}
 }
 
 .experienceContainer {
-	margin: 2rem auto 0;
+	margin: $l auto 0;
 	width: 1000px;
 
 	@media screen and (max-width: $breakpoint-desktop) {

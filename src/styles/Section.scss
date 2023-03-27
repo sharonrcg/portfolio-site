@@ -25,7 +25,7 @@ section div {
 	justify-content: flex-start;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $breakpoint-tablet-lg) {
 	section,
 	section:nth-child(even) {
 		flex-direction: column-reverse;

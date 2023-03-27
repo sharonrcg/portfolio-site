@@ -19,7 +19,7 @@
 	text-transform: uppercase;
 	font-size: 0.8rem;
 	color: $d-light;
-	margin-bottom: 1rem;
+	margin-bottom: $xxs;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
