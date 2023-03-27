@@ -1,16 +1,6 @@
 {
 	"rewrites": [
 		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "gamerank.sharongomez.com"
-				}
-			],
-			"destination": "https://gamerank-u3lo.onrender.com/:path*"
-		},
-		{
 			"source": "/",
 			"has": [
 				{
@@ -19,6 +9,16 @@
 				}
 			],
 			"destination": "https://gamerank-u3lo.onrender.com/"
+		},
+		{
+			"source": "/:path*",
+			"has": [
+				{
+					"type": "host",
+					"value": "gamerank.sharongomez.com"
+				}
+			],
+			"destination": "https://gamerank-u3lo.onrender.com/:path*"
 		}
 	]
 }
