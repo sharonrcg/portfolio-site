@@ -24,6 +24,26 @@ const nextConfig = {
 						},
 					],
 				},
+				{
+					source: '/',
+					destination: 'https://budgettrackr.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'budgettrackr.sharongomez.com',
+						},
+					],
+				},
+				{
+					source: '/:path*',
+					destination: 'https://budgettrackr.onrender.com/:path*',
+					has: [
+						{
+							type: 'host',
+							value: 'budgettrackr.sharongomez.com',
+						},
+					],
+				},
 			],
 		}
 	},
