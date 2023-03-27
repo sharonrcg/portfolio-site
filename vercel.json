@@ -8,7 +8,7 @@
 					"value": "gamerank.sharongomez.com"
 				}
 			],
-			"destination": "https://gamerank-u3lo.onrender.com/"
+			"destination": "https://gamerank-u3lo.onrender.com"
 		},
 		{
 			"source": "/:path*",
