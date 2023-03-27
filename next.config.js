@@ -44,6 +44,26 @@ const nextConfig = {
 						},
 					],
 				},
+				{
+					source: '/',
+					destination: 'https://restfulblog.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'restfulblog.sharongomez.com',
+						},
+					],
+				},
+				{
+					source: '/:path*',
+					destination: 'https://restfulblog.onrender.com/:path*',
+					has: [
+						{
+							type: 'host',
+							value: 'restfulblog.sharongomez.com',
+						},
+					],
+				},
 			],
 		}
 	},
