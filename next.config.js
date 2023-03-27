@@ -14,6 +14,16 @@ const nextConfig = {
 						},
 					],
 				},
+				{
+					source: '/:path*',
+					destination: 'https://gamerank-u3lo.onrender.com/:path*',
+					has: [
+						{
+							type: 'host',
+							value: 'gamerank.sharongomez.com',
+						},
+					],
+				},
 			],
 		}
 	},
