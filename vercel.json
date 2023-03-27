@@ -1,14 +1,14 @@
 {
 	"rewrites": [
 		{
-			"source": "/:path*",
+			"source": "/*",
 			"has": [
 				{
 					"type": "host",
 					"value": "gamerank.sharongomez.com"
 				}
 			],
-			"destination": "https://gamerank-u3lo.onrender.com/:path*"
+			"destination": "https://gamerank-u3lo.onrender.com/*"
 		}
 	]
 }
