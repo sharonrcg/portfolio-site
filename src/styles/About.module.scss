@@ -122,7 +122,8 @@
 
 .skill {
 	background-color: $white;
-	border-radius: 10px;
+	border-radius: 6px;
+	box-shadow: 1px 1px 1px 0 $shadow;
 	color: $off-black;
 	font-size: 0.8rem;
 	font-weight: 900;
@@ -146,5 +147,6 @@
 
 	.skill {
 		background-color: $light-blue-grey;
+		box-shadow: 1px 1px 1px 0 $d-shadow;
 	}
 }
