@@ -3,7 +3,7 @@ import {useNav} from '@/hooks'
 import styles from '@/styles/Projects.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
-import ProjectsGrid from './components/ProjectsGrid'
+// import ProjectsGrid from './components/ProjectsGrid'
 
 const Projects = () => {
 	const projectsRef = useNav('Projects')
@@ -18,7 +18,8 @@ const Projects = () => {
 			>
 				<div>
 					<h1 className={styles.title}>Projects</h1>
-					<ProjectsGrid />
+					{/* <ProjectsGrid /> */}
+					<p>Coming soon! 🥳</p>
 				</div>
 			</section>
 		</div>
