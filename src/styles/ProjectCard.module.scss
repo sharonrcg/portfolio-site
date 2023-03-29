@@ -1,23 +1,9 @@
 @import './var';
 
 .ProjectCard {
-	background: $white;
-	border-radius: 6px;
-	box-shadow: 1px 1px 1px 0 $shadow;
 	justify-content: flex-end;
 	height: 175px;
-	margin: 1rem;
-	overflow: hidden;
-	position: relative;
-	width: 300px;
-}
-
-.projectImage {
-	height: auto;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+	width: 450px;
 }
 
 .cardContent {
@@ -37,30 +23,46 @@
 .projectInfo {
 	align-items: flex-start;
 	height: 180px;
-	padding: 1rem;
-	opacity: 0;
-	backdrop-filter: blur(8px);
-	transition: opacity 0.3s ease-in-out;
-	background: rgb(255 255 255 / 47%);
-
-	&:hover {
-		opacity: 1;
-		z-index: 10;
-	}
+	justify-content: space-between;
+	padding: 0.2rem 1rem 0 0;
 }
 
 .projectLinks {
-	align-items: start;
+	align-items: flex-start;
 	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.projectLink {
+	color: $blue-grey;
+	cursor: pointer;
+	padding-right: 0.8rem;
+
+	&:hover {
+		color: $darker-grey;
+		transition: color 0.2s ease-in-out;
+	}
+
+	&:last-child {
+		padding: 0;
+	}
 }
 
 .projectTools {
 	flex-direction: row;
 	flex-wrap: wrap;
-}
 
-.dark {
-	&.ProjectCard {
-		box-shadow: 1px 1px 1px 0 $d-shadow;
+	span {
+		padding-right: 0.8rem;
+
+		&:last-child {
+			padding: 0;
+		}
 	}
 }
+
+// .dark {
+// 	&.ProjectCard {
+// 		box-shadow: 1px 1px 1px 0 $d-shadow;
+// 	}
+// }

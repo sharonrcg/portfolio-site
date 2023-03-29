@@ -85,10 +85,11 @@
 }
 
 .submitButton button {
-	background: $darker-grey;
+	background: $success;
 	border: none;
 	border-radius: 6px;
 	color: $white;
+	cursor: pointer;
 	font-size: $xs;
 	padding: 0.6rem $xxs;
 	margin-top: $xs;
@@ -104,7 +105,7 @@
 }
 
 .submitButton button:hover {
-	background-color: $dark-grey;
+	background-color: #8cb599;
 	transition: background 0.2s ease-in-out;
 }
 
@@ -139,7 +140,11 @@
 	}
 
 	.submitButton button {
-		background: $off-white;
-		color: $off-black;
+		background: #80a18a;
+		color: $off-white;
+
+		&:hover {
+			background-color: #6f8676;
+		}
 	}
 }

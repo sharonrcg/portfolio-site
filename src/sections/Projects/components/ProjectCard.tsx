@@ -8,9 +8,10 @@ export type ProjectCardProps = {
 		description: string
 		image: string
 		github: string
-		demo: string
+		demo?: string
 		tools: string[]
 	}
+	showScreenshot?: boolean
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
@@ -19,33 +20,28 @@ const ProjectCard = (props: ProjectCardProps) => {
 
 	return (
 		<div className={`${styles.ProjectCard} ${isDarkMode ? styles.dark : ''}`}>
-			<div className={styles.cardContent}>
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img
-					className={styles.projectImage}
-					src={project.image}
-					alt={project.title}
-				/>
-				<div className={styles.projectInfo}>
-					<h3 className={styles.projectTitle}>{project.title}</h3>
-					<p className={styles.projectDescription}>{project.description}</p>
+			{/* eslint-disable-next-line @next/next/no-img-element */}
+			<div className={styles.projectInfo}>
+				<h3 className={styles.projectTitle}>{project.title}</h3>
+				<p className={styles.projectDescription}>{project.description}</p>
 
-					<div className={styles.projectTools}>
-						{project.tools.map((tool, index) => (
-							<span key={index} className={styles.projectTool}>
-								{tool}
-							</span>
-						))}
-					</div>
-					<div className={styles.projectLinks}>
-						<a
-							className={styles.projectLink}
-							href={project.github}
-							target='_blank'
-							rel='noreferrer'
-						>
-							Source code
-						</a>
+				<div className={styles.projectTools}>
+					{project.tools.map((tool, index) => (
+						<span key={index} className={styles.projectTool}>
+							{tool}
+						</span>
+					))}
+				</div>
+				<div className={styles.projectLinks}>
+					<a
+						className={styles.projectLink}
+						href={project.github}
+						target='_blank'
+						rel='noreferrer'
+					>
+						Source code
+					</a>
+					{project.demo && (
 						<a
 							className={styles.projectLink}
 							href={project.demo}
@@ -54,7 +50,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 						>
 							Live demo
 						</a>
-					</div>
+					)}
 				</div>
 			</div>
 		</div>
