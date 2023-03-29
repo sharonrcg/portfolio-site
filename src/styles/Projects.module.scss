@@ -31,8 +31,7 @@
 
 .projectImage {
 	border-radius: 6px;
-	box-shadow: 1px 1px 1px 0 $shadow;
-	margin: 1rem;
+	border: 1px solid #00000052;
 	width: 300px;
 }
 
@@ -47,9 +46,10 @@
 	border-radius: 6px;
 	box-shadow: 1px 1px 1px 0 $shadow;
 	flex-direction: row;
-	margin: 1rem;
+	margin: 0.5rem;
 	justify-content: center;
 	width: 780px;
+	padding: 1.5rem;
 }
 
 .title {
@@ -61,13 +61,13 @@
 	text-align: center;
 }
 
-// .dark {
-// 	.Projects {
-// 		background-color: $d-dark;
-// 	}
+.dark {
+	.Projects {
+		background-color: $d-dark;
+	}
 
-// 	.title,
-// 	p {
-// 		color: $off-white;
-// 	}
-// }
+	.title,
+	p {
+		color: $off-white;
+	}
+}

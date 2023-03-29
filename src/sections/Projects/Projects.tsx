@@ -4,7 +4,7 @@ import styles from '@/styles/Projects.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 import ProjectCard from './components/ProjectCard'
-import {projects} from './components/ProjectsContainer'
+import {projects} from '@/utils/constants'
 
 const Projects = () => {
 	const projectsRef = useNav('Projects')
