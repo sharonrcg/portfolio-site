@@ -33,7 +33,6 @@ const About = () => {
 		'CSS',
 	]
 
-	// testing
 	return (
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
 			<section ref={aboutRef} id='aboutContainer' className={styles.About}>
