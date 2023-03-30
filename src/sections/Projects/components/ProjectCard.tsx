@@ -20,38 +20,25 @@ const ProjectCard = (props: ProjectCardProps) => {
 
 	return (
 		<div className={`${styles.ProjectCard} ${isDarkMode ? styles.dark : ''}`}>
-			{/* eslint-disable-next-line @next/next/no-img-element */}
-			<div className={styles.projectInfo}>
-				<h3 className={styles.projectTitle}>{project.title}</h3>
-				<p className={styles.projectDescription}>{project.description}</p>
-
-				<div className={styles.projectTools}>
-					{project.tools.map((tool, index) => (
-						<span key={index} className={styles.projectTool}>
-							{tool}
-						</span>
-					))}
-				</div>
-				<div className={styles.projectLinks}>
-					<a
-						className={styles.projectLink}
-						href={project.github}
-						target='_blank'
-						rel='noreferrer'
-					>
-						Source code
+			<div className={styles.infoColumn}>
+				<p className={styles.overline}>category</p>
+				<h1 className={styles.title}>{project.title}</h1>
+				<p className={styles.description}>{project.description}</p>
+				<div className={styles.buttonGroup}>
+					<a className={styles.button} href={project.github}>
+						Code
 					</a>
 					{project.demo && (
-						<a
-							className={styles.projectLink}
-							href={project.demo}
-							target='_blank'
-							rel='noreferrer'
-						>
-							Live demo
+						<a className={styles.button} href={project.demo}>
+							Demo
 						</a>
 					)}
+					<button className={styles.button}>Tools</button>
 				</div>
+			</div>
+			<div className={styles.imageContainer}>
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img src={project.image} alt={project.title} />
 			</div>
 		</div>
 	)

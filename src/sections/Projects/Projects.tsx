@@ -31,15 +31,7 @@ const Projects = () => {
 						<div className={styles.projects}>
 							<div>
 								{projects[currentProjectsPage].map((project, idx) => (
-									<div className={styles.projectRow} key={idx}>
-										{/* eslint-disable-next-line @next/next/no-img-element */}
-										<img
-											src={project.image}
-											alt={project.title}
-											className={styles.projectImage}
-										/>
-										<ProjectCard key={idx} project={project} />
-									</div>
+									<ProjectCard key={idx} project={project} />
 								))}
 							</div>
 						</div>

@@ -5,6 +5,7 @@ import {ThemeContext} from '@/context'
 import {PolaroidStack} from './components/PolaroidStack'
 import {Polaroid} from './components/Polaroid'
 import {polaroids, rows} from '@/utils/constants'
+import {SkillPill} from '@/components/SkillPill'
 
 const About = () => {
 	const aboutRef = useNav('About')
@@ -40,10 +41,8 @@ const About = () => {
 						<h1 className={styles.title}>About me</h1>
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
 						<div className={styles.skills}>
-							{skills.map((skill, idx) => (
-								<div className={styles.skill} key={idx}>
-									<p>{skill}</p>
-								</div>
+							{skills.map((skill) => (
+								<SkillPill name={skill} dark={isDarkMode} key={skill} />
 							))}
 						</div>
 					</div>

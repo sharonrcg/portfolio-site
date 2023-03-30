@@ -29,27 +29,9 @@
 	}
 }
 
-.projectImage {
-	border-radius: 6px;
-	border: 1px solid #00000052;
-	width: 300px;
-}
-
 .projects {
 	align-items: center;
 	flex-direction: row;
-}
-
-.projectRow {
-	display: flex;
-	background: $white;
-	border-radius: 6px;
-	box-shadow: 1px 1px 1px 0 $shadow;
-	flex-direction: row;
-	margin: 0.5rem;
-	justify-content: center;
-	width: 780px;
-	padding: 1.5rem;
 }
 
 .title {

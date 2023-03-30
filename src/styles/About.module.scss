@@ -120,33 +120,13 @@
 	}
 }
 
-.skill {
-	background-color: $white;
-	border-radius: 6px;
-	box-shadow: 1px 1px 1px 0 $shadow;
-	color: $off-black;
-	font-size: 0.8rem;
-	font-weight: 900;
-	margin: 0.5rem;
-	padding: 0.5rem $xxs;
-	text-align: center;
-	text-transform: uppercase;
-	width: auto;
-}
-
 .dark {
 	.About {
 		background-color: $d-light;
 	}
 
 	.title,
-	.paragraph,
-	.skill {
+	.paragraph {
 		color: $off-white;
-	}
-
-	.skill {
-		background-color: $light-blue-grey;
-		box-shadow: 1px 1px 1px 0 $d-shadow;
 	}
 }

@@ -1,68 +1,77 @@
 @import './var';
 
 .ProjectCard {
-	justify-content: flex-end;
-	height: 175px;
-	width: 450px;
-}
-
-.cardContent {
-	width: 100%;
-	height: auto;
-}
-
-.projectTitle {
-	font-size: 1.2rem;
-	padding: 0;
-}
-
-.projectButton {
-	margin-left: 0.5rem;
-}
-
-.projectInfo {
-	align-items: flex-start;
-	height: 180px;
-	justify-content: space-between;
-	padding-left: 1.5rem;
-}
-
-.projectLinks {
-	align-items: flex-start;
+	background-color: $white;
+	border-radius: 6px;
+	padding: 1rem;
+	box-shadow: 1px 1px 1px 0 $shadow;
+	margin-bottom: 1rem;
+	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-}
+	align-items: flex-start;
 
-.projectLink {
-	color: $blue-grey;
-	cursor: pointer;
-	padding-right: 0.8rem;
+	.infoColumn {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
 
-	&:hover {
-		color: $darker-grey;
-		transition: color 0.2s ease-in-out;
+		.overline {
+			text-transform: uppercase;
+			font-size: $xxxs;
+			text-align: left;
+		}
+
+		.title {
+			font-size: $xs;
+			font-family: 'Libre Franklin', serif;
+			font-weight: 400;
+			line-height: 1.2;
+			margin-bottom: 0.2rem;
+			text-align: left;
+		}
+
+		.description {
+			font-size: $xxs;
+			font-family: 'Libre Franklin', serif;
+			font-weight: 200;
+			line-height: 1.2;
+			text-align: left;
+			margin-bottom: 1rem;
+		}
+
+		.buttonGroup {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+			.button {
+				border-radius: 6px;
+				background-color: $medium;
+				font-size: $xxs;
+				color: $light-blue-grey;
+				width: unset;
+				height: unset;
+				padding: 0.5rem;
+				margin-right: 0.5rem;
+			}
+
+			:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
-	&:last-child {
-		padding: 0;
-	}
-}
+	.imageContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
 
-.projectTools {
-	flex-direction: row;
-	flex-wrap: wrap;
-
-	span {
-		padding-right: 0.8rem;
-
-		&:last-child {
-			padding: 0;
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 6px;
 		}
 	}
 }
-
-// .dark {
-// 	&.ProjectCard {
-// 		box-shadow: 1px 1px 1px 0 $d-shadow;
-// 	}
-// }
