@@ -1,5 +1,5 @@
 import React from 'react'
-import {Home, About, Experiences, Contact, Projects} from './'
+import {Home, About, Experiences, Contact, Projects} from '@/sections'
 import styles from './Main.module.scss'
 import {useScrollSnap} from '@/hooks'
 

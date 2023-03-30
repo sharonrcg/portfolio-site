@@ -28,9 +28,16 @@ const Projects = () => {
 								</button>
 							)}
 						</div>
+
 						<div className={styles.projects}>
-							<div>
-								{projects[currentProjectsPage].map((project, idx) => (
+							<div className={styles.projectContainer}>
+								{projects[currentProjectsPage][0].map((project, idx) => (
+									<ProjectCard key={idx} project={project} />
+								))}
+							</div>
+
+							<div className={styles.projectContainer}>
+								{projects[currentProjectsPage][1].map((project, idx) => (
 									<ProjectCard key={idx} project={project} />
 								))}
 							</div>

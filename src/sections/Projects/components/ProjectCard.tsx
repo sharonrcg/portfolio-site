@@ -21,19 +21,33 @@ const ProjectCard = (props: ProjectCardProps) => {
 	return (
 		<div className={`${styles.ProjectCard} ${isDarkMode ? styles.dark : ''}`}>
 			<div className={styles.infoColumn}>
-				<p className={styles.overline}>category</p>
-				<h1 className={styles.title}>{project.title}</h1>
-				<p className={styles.description}>{project.description}</p>
+				<div className={styles.info}>
+					<p className={styles.overline}>category</p>
+					<h1 className={styles.title}>{project.title}</h1>
+					<p className={styles.description}>{project.description}</p>
+				</div>
 				<div className={styles.buttonGroup}>
-					<a className={styles.button} href={project.github}>
-						Code
+					<a
+						className={styles.button}
+						href={project.github}
+						target='_blank'
+						rel='noreferrer'
+					>
+						<strong>Code</strong>
 					</a>
 					{project.demo && (
-						<a className={styles.button} href={project.demo}>
-							Demo
+						<a
+							className={styles.button}
+							href={project.demo}
+							target='_blank'
+							rel='noreferrer'
+						>
+							<strong>Demo</strong>
 						</a>
 					)}
-					<button className={styles.button}>Tools</button>
+					<button className={styles.button}>
+						<strong>Tools</strong>
+					</button>
 				</div>
 			</div>
 			<div className={styles.imageContainer}>

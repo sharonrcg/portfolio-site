@@ -1,60 +1,73 @@
 @import '@/styles/var';
 
 .ProjectCard {
+	align-items: flex-start;
 	background-color: $white;
 	border-radius: 6px;
-	padding: 1rem;
 	box-shadow: 1px 1px 1px 0 $shadow;
-	margin-bottom: 1rem;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	width: 400px;
+	color: $off-black;
 
 	.infoColumn {
+		align-items: flex-start;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
+		height: 200px;
+		justify-content: space-between;
+
+		.info {
+			align-items: flex-start;
+		}
 
 		.overline {
-			text-transform: uppercase;
-			font-size: $xxxs;
+			color: $d-light;
+			font-size: 0.8rem;
+			font-weight: 900;
 			text-align: left;
+			text-transform: uppercase;
 		}
 
 		.title {
+			font-family: 'Libre Franklin', sans-serif;
 			font-size: $xs;
-			font-family: 'Libre Franklin', serif;
 			font-weight: 400;
 			line-height: 1.2;
-			margin-bottom: 0.2rem;
+			margin: 0.2rem 0;
 			text-align: left;
 		}
 
 		.description {
+			font-family: 'Libre Franklin', sans-serif;
 			font-size: $xxs;
-			font-family: 'Libre Franklin', serif;
 			font-weight: 200;
 			line-height: 1.2;
-			text-align: left;
 			margin-bottom: 1rem;
+			text-align: left;
 		}
 
 		.buttonGroup {
+			align-items: center;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
-			align-items: center;
 
 			.button {
 				border-radius: 6px;
-				background-color: $medium;
+				color: $blue-grey;
 				font-size: $xxs;
-				color: $light-blue-grey;
-				width: unset;
 				height: unset;
-				padding: 0.5rem;
 				margin-right: 0.5rem;
+				padding: 0.5rem;
+				text-decoration: none;
+				width: unset;
+
+				&:hover {
+					color: $darker-grey;
+				}
 			}
 
 			:last-child {
@@ -69,9 +82,9 @@
 		justify-content: flex-end;
 
 		img {
-			width: 100px;
-			height: 100px;
 			border-radius: 6px;
+			height: 100px;
+			width: 100px;
 		}
 	}
 }
