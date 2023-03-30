@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNav} from '@/hooks'
-import styles from '@/styles/Projects.module.scss'
+import styles from './Projects.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 import ProjectCard from './components/ProjectCard'

@@ -1,7 +1,7 @@
 import {NavContext} from '@/context/NavContext'
 import React, {useContext} from 'react'
-import styles from '@/styles/SectionDots.module.scss'
-import {navLinks} from './navLinks'
+import styles from './SectionDots.module.scss'
+import {navLinks} from '@/utils/constants'
 
 const SectionDots = () => {
 	const {activeNavLinkId} = useContext(NavContext)

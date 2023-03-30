@@ -1,5 +1,5 @@
 import {useContext, useState} from 'react'
-import styles from '@/styles/ContactForm.module.scss'
+import styles from './ContactForm.module.scss'
 import {ThemeContext} from '@/context'
 import Snackbar from './Snackbar'
 

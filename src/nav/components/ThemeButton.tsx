@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
-import lightModeIcon from '../../public/images/lightModeIcon.svg'
-import darkModeIcon from '../../public/images/darkModeIcon.svg'
-import styles from '@/styles/ThemeButton.module.scss'
+import lightModeIcon from '../../../public/images/lightModeIcon.svg'
+import darkModeIcon from '../../../public/images/darkModeIcon.svg'
+import styles from './ThemeButton.module.scss'
 
 const ThemeButton = ({onClick}: {onClick?: () => void}) => {
 	const {isDarkMode, toggleTheme} = useContext(ThemeContext)

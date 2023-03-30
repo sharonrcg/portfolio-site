@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useNav} from '@/hooks'
-import styles from '@/styles/Experiences.module.scss'
+import styles from './Experiences.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 import {Experience} from './components/Experience'

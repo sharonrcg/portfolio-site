@@ -1,5 +1,5 @@
 import {ThemeContext} from '@/context'
-import styles from '@/styles/Experience.module.scss'
+import styles from './Experience.module.scss'
 import {useContext} from 'react'
 
 type ExperienceProps = {

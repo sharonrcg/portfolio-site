@@ -1,5 +1,5 @@
 import {ThemeContext} from '@/context'
-import styles from '@/styles/Snackbar.module.scss'
+import styles from './Snackbar.module.scss'
 import {useContext} from 'react'
 
 type SnackbarProps = {

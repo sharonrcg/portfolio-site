@@ -1,5 +1,5 @@
 import {ThemeContext} from '@/context'
-import styles from '@/styles/ProjectCard.module.scss'
+import styles from './ProjectCard.module.scss'
 import {useContext} from 'react'
 
 export type ProjectCardProps = {

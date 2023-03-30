@@ -1,7 +1,7 @@
 import {ThemeContext} from '@/context'
 import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
-import styles from '@/styles/Home.module.scss'
+import styles from './Home.module.scss'
 
 const Home = () => {
 	const homeRef = useNav('Home')

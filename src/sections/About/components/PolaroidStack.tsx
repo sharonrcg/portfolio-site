@@ -1,5 +1,5 @@
 import {Polaroid} from './Polaroid'
-import styles from '@/styles/PolaroidStack.module.scss'
+import styles from './PolaroidStack.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 

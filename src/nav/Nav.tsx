@@ -1,9 +1,9 @@
 import React, {useContext} from 'react'
-import NavLink from './NavLink'
-import {navLinks} from './navLinks'
+import NavLink from './components/NavLink'
+import {navLinks} from '@/utils/constants'
 import {ThemeButton} from '.'
 import {NavContext, ThemeContext} from '@/context'
-import styles from '@/styles/Nav.module.scss'
+import styles from './Nav.module.scss'
 
 const Nav = () => {
 	const {isDarkMode} = useContext(ThemeContext)

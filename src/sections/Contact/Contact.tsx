@@ -1,7 +1,7 @@
 import {ThemeContext} from '@/context'
 import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
-import styles from '@/styles/Contact.module.scss'
+import styles from './Contact.module.scss'
 import ContactForm from './components/ContactForm'
 
 const Contact = () => {

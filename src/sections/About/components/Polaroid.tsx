@@ -1,4 +1,4 @@
-import styles from '@/styles/Polaroid.module.scss'
+import styles from './Polaroid.module.scss'
 
 type PolaroidProps = {
 	className?: string

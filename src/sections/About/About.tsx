@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
-import styles from '@/styles/About.module.scss'
+import styles from './About.module.scss'
 import {ThemeContext} from '@/context'
 import {PolaroidStack} from './components/PolaroidStack'
 import {Polaroid} from './components/Polaroid'

@@ -1,6 +1,6 @@
 export {About} from './About'
 export {Contact} from './Contact'
-export {default as Home} from './Home'
+export {Home} from './Home'
 export {default as Main} from './Main'
 export {Projects} from './Projects'
 export {Experiences} from './Experience'

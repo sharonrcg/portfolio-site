@@ -8,7 +8,15 @@ import rinblog from '../../public/images/projects/rinblog.png'
 import hoodie from '../../public/images/projects/hoodie.png'
 import color from '../../public/images/projects/color.png'
 
-export const projects = [
+const navLinks = [
+	{navLinkId: 'Home', scrollToId: 'homeContainer'},
+	{navLinkId: 'About', scrollToId: 'aboutContainer'},
+	{navLinkId: 'Experience', scrollToId: 'experienceContainer'},
+	{navLinkId: 'Projects', scrollToId: 'projectsContainer'},
+	{navLinkId: 'Contact', scrollToId: 'contactContainer'},
+]
+
+const projects = [
 	[
 		{
 			title: 'Portfolio site',
@@ -176,4 +184,4 @@ const education = {
 	],
 }
 
-export {education, experiences, polaroids, rows}
+export {navLinks, projects, education, experiences, polaroids, rows}

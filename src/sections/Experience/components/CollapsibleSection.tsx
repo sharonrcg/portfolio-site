@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import styles from '@/styles/CollapsibleSection.module.scss'
+import styles from './CollapsibleSection.module.scss'
 import {ThemeContext} from '@/context'
 
 interface CollapsibleSectionProps {

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Home, About, Experiences, Contact, Projects} from './'
-import styles from '@/styles/Main.module.scss'
+import styles from './Main.module.scss'
 import {useScrollSnap} from '@/hooks'
 
 const Main = () => {
