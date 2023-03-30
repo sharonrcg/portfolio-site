@@ -21,7 +21,7 @@ const Projects = () => {
 				<div>
 					<h1 className={styles.title}>Projects</h1>
 					<div className={styles.projectsContainer}>
-						<div>
+						<div className={styles.buttonContainer}>
 							{currentProjectsPage >= 1 && (
 								<button onClick={() => setCurrentProjectsPage((pg) => pg - 1)}>
 									〈
@@ -29,21 +29,20 @@ const Projects = () => {
 							)}
 						</div>
 
+						{/* all projects */}
 						<div className={styles.projects}>
-							<div className={styles.projectContainer}>
-								{projects[currentProjectsPage][0].map((project, idx) => (
-									<ProjectCard key={idx} project={project} />
-								))}
-							</div>
-
-							<div className={styles.projectContainer}>
-								{projects[currentProjectsPage][1].map((project, idx) => (
-									<ProjectCard key={idx} project={project} />
-								))}
-							</div>
+							{projects.map((projectPage, idx) => (
+								/* each page of 4 projects */
+								<div className={styles.projectContainer} key={idx}>
+									{projectPage.map((project, idx) => (
+										/* each project */
+										<ProjectCard key={idx} project={project} />
+									))}
+								</div>
+							))}
 						</div>
 
-						<div>
+						<div className={styles.buttonContainer}>
 							{currentProjectsPage + 1 < projects.length && (
 								<button onClick={() => setCurrentProjectsPage((pg) => pg + 1)}>
 									〉

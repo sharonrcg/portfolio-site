@@ -7,10 +7,11 @@
 	box-shadow: 1px 1px 1px 0 $shadow;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 1rem;
 	padding: 1rem;
-	width: 400px;
 	color: $off-black;
+	height: 225px;
+	width: 340px;
+	margin: 0 1rem 1rem 0;
 
 	.infoColumn {
 		align-items: flex-start;

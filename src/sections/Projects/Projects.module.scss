@@ -9,10 +9,15 @@
 }
 
 .projectsContainer {
-	align-items: center;
+	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	width: 1000px;
+	width: 850px;
+	justify-content: space-evenly;
+
+	.buttonContainer {
+		width: 50px;
+		height: 50px;
+	}
 
 	button {
 		background: none;
@@ -20,8 +25,8 @@
 		color: #00000057;
 		cursor: pointer;
 		font-size: 1.8rem;
-		width: 50px;
-		height: 50px;
+		width: 100%;
+		height: 100%;
 
 		&:hover {
 			color: #000000a8;
@@ -30,20 +35,27 @@
 }
 
 .projects {
-	align-items: center;
+	display: flex;
 	flex-direction: row;
+	margin: auto;
+	overflow: hidden;
+	width: 700px;
 
-	.projectContainer:first-child {
-		margin-right: 1rem;
+	.projectContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		width: 100%;
+		height: 100%;
 	}
 }
 
 .title {
 	color: $off-black;
 	font-family: 'DM Serif Display', serif;
-	font-size: $xxl;
+	font-size: 2.5rem;
 	line-height: 1.2;
-	margin-bottom: 1rem;
+	margin-bottom: 1.2rem;
 	text-align: center;
 }
 
