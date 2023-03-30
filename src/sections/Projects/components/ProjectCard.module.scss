@@ -5,13 +5,13 @@
 	background-color: $white;
 	border-radius: 6px;
 	box-shadow: 1px 1px 1px 0 $shadow;
+	color: $off-black;
 	display: flex;
 	flex-direction: row;
-	padding: 1rem;
-	color: $off-black;
 	height: 225px;
-	width: 340px;
 	margin: 0 1rem 1rem 0;
+	padding: 1rem;
+	width: 340px;
 
 	.infoColumn {
 		align-items: flex-start;

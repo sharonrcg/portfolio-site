@@ -81,22 +81,6 @@ const projects = [
 			demo: '',
 			tools: ['JavaScript', 'HTML', 'CSS'],
 		},
-		{
-			title: 'Lorem Ipsum',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-			image: rinblog.src,
-			github: 'https://github.com/sharonrgomez/hoodie',
-			demo: 'https://caniwearahoodie.web.app',
-			tools: ['React', 'SCSS'],
-		},
-		{
-			title: 'Lorem Ipsum Lorem Ipsum',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-			image: portfolio.src,
-			github: 'https://github.com/sharonrgomez/color-game',
-			demo: '',
-			tools: ['JavaScript', 'HTML', 'CSS'],
-		},
 	],
 ]
 
