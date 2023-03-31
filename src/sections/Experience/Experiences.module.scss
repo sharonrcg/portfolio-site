@@ -17,6 +17,13 @@
 	line-height: 1.2;
 	text-align: center;
 	margin-bottom: 1.2rem;
+	display: flex;
+	align-items: center;
+
+	img {
+		width: 45px;
+		margin-right: 0.5rem;
+	}
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {

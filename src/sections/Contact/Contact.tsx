@@ -3,6 +3,7 @@ import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
 import styles from './Contact.module.scss'
 import ContactForm from './components/ContactForm'
+import phone from '../../../public/images/phone.svg'
 
 const Contact = () => {
 	const contactRef = useNav('Contact')
@@ -14,7 +15,11 @@ const Contact = () => {
 		>
 			<section ref={contactRef} id='contactContainer' className={styles.Contact}>
 				<div className={styles.titleContainer}>
-					<h1 className={styles.title}>Contact</h1>
+					<h1 className={styles.title}>
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img src={phone.src} alt='' />
+						Contact
+					</h1>
 					<p className={styles.paragraph}>
 						Feel free to reach out for any questions or inquiries! I will try to get
 						back to you as soon as possible.

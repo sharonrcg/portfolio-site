@@ -7,6 +7,7 @@ import {Experience} from './components/Experience'
 import {ExperienceSection} from './components/ExperienceSection'
 import {education, experiences} from '@/utils/constants'
 import {CollapsibleSection} from './components/CollapsibleSection'
+import folder from '../../../public/images/folder.svg'
 
 const Experiences = () => {
 	const experienceRef = useNav('Experience')
@@ -26,7 +27,10 @@ const Experiences = () => {
 				id='experienceContainer'
 				className={styles.Experiences}
 			>
-				<h1 className={styles.title}>Experience</h1>
+				<h1 className={styles.title}>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={folder.src} alt='' /> Experience
+				</h1>
 				<div className={styles.experienceContainer}>
 					<ExperienceSection title='Work experience'>
 						{experiences.map((experience, idx) => (

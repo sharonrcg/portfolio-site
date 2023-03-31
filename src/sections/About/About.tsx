@@ -6,6 +6,7 @@ import {PolaroidStack} from './components/PolaroidStack'
 import {Polaroid} from './components/Polaroid'
 import {polaroids, rows} from '@/utils/constants'
 import {SkillPill} from '@/components/SkillPill'
+import palette4 from '../../../public/images/palette4.svg'
 
 const About = () => {
 	const aboutRef = useNav('About')
@@ -38,7 +39,10 @@ const About = () => {
 			<section ref={aboutRef} id='aboutContainer' className={styles.About}>
 				<div className={styles.container}>
 					<div>
-						<h1 className={styles.title}>About me</h1>
+						<h1 className={styles.title}>
+							{/* eslint-disable-next-line @next/next/no-img-element */}
+							About me <img src={palette4.src} alt='' />
+						</h1>
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
 						<div className={styles.skills}>
 							{skills.map((skill) => (

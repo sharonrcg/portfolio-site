@@ -6,6 +6,7 @@ import {useContext} from 'react'
 import ProjectCard from './components/ProjectCard'
 import {projects} from '@/utils/constants'
 import cn from 'classnames'
+import brush from '../../../public/images/brush.svg'
 
 const Projects = () => {
 	const projectsRef = useNav('Projects')
@@ -21,7 +22,11 @@ const Projects = () => {
 				className={styles.Projects}
 			>
 				<div>
-					<h1 className={styles.title}>Projects</h1>
+					<h1 className={styles.title}>
+						Projects
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img src={brush.src} alt='' />
+					</h1>
 					<div className={styles.projectsContainer}>
 						<div className={styles.buttonContainer}>
 							{currentProjectsPage >= 1 && (

@@ -66,6 +66,14 @@
 	line-height: 1.2;
 	margin-bottom: 1.2rem;
 	text-align: center;
+
+	display: flex;
+	align-items: center;
+
+	img {
+		width: 45px;
+		margin-left: 0.3rem;
+	}
 }
 
 .dark {
