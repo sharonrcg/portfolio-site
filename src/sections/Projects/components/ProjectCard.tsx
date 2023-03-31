@@ -18,6 +18,10 @@ const ProjectCard = (props: ProjectCardProps) => {
 	const {project, isDarkMode, showScreenshot = true} = props
 	const {title, description, image, github, demo, tools} = project
 
+	const handleToolsClick = () => {
+		console.log(tools)
+	}
+
 	return (
 		<div className={cn(styles.ProjectCard, isDarkMode ? styles.dark : '')}>
 			<div className={styles.infoColumn}>
@@ -34,7 +38,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 							<strong>Demo</strong>
 						</a>
 					)}
-					<button className={styles.link}>
+					<button className={styles.link} onClick={handleToolsClick}>
 						<strong>Tools</strong>
 					</button>
 				</div>

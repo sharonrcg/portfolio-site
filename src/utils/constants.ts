@@ -22,7 +22,8 @@ const projects = [
 	[
 		{
 			title: 'Portfolio site',
-			description: 'A portfolio site that showcases my projects and skills.',
+			description:
+				'This is my portfolio site where I show off all my cool projects and skills.',
 			image: portfolio.src,
 			github: 'https://github.com/sharonrgomez/portfolio-site',
 			tools: ['Next.js', 'TypeScript', 'SCSS'],
@@ -30,7 +31,7 @@ const projects = [
 		{
 			title: 'Review video games',
 			description:
-				'A web app where people can rank and share their opinions on their favorite video games',
+				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
 			image: gamerank.src,
 			github: 'https://github.com/sharonrgomez/gamerank',
 			demo: 'https://gamerank.sharongomez.com/',
@@ -39,7 +40,7 @@ const projects = [
 		{
 			title: 'Budget tracker',
 			description:
-				'A web app that helps you track your expenses and income to help you manage your money effenciently.',
+				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
 			image: budget.src,
 			github: 'https://github.com/sharonrgomez/budget-trackr',
 			demo: 'https://budgettrackr.sharongomez.com/',
@@ -53,7 +54,7 @@ const projects = [
 		{
 			title: 'Blog',
 			description:
-				'A blogging app that gives you the freedom to unleash your mind.',
+				'With this blogging app, you can express your thoughts and ideas with complete freedom and unleash your creativity to the fullest!',
 			image: rinblog.src,
 			github: 'https://github.com/sharonrgomez/rinblog',
 			demo: 'https://rinblog.sharongomez.com/',
@@ -69,16 +70,17 @@ const projects = [
 	[
 		{
 			title: 'Weather app',
-			description: "Find out if it's the right weather to wear a hoodie.",
+			description:
+				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
 			image: hoodie.src,
 			github: 'https://github.com/sharonrgomez/hoodie',
 			demo: 'https://hoodie.sharongomez.com/',
 			tools: ['React', 'SCSS'],
 		},
 		{
-			title: 'Choice picker',
+			title: 'Decision making app',
 			description:
-				'Need help deciding on what to do? Let this app decide for you!',
+				'An intuitive decision-making app that provides a simple and effective way to weigh your options and help you make informed choices.',
 			image: indecision.src,
 			github: 'https://github.com/sharonrgomez/indecision-app',
 			demo: 'https://indecision.sharongomez.com/',
@@ -86,7 +88,8 @@ const projects = [
 		},
 		{
 			title: 'RGB color game',
-			description: 'Test your RGB color knowledge.',
+			description:
+				'Test your knowledge of RGB and improve your color-matching skills with this simple yet engaging game.',
 			image: color.src,
 			github: 'https://github.com/sharonrgomez/color-game',
 			demo: 'https://rgb-color.onrender.com/',
@@ -94,7 +97,8 @@ const projects = [
 		},
 		{
 			title: 'Landing page',
-			description: 'A simple landing page.',
+			description:
+				'A minimal landing page that provides a stylish and professional way to showcase a brand or product.',
 			image: landing.src,
 			github: 'https://github.com/sharonrgomez/landing-page',
 			demo: 'https://landing-14xu.onrender.com/',
