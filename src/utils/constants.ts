@@ -56,7 +56,7 @@ const projects = [
 				'A blogging app that gives you the freedom to unleash your mind.',
 			image: rinblog.src,
 			github: 'https://github.com/sharonrgomez/rinblog',
-			demo: 'https://rin-blog.web.app/',
+			demo: 'https://rinblog.sharongomez.com/',
 			tools: [
 				'React',
 				'Firebase Realtime Database',
@@ -72,7 +72,7 @@ const projects = [
 			description: "Find out if it's the right weather to wear a hoodie.",
 			image: hoodie.src,
 			github: 'https://github.com/sharonrgomez/hoodie',
-			demo: 'https://caniwearahoodie.web.app',
+			demo: 'https://hoodie.sharongomez.com/',
 			tools: ['React', 'SCSS'],
 		},
 		{
@@ -81,7 +81,7 @@ const projects = [
 				'Need help deciding on what to do? Let this app decide for you!',
 			image: indecision.src,
 			github: 'https://github.com/sharonrgomez/indecision-app',
-			demo: 'https://indecision.onrender.com/',
+			demo: 'https://indecision.sharongomez.com/',
 			tools: ['React', 'Webpack', 'SCSS'],
 		},
 		{
