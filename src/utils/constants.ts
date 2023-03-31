@@ -1,12 +1,14 @@
 import sharon from '../../public/images/sharon.jpg'
 import kai from '../../public/images/kai.jpg'
 import sharon_and_juan from '../../public/images/sharon_and_juan.jpg'
-import gamerank from '../../public/images/projects/game.png'
-import budgettrackr from '../../public/images/projects/budget.png'
-import portfolio from '../../public/images/projects/portfolio.png'
-import rinblog from '../../public/images/projects/rinblog.png'
-import hoodie from '../../public/images/projects/hoodie.png'
-import color from '../../public/images/projects/color.png'
+import portfolio from '../../public/projects/portfolio.svg'
+import gamerank from '../../public/projects/gamerank.svg'
+import budget from '../../public/projects/budget.svg'
+import rinblog from '../../public/projects/rinblog.svg'
+import hoodie from '../../public/projects/hoodie.svg'
+import indecision from '../../public/projects/indecision.svg'
+import landing from '../../public/projects/landing.svg'
+import color from '../../public/projects/color.svg'
 
 const navLinks = [
 	{navLinkId: 'Home', scrollToId: 'homeContainer'},
@@ -26,7 +28,7 @@ const projects = [
 			tools: ['Next.js', 'TypeScript', 'SCSS'],
 		},
 		{
-			title: 'Review Video Games',
+			title: 'Review video games',
 			description:
 				'A web app where people can rank and share their opinions on their favorite video games',
 			image: gamerank.src,
@@ -35,10 +37,10 @@ const projects = [
 			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
 		},
 		{
-			title: 'Budget Tracker',
+			title: 'Budget tracker',
 			description:
 				'A web app that helps you track your expenses and income to help you manage your money effenciently.',
-			image: budgettrackr.src,
+			image: budget.src,
 			github: 'https://github.com/sharonrgomez/budget-trackr',
 			demo: 'https://budgettrackr.sharongomez.com/',
 			tools: [
@@ -66,7 +68,7 @@ const projects = [
 	],
 	[
 		{
-			title: 'Weather App',
+			title: 'Weather app',
 			description: "Find out if it's the right weather to wear a hoodie.",
 			image: hoodie.src,
 			github: 'https://github.com/sharonrgomez/hoodie',
@@ -74,12 +76,29 @@ const projects = [
 			tools: ['React', 'SCSS'],
 		},
 		{
-			title: 'RGB Color Game',
-			description: 'A simple game to test your RGB color knowledge.',
+			title: 'Choice picker',
+			description:
+				'Need help deciding on what to do? Let this app decide for you!',
+			image: indecision.src,
+			github: 'https://github.com/sharonrgomez/indecision-app',
+			demo: 'https://indecision.onrender.com/',
+			tools: ['React', 'Webpack', 'SCSS'],
+		},
+		{
+			title: 'RGB color game',
+			description: 'Test your RGB color knowledge.',
 			image: color.src,
 			github: 'https://github.com/sharonrgomez/color-game',
-			demo: '',
+			demo: 'https://rgb-color.onrender.com/',
 			tools: ['JavaScript', 'HTML', 'CSS'],
+		},
+		{
+			title: 'Landing page',
+			description: 'A simple landing page.',
+			image: landing.src,
+			github: 'https://github.com/sharonrgomez/landing-page',
+			demo: 'https://landing-14xu.onrender.com/',
+			tools: ['React', 'SCSS'],
 		},
 	],
 ]

@@ -4,6 +4,7 @@ const nextConfig = {
 	async rewrites() {
 		return {
 			beforeFiles: [
+				// gamerank
 				{
 					source: '/',
 					destination: 'https://gamerank-u3lo.onrender.com/',
@@ -24,6 +25,7 @@ const nextConfig = {
 						},
 					],
 				},
+				// budgettrackr
 				{
 					source: '/',
 					destination: 'https://budgettrackr.onrender.com/',
@@ -44,23 +46,68 @@ const nextConfig = {
 						},
 					],
 				},
+				// rin-blog
 				{
 					source: '/',
-					destination: 'https://restfulblog.onrender.com/',
+					destination: 'https://rin-blog.web.app/',
 					has: [
 						{
 							type: 'host',
-							value: 'restfulblog.sharongomez.com',
+							value: 'rinblog.sharongomez.com',
 						},
 					],
 				},
 				{
 					source: '/:path*',
-					destination: 'https://restfulblog.onrender.com/:path*',
+					destination: 'https://rin-blog.web.app/:path*',
 					has: [
 						{
 							type: 'host',
-							value: 'restfulblog.sharongomez.com',
+							value: 'rinblog.sharongomez.com',
+						},
+					],
+				},
+				// hoodie
+				{
+					source: '/',
+					destination: 'https://caniwearahoodie.web.app/',
+					has: [
+						{
+							type: 'host',
+							value: 'hoodie.sharongomez.com',
+						},
+					],
+				},
+				// indecision
+				{
+					source: '/',
+					destination: 'https://indecision.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'indecision.sharongomez.com',
+						},
+					],
+				},
+				// rgb color
+				{
+					source: '/',
+					destination: 'https://rgb-color.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'rgb.sharongomez.com',
+						},
+					],
+				},
+				// landing
+				{
+					source: '/',
+					destination: 'https://landing-14xu.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'landing.sharongomez.com',
 						},
 					],
 				},
