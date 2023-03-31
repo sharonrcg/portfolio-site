@@ -22,7 +22,7 @@ const projects = [
 	[
 		{
 			title: 'Portfolio site',
-			description: 'A homepage/portfolio to display my experiences and projects',
+			description: 'A portfolio site that showcases my projects and skills.',
 			image: portfolio.src,
 			github: 'https://github.com/sharonrgomez/portfolio-site',
 			tools: ['Next.js', 'TypeScript', 'SCSS'],
