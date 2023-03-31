@@ -14,7 +14,7 @@ const Projects = () => {
 	const [translate, setTranslate] = React.useState<string | undefined>()
 
 	return (
-		<div className={`${isDarkMode ? styles.dark : ''}`}>
+		<div className={isDarkMode ? styles.dark : ''}>
 			<section
 				ref={projectsRef}
 				id='projectsContainer'
@@ -26,6 +26,7 @@ const Projects = () => {
 						<div className={styles.buttonContainer}>
 							{currentProjectsPage >= 1 && (
 								<button
+									className={styles.pageBtn}
 									onClick={() => {
 										setTranslate('left')
 										setCurrentProjectsPage((pg) => pg - 1)
@@ -50,7 +51,7 @@ const Projects = () => {
 								>
 									{projectPage.map((project, idx) => (
 										/* each project */
-										<ProjectCard key={idx} project={project} />
+										<ProjectCard key={idx} isDarkMode={isDarkMode} project={project} />
 									))}
 								</div>
 							))}
@@ -59,6 +60,7 @@ const Projects = () => {
 						<div className={styles.buttonContainer}>
 							{currentProjectsPage + 1 < projects.length && (
 								<button
+									className={styles.pageBtn}
 									onClick={() => {
 										setTranslate('right')
 										setCurrentProjectsPage((pg) => pg + 1)

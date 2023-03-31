@@ -11,6 +11,7 @@
 	height: 225px;
 	margin: 0 1rem 1rem 0;
 	padding: 1rem;
+	transition: background-color 0.5s ease-in-out;
 	width: 340px;
 
 	.infoColumn {
@@ -50,15 +51,18 @@
 			text-align: left;
 		}
 
-		.buttonGroup {
+		.linkGroup {
 			align-items: center;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
 
-			.button {
+			.link {
+				background: none;
+				border: none;
 				border-radius: 6px;
 				color: $blue-grey;
+				cursor: pointer;
 				font-size: $xxs;
 				height: unset;
 				margin-right: 0.5rem;
@@ -86,6 +90,25 @@
 			border-radius: 6px;
 			height: 100px;
 			width: 100px;
+		}
+	}
+}
+
+.dark {
+	&.ProjectCard {
+		background-color: $light-blue-grey;
+		box-shadow: 1px 1px 1px 0 $d-shadow;
+		color: $white;
+
+		.overline,
+		.title,
+		.description,
+		.infoColumn .linkGroup .link {
+			color: $white;
+		}
+
+		.infoColumn .linkGroup .link:hover {
+			color: $dark-grey;
 		}
 	}
 }

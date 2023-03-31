@@ -1,6 +1,5 @@
-import {ThemeContext} from '@/context'
 import styles from './ProjectCard.module.scss'
-import {useContext} from 'react'
+import cn from 'classnames'
 
 export type ProjectCardProps = {
 	project: {
@@ -11,24 +10,24 @@ export type ProjectCardProps = {
 		demo?: string
 		tools: string[]
 	}
+	isDarkMode: boolean
 	showScreenshot?: boolean
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
-	const {project} = props
-	const {isDarkMode} = useContext(ThemeContext)
+	const {project, isDarkMode, showScreenshot = true} = props
 
 	return (
-		<div className={`${styles.ProjectCard} ${isDarkMode ? styles.dark : ''}`}>
+		<div className={cn(styles.ProjectCard, isDarkMode ? styles.dark : '')}>
 			<div className={styles.infoColumn}>
 				<div className={styles.info}>
 					<p className={styles.overline}>category</p>
 					<h1 className={styles.title}>{project.title}</h1>
 					<p className={styles.description}>{project.description}</p>
 				</div>
-				<div className={styles.buttonGroup}>
+				<div className={styles.linkGroup}>
 					<a
-						className={styles.button}
+						className={styles.link}
 						href={project.github}
 						target='_blank'
 						rel='noreferrer'
@@ -37,7 +36,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 					</a>
 					{project.demo && (
 						<a
-							className={styles.button}
+							className={styles.link}
 							href={project.demo}
 							target='_blank'
 							rel='noreferrer'
@@ -45,15 +44,17 @@ const ProjectCard = (props: ProjectCardProps) => {
 							<strong>Demo</strong>
 						</a>
 					)}
-					<button className={styles.button}>
+					<button className={styles.link}>
 						<strong>Tools</strong>
 					</button>
 				</div>
 			</div>
-			<div className={styles.imageContainer}>
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img src={project.image} alt={project.title} />
-			</div>
+			{showScreenshot && (
+				<div className={styles.imageContainer}>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={project.image} alt={project.title} />
+				</div>
+			)}
 		</div>
 	)
 }

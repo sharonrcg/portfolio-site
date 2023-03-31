@@ -19,7 +19,7 @@
 		height: 50px;
 	}
 
-	button {
+	.pageBtn {
 		background: none;
 		border: none;
 		color: #00000057;
@@ -75,6 +75,14 @@
 
 	.title,
 	p {
+		color: $white;
+	}
+
+	.pageBtn {
 		color: $off-white;
+
+		&:hover {
+			color: $dark-grey;
+		}
 	}
 }
