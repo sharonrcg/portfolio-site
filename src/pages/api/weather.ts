@@ -1,12 +1,29 @@
 import type {NextApiRequest, NextApiResponse} from 'next'
 
+const allowCors =
+	(fn: Function) => async (req: NextApiRequest, res: NextApiResponse<Data>) => {
+		res.setHeader('Access-Control-Allow-Credentials', 'true')
+		res.setHeader('Access-Control-Allow-Origin', '*')
+
+		res.setHeader('Access-Control-Allow-Methods', 'GET')
+		res.setHeader(
+			'Access-Control-Allow-Headers',
+			'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+		)
+		if (req.method === 'OPTIONS') {
+			res.status(200).end()
+			return
+		}
+		return await fn(req, res)
+	}
+
 type Data = {
 	name: string
 	temp: string
 	desc: string
 }
 
-export default async function handler(
+const handler = async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Data>,
 ) {
@@ -29,3 +46,5 @@ export default async function handler(
 		desc: weatherData.weather[0].description,
 	})
 }
+
+export default allowCors(handler)
