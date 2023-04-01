@@ -139,7 +139,7 @@ const rows = [
 	},
 	{
 		paragraph:
-			"When I'm not coding, you'll probably catch me <span>watching movies, playing video games, or doodling</span>. Feel free to drop me a message if you want learn more - I'm always up for a chat!",
+			"When I'm not coding, you'll probably catch me watching movies, playing video games, or doodling. Feel free to <span>drop me a message</span> if you want learn more - I'm always up for a chat!",
 		polaroid: polaroids[2],
 	},
 ]

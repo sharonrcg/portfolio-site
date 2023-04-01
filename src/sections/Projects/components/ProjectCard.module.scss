@@ -91,13 +91,13 @@
 	&.ProjectCard {
 		background-color: $light-blue-grey;
 		box-shadow: 1px 1px 1px 0 $d-shadow;
-		color: $white;
+		color: $off-white;
 
 		.overline,
 		.title,
 		.description,
 		.infoColumn .linkGroup .link {
-			color: $white;
+			color: $off-white;
 		}
 
 		.infoColumn .linkGroup .link:hover {

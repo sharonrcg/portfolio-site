@@ -3,7 +3,8 @@ import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
 import styles from './Contact.module.scss'
 import ContactForm from './components/ContactForm'
-import phone from '../../../public/images/phone.svg'
+import phoneLight from '../../../public/images/phoneLight.svg'
+import phoneDark from '../../../public/images/phoneDark.svg'
 
 const Contact = () => {
 	const contactRef = useNav('Contact')
@@ -17,7 +18,7 @@ const Contact = () => {
 				<div className={styles.titleContainer}>
 					<h1 className={styles.title}>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={phone.src} alt='' />
+						<img src={isDarkMode ? phoneDark.src : phoneLight.src} alt='' />
 						Contact
 					</h1>
 					<p className={styles.paragraph}>

@@ -7,7 +7,8 @@ import {Experience} from './components/Experience'
 import {ExperienceSection} from './components/ExperienceSection'
 import {education, experiences} from '@/utils/constants'
 import {CollapsibleSection} from './components/CollapsibleSection'
-import folder from '../../../public/images/folder.svg'
+import folderLight from '../../../public/images/folderLight.svg'
+import folderDark from '../../../public/images/folderDark.svg'
 
 const Experiences = () => {
 	const experienceRef = useNav('Experience')
@@ -29,7 +30,8 @@ const Experiences = () => {
 			>
 				<h1 className={styles.title}>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={folder.src} alt='' /> Experience
+					<img src={isDarkMode ? folderDark.src : folderLight.src} alt='' />{' '}
+					Experience
 				</h1>
 				<div className={styles.experienceContainer}>
 					<ExperienceSection title='Work experience'>

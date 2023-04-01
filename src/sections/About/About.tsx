@@ -6,7 +6,8 @@ import {PolaroidStack} from './components/PolaroidStack'
 import {Polaroid} from './components/Polaroid'
 import {polaroids, rows} from '@/utils/constants'
 import {SkillPill} from '@/components/SkillPill'
-import palette4 from '../../../public/images/palette4.svg'
+import paletteLight from '../../../public/images/paletteLight.svg'
+import paletteDark from '../../../public/images/paletteDark.svg'
 
 const About = () => {
 	const aboutRef = useNav('About')
@@ -41,7 +42,8 @@ const About = () => {
 					<div>
 						<h1 className={styles.title}>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							About me <img src={palette4.src} alt='' />
+							About me{' '}
+							<img src={isDarkMode ? paletteDark.src : paletteLight.src} alt='' />
 						</h1>
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
 						<div className={styles.skills}>

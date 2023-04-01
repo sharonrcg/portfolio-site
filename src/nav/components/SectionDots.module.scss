@@ -28,7 +28,7 @@
 	border-radius: 25px;
 	height: 0.4rem;
 	list-style: none;
-	margin: 10px 0;
+	margin: 20px 0;
 	position: relative;
 	width: 0.4rem;
 
@@ -36,5 +36,13 @@
 		background-color: $off-black;
 		transition: ease-in-out 0.4s;
 		transition-property: background-color;
+	}
+}
+
+.dark {
+	&.dotNav {
+		& li.active {
+			background-color: $black;
+		}
 	}
 }
