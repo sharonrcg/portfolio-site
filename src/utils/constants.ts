@@ -38,6 +38,26 @@ const projects = [
 			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
 		},
 		{
+			title: 'Weather app',
+			description:
+				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
+			image: hoodie.src,
+			github: 'https://github.com/sharonrgomez/hoodie',
+			demo: 'https://hoodie.onrender.com/',
+			tools: ['React', 'SCSS'],
+		},
+		{
+			title: 'Decision making app',
+			description:
+				'An intuitive decision-making app that provides a simple and effective way to weigh your options and help you make informed choices.',
+			image: indecision.src,
+			github: 'https://github.com/sharonrgomez/indecision-app',
+			demo: 'https://indecision.sharongomez.com/',
+			tools: ['React', 'Webpack', 'SCSS'],
+		},
+	],
+	[
+		{
 			title: 'Budget tracker',
 			description:
 				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
@@ -65,26 +85,6 @@ const projects = [
 				'Semantic UI',
 				'SCSS',
 			],
-		},
-	],
-	[
-		{
-			title: 'Weather app',
-			description:
-				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
-			image: hoodie.src,
-			github: 'https://github.com/sharonrgomez/hoodie',
-			demo: 'https://hoodie.onrender.com/',
-			tools: ['React', 'SCSS'],
-		},
-		{
-			title: 'Decision making app',
-			description:
-				'An intuitive decision-making app that provides a simple and effective way to weigh your options and help you make informed choices.',
-			image: indecision.src,
-			github: 'https://github.com/sharonrgomez/indecision-app',
-			demo: 'https://indecision.sharongomez.com/',
-			tools: ['React', 'Webpack', 'SCSS'],
 		},
 		{
 			title: 'RGB color game',

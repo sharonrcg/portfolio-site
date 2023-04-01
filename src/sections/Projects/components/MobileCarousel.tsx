@@ -36,22 +36,22 @@ export const MobileCarousel = ({
 		],
 	}
 
-	const pageOne = projects[0].map((project, idx) => (
+	const rowOne = projects[0].map((project, idx) => (
 		<ProjectCard key={idx} isDarkMode={isDarkMode} project={project} />
 	))
 
-	const pageTwo = projects[1].map((project, idx) => (
+	const rowTwo = projects[1].map((project, idx) => (
 		<ProjectCard key={idx} isDarkMode={isDarkMode} project={project} />
 	))
 
 	return (
 		<div className={styles.MobileCarousel}>
 			<Slider {...sliderSettings}>
-				{pageOne.map((project, idx) => (
-					<>
+				{rowOne.map((project, idx) => (
+					<div key={idx}>
 						{project}
-						{pageTwo[idx]}
-					</>
+						{rowTwo[idx]}
+					</div>
 				))}
 			</Slider>
 		</div>

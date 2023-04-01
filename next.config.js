@@ -78,6 +78,16 @@ const nextConfig = {
 						},
 					],
 				},
+				{
+					source: '/:path*',
+					destination: 'https://indecision.onrender.com/:path*',
+					has: [
+						{
+							type: 'host',
+							value: 'indecision.sharongomez.com',
+						},
+					],
+				},
 			],
 		}
 	},
