@@ -74,7 +74,7 @@ const projects = [
 				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
 			image: hoodie.src,
 			github: 'https://github.com/sharonrgomez/hoodie',
-			demo: 'https://hoodie.sharongomez.com/',
+			demo: 'https://hoodie.onrender.com/',
 			tools: ['React', 'SCSS'],
 		},
 		{

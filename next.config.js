@@ -67,17 +67,6 @@ const nextConfig = {
 						},
 					],
 				},
-				// hoodie
-				{
-					source: '/',
-					destination: 'https://hoodie.onrender.com/',
-					has: [
-						{
-							type: 'host',
-							value: 'hoodie.sharongomez.com',
-						},
-					],
-				},
 				// indecision
 				{
 					source: '/',
@@ -89,28 +78,6 @@ const nextConfig = {
 						},
 					],
 				},
-				// // rgb color
-				// {
-				// 	source: '/',
-				// 	destination: 'https://rgb-color.onrender.com/',
-				// 	has: [
-				// 		{
-				// 			type: 'host',
-				// 			value: 'rgb.sharongomez.com',
-				// 		},
-				// 	],
-				// },
-				// // landing
-				// {
-				// 	source: '/',
-				// 	destination: 'https://landing-14xu.onrender.com/',
-				// 	has: [
-				// 		{
-				// 			type: 'host',
-				// 			value: 'landing.sharongomez.com',
-				// 		},
-				// 	],
-				// },
 			],
 		}
 	},
