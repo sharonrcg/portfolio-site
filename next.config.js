@@ -78,16 +78,6 @@ const nextConfig = {
 						},
 					],
 				},
-				{
-					source: '/:path*',
-					destination: 'https://hoodie.onrender.com/:path*',
-					has: [
-						{
-							type: 'host',
-							value: 'hoodie.sharongomez.com',
-						},
-					],
-				},
 				// indecision
 				{
 					source: '/',
