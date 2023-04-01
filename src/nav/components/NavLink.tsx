@@ -21,7 +21,7 @@ const NavLink = ({
 				'document.getElementById(scrollToId)',
 				document.getElementById(scrollToId),
 			)
-			document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
+			document.getElementById(scrollToId)?.scrollIntoView()
 			onClick()
 		} else {
 			console.log('no scrollToId', scrollToId)
