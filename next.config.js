@@ -70,7 +70,17 @@ const nextConfig = {
 				// hoodie
 				{
 					source: '/',
-					destination: 'https://caniwearahoodie.web.app/',
+					destination: 'https://hoodie.onrender.com/',
+					has: [
+						{
+							type: 'host',
+							value: 'hoodie.sharongomez.com',
+						},
+					],
+				},
+				{
+					source: '/:path*',
+					destination: 'https://hoodie.onrender.com/:path*',
 					has: [
 						{
 							type: 'host',
