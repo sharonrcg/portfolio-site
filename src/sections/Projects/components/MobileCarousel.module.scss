@@ -1,0 +1,10 @@
+@import '@/styles/var';
+
+.MobileCarousel {
+	width: 730px;
+	margin: 0 auto;
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		width: 100%;
+	}
+}

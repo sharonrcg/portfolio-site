@@ -1,15 +1,17 @@
 import styles from './ProjectCard.module.scss'
 import cn from 'classnames'
 
+export type Project = {
+	title: string
+	description: string
+	image: string
+	github: string
+	demo?: string
+	tools: string[]
+}
+
 export type ProjectCardProps = {
-	project: {
-		title: string
-		description: string
-		image: string
-		github: string
-		demo?: string
-		tools: string[]
-	}
+	project: Project
 	isDarkMode: boolean
 	showScreenshot?: boolean
 }
