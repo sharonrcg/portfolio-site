@@ -15,8 +15,21 @@ const NavLink = ({
 	const {activeNavLinkId} = useContext(NavContext)
 
 	const handleClick = () => {
-		document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
-		onClick()
+		if (document.getElementById(scrollToId)) {
+			console.log('scrollToId', scrollToId)
+			console.log(
+				'document.getElementById(scrollToId)',
+				document.getElementById(scrollToId),
+			)
+			document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
+			onClick()
+		} else {
+			console.log('no scrollToId', scrollToId)
+			console.log(
+				'no document.getElementById(scrollToId)',
+				document.getElementById(scrollToId),
+			)
+		}
 	}
 
 	return (
