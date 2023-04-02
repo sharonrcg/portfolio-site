@@ -64,12 +64,7 @@ const projects = [
 			image: budget.src,
 			github: 'https://github.com/sharonrgomez/budget-trackr',
 			demo: 'https://budgettrackr.sharongomez.com/',
-			tools: [
-				'React',
-				'Firebase Authentication',
-				'Firebase Realtime Database',
-				'SCSS',
-			],
+			tools: ['React', 'Firebase', 'SCSS'],
 		},
 		{
 			title: 'Blog',
@@ -78,13 +73,7 @@ const projects = [
 			image: rinblog.src,
 			github: 'https://github.com/sharonrgomez/rinblog',
 			demo: 'https://rinblog.sharongomez.com/',
-			tools: [
-				'React',
-				'Firebase Realtime Database',
-				'Firebase Authentication',
-				'Semantic UI',
-				'SCSS',
-			],
+			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
 		},
 		{
 			title: 'RGB color game',

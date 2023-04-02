@@ -13,6 +13,42 @@
 	padding: 1rem;
 	transition: background-color 0.5s ease-in-out;
 	width: 340px;
+	position: relative;
+
+	.tools {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: #c7bdbd;
+		border-radius: 6px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		.close {
+			align-self: flex-end;
+			width: 1.5rem;
+			height: 1.5rem;
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 
 	.infoColumn {
 		align-items: flex-start;
@@ -76,13 +112,28 @@
 
 	.imageContainer {
 		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 100%;
 
 		img {
 			border-radius: 6px;
 			height: 100px;
 			width: 100px;
+		}
+
+		.toolsButton {
+			width: 1.5rem;
+			height: 1.5rem;
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }
