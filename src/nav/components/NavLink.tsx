@@ -16,19 +16,8 @@ const NavLink = ({
 
 	const handleClick = () => {
 		if (document.getElementById(scrollToId)) {
-			console.log('scrollToId', scrollToId)
-			console.log(
-				'document.getElementById(scrollToId)',
-				document.getElementById(scrollToId),
-			)
 			document.getElementById(scrollToId)?.scrollIntoView({behavior: 'smooth'})
 			onClick()
-		} else {
-			console.log('no scrollToId', scrollToId)
-			console.log(
-				'no document.getElementById(scrollToId)',
-				document.getElementById(scrollToId),
-			)
 		}
 	}
 
