@@ -3,8 +3,10 @@ import {useState} from 'react'
 import styles from './ProjectCard.module.scss'
 import cn from 'classnames'
 import {SkillPill} from '@/components/SkillPill'
-import hammer from '../../../../public/images/hammer.svg'
-import close from '../../../../public/images/close.svg'
+import hammerLight from '../../../../public/images/hammerLight.svg'
+import hammerDark from '../../../../public/images/hammerDark.svg'
+import closeLight from '../../../../public/images/closeLight.svg'
+import closeDark from '../../../../public/images/closeDark.svg'
 
 export type Project = {
 	title: string
@@ -40,7 +42,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 						))}
 					</div>
 					<button className={styles.close} onClick={() => setShowTools(false)}>
-						<img src={close.src} alt='' />
+						<img src={isDarkMode ? closeDark.src : closeLight.src} alt='' />
 					</button>
 				</div>
 			)}
@@ -64,7 +66,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 				<div className={styles.imageContainer}>
 					<img src={image} alt={title} />
 					<button className={styles.toolsButton} onClick={handleToolsClick}>
-						<img src={hammer.src} alt='' />
+						<img src={isDarkMode ? hammerDark.src : hammerLight.src} alt='' />
 					</button>
 				</div>
 			)}
