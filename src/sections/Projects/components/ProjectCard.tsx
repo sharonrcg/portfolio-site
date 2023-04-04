@@ -3,8 +3,8 @@ import {useState} from 'react'
 import styles from './ProjectCard.module.scss'
 import cn from 'classnames'
 import {SkillPill} from '@/components/SkillPill'
-import hammerLight from '../../../../public/images/hammerLight.svg'
-import hammerDark from '../../../../public/images/hammerDark.svg'
+import wrenchLight from '../../../../public/images/wrenchLight.svg'
+import wrenchDark from '../../../../public/images/wrenchDark.svg'
 import closeLight from '../../../../public/images/closeLight.svg'
 import closeDark from '../../../../public/images/closeDark.svg'
 
@@ -66,7 +66,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 				<div className={styles.imageContainer}>
 					<img src={image} alt={title} />
 					<button className={styles.toolsButton} onClick={handleToolsClick}>
-						<img src={isDarkMode ? hammerDark.src : hammerLight.src} alt='' />
+						<img src={isDarkMode ? wrenchDark.src : wrenchLight.src} alt='' />
 					</button>
 				</div>
 			)}
