@@ -67,10 +67,6 @@
 		margin-top: $xxs;
 	}
 
-	span {
-		font-weight: 900;
-	}
-
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			font-size: 1.1rem;

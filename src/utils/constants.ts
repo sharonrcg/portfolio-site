@@ -116,17 +116,17 @@ const polaroids = [
 const rows = [
 	{
 		paragraph:
-			"I love creating web applications that not only look great but also provide an <span>exceptional user experience</span>. Whether it's building from scratch or improving existing projects, I always strive to learn new technologies and techniques to <span>enhance my skills</span> and stay up-to-date with industry trends.",
+			"I love creating web applications that not only look great but also provide an exceptional user experience. Whether it's building from scratch or improving existing projects, I always strive to learn new technologies and techniques to enhance my skills and stay up-to-date with industry trends.",
 		polaroid: polaroids[0],
 	},
 	{
 		paragraph:
-			"For the past two+ years, I've been working as a <span>front-end engineer</span> at Casebook PBC, where I've had the opportunity to contribute to the development and maintenance of the Casebook platform. This platform empowers human services agencies to provide better support and care to those who need it most.",
+			"For the past two+ years, I've been working as a front-end engineer at Casebook PBC, where I've had the opportunity to contribute to the development and maintenance of the Casebook platform. This platform empowers human services agencies to provide better support and care to those who need it most.",
 		polaroid: polaroids[1],
 	},
 	{
 		paragraph:
-			"When I'm not coding, you'll probably catch me watching movies, playing video games, or doodling. Feel free to <span>drop me a message</span> if you want learn more - I'm always up for a chat!",
+			"When I'm not coding, you'll probably catch me watching movies, playing video games, or doodling. Feel free to drop me a message if you want learn more - I'm always up for a chat!",
 		polaroid: polaroids[2],
 	},
 ]
