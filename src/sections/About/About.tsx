@@ -41,8 +41,7 @@ const About = () => {
 				<div className={styles.container}>
 					<div>
 						<h1 className={styles.title}>
-							{/* eslint-disable-next-line @next/next/no-img-element */}
-							About me{' '}
+							About me {/* eslint-disable-next-line @next/next/no-img-element */}
 							<img src={isDarkMode ? paletteDark.src : paletteLight.src} alt='' />
 						</h1>
 						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}

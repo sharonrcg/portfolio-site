@@ -23,7 +23,7 @@
 .title {
 	color: $off-black;
 	font-family: 'DM Serif Display', serif;
-	font-size: $xxl;
+	font-size: $xl;
 	line-height: 1.2;
 	text-align: center;
 	margin: $s 0 $xxs;
@@ -38,7 +38,7 @@
 
 .paragraph {
 	color: $off-black;
-	font-size: $m;
+	font-size: 1.6rem;
 	line-height: 1.5;
 	margin-bottom: $s;
 	max-width: 75%;
@@ -61,7 +61,7 @@
 
 .avatar {
 	background: $white;
-	border-radius: 100%;
+	border-radius: 50%;
 	box-shadow: 1px 1px 1px 0 $shadow;
 	transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 	width: 300px;

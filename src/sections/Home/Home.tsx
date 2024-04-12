@@ -23,7 +23,7 @@ const Home = () => {
 						<img
 							alt="Sharon's avatar"
 							className={styles.avatar}
-							src='/images/avatar.png'
+							src='/images/avatar2.png'
 						/>
 					</div>
 				</div>

@@ -1,13 +1,13 @@
 import sharon from '../../public/images/sharon.jpg'
 import kai from '../../public/images/kai.jpg'
-import sharon_and_juan from '../../public/images/sharon_and_juan.jpg'
+import family from '../../public/images/family.jpeg'
 import portfolio from '../../public/projects/portfolio.svg'
 import gamerank from '../../public/projects/gamerank.svg'
 import budget from '../../public/projects/budget.svg'
 import rinblog from '../../public/projects/rinblog.svg'
 import hoodie from '../../public/projects/hoodie.svg'
 import indecision from '../../public/projects/indecision.svg'
-import landing from '../../public/projects/landing.svg'
+import calendar from '../../public/projects/calendar.svg'
 import color from '../../public/projects/color.svg'
 
 const navLinks = [
@@ -29,42 +29,12 @@ const projects = [
 			tools: ['Next.js', 'TypeScript', 'SCSS'],
 		},
 		{
-			title: 'Review video games',
-			description:
-				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
-			image: gamerank.src,
-			github: 'https://github.com/sharonrgomez/gamerank',
-			demo: 'https://gamerank.sharongomez.com/',
-			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
-		},
-		{
-			title: 'Weather app',
-			description:
-				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
-			image: hoodie.src,
-			github: 'https://github.com/sharonrgomez/hoodie',
-			demo: 'https://hoodie.onrender.com/',
-			tools: ['React', 'SCSS'],
-		},
-		{
-			title: 'Decision making app',
-			description:
-				'An intuitive decision-making app that provides a simple and effective way to weigh your options and help you make informed choices.',
-			image: indecision.src,
-			github: 'https://github.com/sharonrgomez/indecision-app',
-			demo: 'https://indecision.sharongomez.com/',
-			tools: ['React', 'Webpack', 'SCSS'],
-		},
-	],
-	[
-		{
-			title: 'Budget tracker',
-			description:
-				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
-			image: budget.src,
-			github: 'https://github.com/sharonrgomez/budget-trackr',
-			demo: 'https://budgettrackr.sharongomez.com/',
-			tools: ['React', 'Firebase', 'SCSS'],
+			title: 'Event planner',
+			description: 'Plan your events with ease using this intuitive calendar app.',
+			image: calendar.src,
+			github: 'https://github.com/sharonrgomez/event-planner',
+			demo: 'https://event-planner-blush.vercel.app/',
+			tools: ['Next,js', 'TypeScript', 'Tailwind CSS'],
 		},
 		{
 			title: 'Blog',
@@ -76,6 +46,44 @@ const projects = [
 			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
 		},
 		{
+			title: 'Review video games',
+			description:
+				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
+			image: gamerank.src,
+			github: 'https://github.com/sharonrgomez/gamerank',
+			demo: 'https://gamerank.sharongomez.com/',
+			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
+		},
+	],
+	[
+		{
+			title: 'Decision making app',
+			description:
+				'Having trouble making decisions? Let this app help you decide what to do next!',
+			image: indecision.src,
+			github: 'https://github.com/sharonrgomez/indecision-app',
+			demo: 'https://indecision.sharongomez.com/',
+			tools: ['React', 'Webpack', 'SCSS'],
+		},
+		{
+			title: 'Weather app',
+			description:
+				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
+			image: hoodie.src,
+			github: 'https://github.com/sharonrgomez/hoodie',
+			demo: 'https://hoodie.onrender.com/',
+			tools: ['React', 'SCSS'],
+		},
+		{
+			title: 'Budget tracker',
+			description:
+				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
+			image: budget.src,
+			github: 'https://github.com/sharonrgomez/budget-trackr',
+			demo: 'https://budgettrackr.sharongomez.com/',
+			tools: ['React', 'Firebase', 'SCSS'],
+		},
+		{
 			title: 'RGB color game',
 			description:
 				'Test your knowledge of RGB and improve your color-matching skills with this simple yet engaging game.',
@@ -83,15 +91,6 @@ const projects = [
 			github: 'https://github.com/sharonrgomez/color-game',
 			demo: 'https://rgb-color.onrender.com/',
 			tools: ['JavaScript', 'HTML', 'CSS'],
-		},
-		{
-			title: 'Landing page',
-			description:
-				'A minimal landing page that provides a stylish and professional way to showcase a brand or product.',
-			image: landing.src,
-			github: 'https://github.com/sharonrgomez/landing-page',
-			demo: 'https://landing-14xu.onrender.com/',
-			tools: ['React', 'SCSS'],
 		},
 	],
 ]
@@ -102,16 +101,15 @@ const polaroids = [
 		imageAlt: 'A polaroid of me',
 		imageSrc: sharon.src,
 	},
-
 	{
-		displayText: 'Me and my husband, Juan',
-		imageAlt: 'A polaroid of me and my husband, Juan',
-		imageSrc: sharon_and_juan.src,
+		displayText: 'My pup',
+		imageAlt: 'A polaroid of my dog',
+		imageSrc: kai.src,
 	},
 	{
-		displayText: 'My pup, Kai',
-		imageAlt: 'A polaroid of my dog, Kai',
-		imageSrc: kai.src,
+		displayText: 'My family',
+		imageAlt: 'A polaroid of me and my family',
+		imageSrc: family.src,
 	},
 ]
 
