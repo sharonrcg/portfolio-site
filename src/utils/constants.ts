@@ -37,26 +37,6 @@ const projects = [
 			tools: ['Next,js', 'TypeScript', 'Tailwind CSS'],
 		},
 		{
-			title: 'Blog',
-			description:
-				'With this blogging app, you can express your thoughts and ideas with complete freedom and unleash your creativity to the fullest!',
-			image: rinblog.src,
-			github: 'https://github.com/sharonrgomez/rinblog',
-			demo: 'https://rinblog.sharongomez.com/',
-			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
-		},
-		{
-			title: 'Review video games',
-			description:
-				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
-			image: gamerank.src,
-			github: 'https://github.com/sharonrgomez/gamerank',
-			demo: 'https://gamerank.sharongomez.com/',
-			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
-		},
-	],
-	[
-		{
 			title: 'Decision making app',
 			description:
 				'Having trouble making decisions? Let this app help you decide what to do next!',
@@ -73,6 +53,26 @@ const projects = [
 			github: 'https://github.com/sharonrgomez/hoodie',
 			demo: 'https://hoodie.onrender.com/',
 			tools: ['React', 'SCSS'],
+		},
+	],
+	[
+		{
+			title: 'Blog',
+			description:
+				'With this blogging app, you can express your thoughts and ideas with complete freedom and unleash your creativity to the fullest!',
+			image: rinblog.src,
+			github: 'https://github.com/sharonrgomez/rinblog',
+			demo: 'https://rinblog.sharongomez.com/',
+			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
+		},
+		{
+			title: 'Review video games',
+			description:
+				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
+			image: gamerank.src,
+			github: 'https://github.com/sharonrgomez/gamerank',
+			demo: 'https://gamerank.sharongomez.com/',
+			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
 		},
 		{
 			title: 'Budget tracker',
