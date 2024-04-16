@@ -6,7 +6,7 @@ import gamerank from '../../public/projects/gamerank.svg'
 import budget from '../../public/projects/budget.svg'
 import rinblog from '../../public/projects/rinblog.svg'
 import hoodie from '../../public/projects/hoodie.svg'
-import indecision from '../../public/projects/indecision.svg'
+import taskroulette from '../../public/projects/taskroulette.svg'
 import calendar from '../../public/projects/calendar.svg'
 import color from '../../public/projects/color.svg'
 
@@ -37,12 +37,12 @@ const projects = [
 			tools: ['Next,js', 'TypeScript', 'Tailwind CSS'],
 		},
 		{
-			title: 'Decision making app',
+			title: 'Task Roulette',
 			description:
-				'Having trouble making decisions? Let this app help you decide what to do next!',
-			image: indecision.src,
-			github: 'https://github.com/sharonrgomez/indecision-app',
-			demo: 'https://indecision.sharongomez.com/',
+				"Don't know where to start on your to-do list? This app will help you decide!",
+			image: taskroulette.src,
+			github: 'https://github.com/sharonrgomez/task-roulette',
+			demo: 'https://taskroulette.sharongomez.com/',
 			tools: ['React', 'Webpack', 'SCSS'],
 		},
 		{

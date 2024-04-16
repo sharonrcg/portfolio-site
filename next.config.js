@@ -67,14 +67,14 @@ const nextConfig = {
 						},
 					],
 				},
-				// indecision
+				// taskroulette
 				{
 					source: '/',
 					destination: 'https://indecision.onrender.com/',
 					has: [
 						{
 							type: 'host',
-							value: 'indecision.sharongomez.com',
+							value: 'taskroulette.sharongomez.com',
 						},
 					],
 				},
@@ -84,7 +84,7 @@ const nextConfig = {
 					has: [
 						{
 							type: 'host',
-							value: 'indecision.sharongomez.com',
+							value: 'taskroulette.sharongomez.com',
 						},
 					],
 				},
