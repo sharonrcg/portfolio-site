@@ -46,12 +46,6 @@ const Contact = () => {
 								@sharonrgomez
 							</a>
 						</li>
-						<li>
-							{'Twitter: '}
-							<a href='https://www.twitter.com/shaerins' target='_blank'>
-								@shaerins
-							</a>
-						</li>
 					</ul>
 					<p className={styles.mobileLinks}>
 						<a href='mailto:me@sharongomez.com'>Email</a> |{' '}
@@ -61,10 +55,6 @@ const Contact = () => {
 						|{' '}
 						<a href='https://www.github.com/sharonrgomez' target='_blank'>
 							GitHub
-						</a>{' '}
-						|{' '}
-						<a href='https://www.twitter.com/shaerins' target='_blank'>
-							Twitter
 						</a>
 					</p>
 				</div>
