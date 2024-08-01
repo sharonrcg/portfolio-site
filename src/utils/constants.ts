@@ -121,7 +121,7 @@ const rows = [
 	},
 	{
 		paragraph:
-			"For the past two+ years, I've been working as a front-end engineer at Casebook PBC, where I've had the opportunity to contribute to the development and maintenance of the Casebook platform. This platform empowers human services agencies to provide better support and care to those who need it most.",
+			"For the past 3+ years, I've been working as a front-end engineer at Casebook PBC, where I've had the opportunity to contribute to the development and maintenance of the Casebook platform. This platform empowers human services agencies to provide better support and care to those who need it most.",
 		polaroid: polaroids[1],
 	},
 	{
@@ -137,18 +137,10 @@ const experiences = [
 		orgName: 'Casebook PBC',
 		dates: 'September 2020 - present',
 		paragraphs: [
-			`Developed and maintained the design system used by the Casebook
-			platform. Built new components from scratch and maintained existing
-			components using React, Typescript, and MaterialUI. Collaborated
-			closely with the design team to ensure all components were
-			user-friendly, accessible, and aligned with the product's
-			requirements.`,
-			`Contributed to the Casebook platform web applications using React and
-			TypeScript. Helped build out the platform's new features while
-			also maintaining and enhancing existing functionality. Utilized
-			GraphQL to improve and upkeep the platform's API.`,
-			`Utilized Jest and React Testing Library to create unit tests for
-			components, and used Cypress for developing end-to-end tests.`,
+			`Developed and maintained the design system for the Casebook platform, creating new components and refining existing ones using React, TypeScript, and MaterialUI. Partnered with the design team to ensure components were user-friendly and met product requirements.`,
+			`Enhanced the Casebook platform by building new features and improving existing functionality with React and TypeScript. Worked with fellow engineers to leverage GraphQL for API upgrades and ongoing maintenance.`,
+			`Used Jest and React Testing Library for unit testing and Cypress for end-to-end testing, working with the engineering team to guarantee thorough testing and high-quality code.`,
+			`Led several full-stack projects from start to finish, collaborating with team members to ensure seamless integration and the delivery of effective solutions.`,
 		],
 	},
 	{
@@ -156,12 +148,8 @@ const experiences = [
 		orgName: 'Almod Diamonds',
 		dates: 'September 2018 - March 2020',
 		paragraphs: [
-			`Sorted and organized the database containing the entered items, and
-			collaborated with the accounting department to ensure the accuracy of
-			all values and prices.`,
-			`Maintained inventory to prevent system errors and verified that all
-			data inputted into the system was accurate and aligned with their
-			corresponding invoices.`,
+			`Managed and optimized the database of inventory items, implementing efficient sorting and organization practices to enhance data retrieval and accuracy.`,
+			`Maintained and validated inventory data to prevent system discrepancies, ensuring that all entries were accurately reflected against corresponding invoices.`,
 		],
 	},
 	{
@@ -169,12 +157,10 @@ const experiences = [
 		orgName: 'Coditum',
 		dates: 'October 2016 - August 2018',
 		paragraphs: [
-			`Taught programming languages Python and Java. Worked with students to
-			help them understand basic to advanced programming concepts to help
-			them prepare for high school and college.`,
-			`Assisted students in creating programs using algorithms, data
-			structures and object-oriented programming. Debugged students'
-			code and provided contructive feedback on their projects.`,
+			`Instructed students in Python and Java programming languages, guiding them through foundational to advanced concepts to prepare them for further education.`,
+			`Created and developed lesson plans tailored to students' academic needs, ensuring comprehensive coverage of key programming principles.`,
+			`Facilitated students' understanding of algorithms, data structures, and object-oriented programming by helping them design and implement their own projects.`,
+			`Provided hands-on debugging support and constructive feedback on students' code, focusing on improving their problem-solving skills and coding practices.`,
 		],
 	},
 ]
@@ -185,10 +171,7 @@ const education = {
 	dates: 'September 2013 - May 2017',
 	paragraphs: [
 		`GPA: 3.5`,
-		`Senior Project: Researched the connection between mathematics and art,
-		with a particular focus on the works of artist M.C. Escher. Developed
-		a web application that enables users to produce tessellation-inspired
-		drawings.`,
+		`Senior Project: Researched the connection between mathematics and art, with a focus on the works of artist M.C. Escher. Developed a web application using p5.js that enabled users to produce tessellation-inspired drawings. Presented at the SUNY Undergraduate Research Conference (SURC) 2017, showcasing the project's impact and relevance.`,
 		`Minor in Visual Arts. Completed coursework in drawing, painting, and
 		sculpture.`,
 	],
