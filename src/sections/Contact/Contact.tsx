@@ -2,7 +2,7 @@ import {ThemeContext} from '@/context'
 import React, {useContext} from 'react'
 import {useNav} from '@/hooks'
 import styles from './Contact.module.scss'
-import ContactForm from './components/ContactForm'
+// import ContactForm from './components/ContactForm'
 import phoneLight from '../../../public/images/phoneLight.svg'
 import phoneDark from '../../../public/images/phoneDark.svg'
 
@@ -58,7 +58,7 @@ const Contact = () => {
 						</a>
 					</p>
 				</div>
-				<ContactForm />
+				{/* <ContactForm /> */}
 			</section>
 		</div>
 	)
