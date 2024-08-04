@@ -26,7 +26,7 @@ const Contact = () => {
 						back to you as soon as possible.
 						<br />
 						<span className={styles.reachOutText}>
-							You can also reach me at the following:
+							You can reach me at the following:
 						</span>
 					</p>
 					<ul className={styles.list}>
