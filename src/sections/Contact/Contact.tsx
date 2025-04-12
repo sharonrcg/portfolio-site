@@ -42,8 +42,8 @@ const Contact = () => {
 						</li>
 						<li>
 							{'GitHub: '}
-							<a href='https://www.github.com/sharonrgomez' target='_blank'>
-								@sharonrgomez
+							<a href='https://www.github.com/sharonrcg' target='_blank'>
+								@sharonrcg
 							</a>
 						</li>
 					</ul>
@@ -53,7 +53,7 @@ const Contact = () => {
 							LinkedIn
 						</a>{' '}
 						|{' '}
-						<a href='https://www.github.com/sharonrgomez' target='_blank'>
+						<a href='https://www.github.com/sharonrcg' target='_blank'>
 							GitHub
 						</a>
 					</p>
