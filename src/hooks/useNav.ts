@@ -3,7 +3,7 @@ import {useOnScreen} from './useOnScreen'
 import {NavContext} from '@/context/NavContext'
 
 export const useNav = (navLinkId: string) => {
-	const ref = useRef<HTMLElement>(null)
+	const ref = useRef<any>(null)
 
 	const {setActiveNavLinkId} = useContext(NavContext)
 

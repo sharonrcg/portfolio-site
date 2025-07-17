@@ -15,7 +15,7 @@ const Home = () => {
 						<h1 className={styles.title}>Sharon Gomez</h1>
 						<p className={styles.paragraph}>
 							Hi there, welcome to my portfolio! My name is Sharon and I&apos;m a
-							software engineer based in Westchester, NY.
+							software engineer based in New York.
 						</p>
 					</div>
 					<div>

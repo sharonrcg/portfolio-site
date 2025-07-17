@@ -1,6 +1,6 @@
 import sharon from '../../public/images/sharon.jpg'
 import kai from '../../public/images/kai.jpg'
-import family from '../../public/images/family.jpeg'
+import family from '../../public/images/fam.jpg'
 import portfolio from '../../public/projects/portfolio.svg'
 import gamerank from '../../public/projects/gamerank.svg'
 import budget from '../../public/projects/budget.svg'
@@ -116,17 +116,17 @@ const polaroids = [
 const rows = [
 	{
 		paragraph:
-			"I love creating web applications that not only look great but also provide an exceptional user experience. Whether it's building from scratch or improving existing projects, I always strive to learn new technologies and techniques to enhance my skills and stay up-to-date with industry trends.",
+			"I love creating web applications that not only look great but also feel great to use. Whether I’m building something new or improving what’s already there, I always strive to learn new technologies and techniques to enhance my skills and stay up-to-date with industry trends.",
 		polaroid: polaroids[0],
 	},
 	{
 		paragraph:
-			"For the past 3+ years, I've been working as a front-end engineer at Casebook PBC, where I've had the opportunity to contribute to the development and maintenance of the Casebook platform. This platform empowers human services agencies to provide better support and care to those who need it most.",
+			"Over the past 5+ years, I've developed scalable, accessible web apps using modern front-end technologies like React, TypeScript, and GraphQL. I'm passionate about clean code and building interfaces that feel smooth and user-friendly.",
 		polaroid: polaroids[1],
 	},
 	{
 		paragraph:
-			"When I'm not coding, you'll probably catch me watching movies, playing video games, or doodling. Feel free to drop me a message if you want learn more - I'm always up for a chat!",
+			"When I'm not coding, you'll probably catch me reading, playing video games, or knitting. Feel free to shoot me a message if you want to learn more - I'm always up for a chat!",
 		polaroid: polaroids[2],
 	},
 ]
@@ -134,8 +134,18 @@ const rows = [
 const experiences = [
 	{
 		title: 'Software Engineer',
+		orgName: 'USPIS (Contractor)',
+		dates: 'April 2025 - present',
+		paragraphs: [
+			`Improving the front-end experience and enhancing usability, maintainability, and consistency across the app.`,
+			`Replacing legacy patterns with modern React features.`,
+			`Writing clean, modular TypeScript code and contributing to long-term architectural improvements.`,
+		],
+	},
+	{
+		title: 'Software Engineer',
 		orgName: 'Casebook PBC',
-		dates: 'September 2020 - present',
+		dates: 'September 2020 - March 2025',
 		paragraphs: [
 			`Developed and maintained the design system for the Casebook platform, creating new components and refining existing ones using React, TypeScript, and MaterialUI. Partnered with the design team to ensure components were user-friendly and met product requirements.`,
 			`Enhanced the Casebook platform by building new features and improving existing functionality with React and TypeScript. Worked with fellow engineers to leverage GraphQL for API upgrades and ongoing maintenance.`,
