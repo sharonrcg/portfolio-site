@@ -25,14 +25,14 @@ const projects = [
 			description:
 				'This is my portfolio site where I show off all my cool projects and skills.',
 			image: portfolio.src,
-			github: 'https://github.com/sharonrgomez/portfolio-site',
+			github: 'https://github.com/sharonrcg/portfolio-site',
 			tools: ['Next.js', 'TypeScript', 'SCSS'],
 		},
 		{
 			title: 'Event planner',
 			description: 'Plan your events with ease using this intuitive calendar app.',
 			image: calendar.src,
-			github: 'https://github.com/sharonrgomez/event-planner',
+			github: 'https://github.com/sharonrcg/event-planner',
 			demo: 'https://event-planner-blush.vercel.app/',
 			tools: ['Next,js', 'TypeScript', 'Tailwind CSS'],
 		},
@@ -41,7 +41,7 @@ const projects = [
 			description:
 				"Don't know where to start on your to-do list? This app will help you decide!",
 			image: taskroulette.src,
-			github: 'https://github.com/sharonrgomez/task-roulette',
+			github: 'https://github.com/sharonrcg/task-roulette',
 			demo: 'https://taskroulette.sharongomez.com/',
 			tools: ['React', 'Webpack', 'SCSS'],
 		},
@@ -50,7 +50,7 @@ const projects = [
 			description:
 				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
 			image: hoodie.src,
-			github: 'https://github.com/sharonrgomez/hoodie',
+			github: 'https://github.com/sharonrcg/hoodie',
 			demo: 'https://hoodie.onrender.com/',
 			tools: ['React', 'SCSS'],
 		},
@@ -61,7 +61,7 @@ const projects = [
 			description:
 				'With this blogging app, you can express your thoughts and ideas with complete freedom and unleash your creativity to the fullest!',
 			image: rinblog.src,
-			github: 'https://github.com/sharonrgomez/rinblog',
+			github: 'https://github.com/sharonrcg/rinblog',
 			demo: 'https://rinblog.sharongomez.com/',
 			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
 		},
@@ -70,7 +70,7 @@ const projects = [
 			description:
 				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
 			image: gamerank.src,
-			github: 'https://github.com/sharonrgomez/gamerank',
+			github: 'https://github.com/sharonrcg/gamerank',
 			demo: 'https://gamerank.sharongomez.com/',
 			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
 		},
@@ -79,7 +79,7 @@ const projects = [
 			description:
 				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
 			image: budget.src,
-			github: 'https://github.com/sharonrgomez/budget-trackr',
+			github: 'https://github.com/sharonrcg/budget-trackr',
 			demo: 'https://budgettrackr.sharongomez.com/',
 			tools: ['React', 'Firebase', 'SCSS'],
 		},
@@ -88,7 +88,7 @@ const projects = [
 			description:
 				'Test your knowledge of RGB and improve your color-matching skills with this simple yet engaging game.',
 			image: color.src,
-			github: 'https://github.com/sharonrgomez/color-game',
+			github: 'https://github.com/sharonrcg/color-game',
 			demo: 'https://rgb-color.onrender.com/',
 			tools: ['JavaScript', 'HTML', 'CSS'],
 		},
