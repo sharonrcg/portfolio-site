@@ -3,26 +3,12 @@ import {useNav} from '@/hooks'
 import styles from './About.module.scss'
 import {ThemeContext} from '@/context'
 import {PolaroidStack} from './components/PolaroidStack'
-import {Polaroid} from './components/Polaroid'
 import {polaroids, rows} from '@/utils/constants'
 import {SkillPill} from '@/components/SkillPill'
-import paletteLight from '../../../public/images/paletteLight.svg'
-import paletteDark from '../../../public/images/paletteDark.svg'
 
 const About = () => {
 	const aboutRef = useNav('About')
 	const {isDarkMode} = useContext(ThemeContext)
-
-	const renderRow = (idx: number, paragraph: string, polaroid: Polaroid) => {
-		return (
-			<div className={styles.row} key={idx}>
-				<p
-					className={styles.paragraph}
-					dangerouslySetInnerHTML={{__html: paragraph}}
-				/>
-			</div>
-		)
-	}
 
 	const skills = [
 		'JavaScript',
@@ -39,16 +25,25 @@ const About = () => {
 		<div className={`${isDarkMode ? styles.dark : ''}`}>
 			<section ref={aboutRef} id='aboutContainer' className={styles.About}>
 				<div className={styles.container}>
-					<div>
+					<div className={styles.bio}>
+						<div className={styles.kicker}>Get to know me</div>
 						<h1 className={styles.title}>
-							About me {/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={isDarkMode ? paletteDark.src : paletteLight.src} alt='' />
+							About me <span className={styles.emoji}>🎨</span>
 						</h1>
-						{rows.map((row, idx) => renderRow(idx, row.paragraph, row.polaroid))}
+						{rows.map((row, idx) => (
+							<p
+								key={idx}
+								className={styles.paragraph}
+								dangerouslySetInnerHTML={{__html: row.paragraph}}
+							/>
+						))}
 						<div className={styles.skills}>
-							{skills.map((skill) => (
-								<SkillPill name={skill} dark={isDarkMode} key={skill} />
-							))}
+							<div className={styles.skillsLabel}>Tools I work with</div>
+							<div className={styles.chips}>
+								{skills.map((skill) => (
+									<SkillPill name={skill} dark={isDarkMode} key={skill} />
+								))}
+							</div>
 						</div>
 					</div>
 					<PolaroidStack polaroids={polaroids} />

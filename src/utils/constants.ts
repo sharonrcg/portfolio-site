@@ -9,6 +9,8 @@ import hoodie from '../../public/projects/hoodie.svg'
 import taskroulette from '../../public/projects/taskroulette.svg'
 import calendar from '../../public/projects/calendar.svg'
 import color from '../../public/projects/color.svg'
+import marina from '../../public/projects/marina.svg'
+import keysounds from '../../public/projects/keysounds.svg'
 
 const navLinks = [
 	{navLinkId: 'Home', scrollToId: 'homeContainer'},
@@ -17,82 +19,90 @@ const navLinks = [
 	{navLinkId: 'Projects', scrollToId: 'projectsContainer'},
 	{navLinkId: 'Contact', scrollToId: 'contactContainer'},
 ]
-
 const projects = [
-	[
-		{
-			title: 'Portfolio site',
-			description:
-				'This is my portfolio site where I show off all my cool projects and skills.',
-			image: portfolio.src,
-			github: 'https://github.com/sharonrcg/portfolio-site',
-			tools: ['Next.js', 'TypeScript', 'SCSS'],
-		},
-		{
-			title: 'Event planner',
-			description: 'Plan your events with ease using this intuitive calendar app.',
-			image: calendar.src,
-			github: 'https://github.com/sharonrcg/event-planner',
-			demo: 'https://event-planner-blush.vercel.app/',
-			tools: ['Next,js', 'TypeScript', 'Tailwind CSS'],
-		},
-		{
-			title: 'Task Roulette',
-			description:
-				"Don't know where to start on your to-do list? This app will help you decide!",
-			image: taskroulette.src,
-			github: 'https://github.com/sharonrcg/task-roulette',
-			demo: 'https://taskroulette.sharongomez.com/',
-			tools: ['React', 'Webpack', 'SCSS'],
-		},
-		{
-			title: 'Weather app',
-			description:
-				'Planning your outfit just got easier with this helpful web app that lets you know if the weather is suitable for wearing a hoodie.',
-			image: hoodie.src,
-			github: 'https://github.com/sharonrcg/hoodie',
-			demo: 'https://hoodie.onrender.com/',
-			tools: ['React', 'SCSS'],
-		},
-	],
-	[
-		{
-			title: 'Blog',
-			description:
-				'With this blogging app, you can express your thoughts and ideas with complete freedom and unleash your creativity to the fullest!',
-			image: rinblog.src,
-			github: 'https://github.com/sharonrcg/rinblog',
-			demo: 'https://rinblog.sharongomez.com/',
-			tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
-		},
-		{
-			title: 'Review video games',
-			description:
-				'A platform for gamers to review and rank video games with others, making it a great tool for discovering new favorites and sharing opinions.',
-			image: gamerank.src,
-			github: 'https://github.com/sharonrcg/gamerank',
-			demo: 'https://gamerank.sharongomez.com/',
-			tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
-		},
-		{
-			title: 'Budget tracker',
-			description:
-				'Efficiently manage your money with the help of this web app that allows you to track your expenses and income.',
-			image: budget.src,
-			github: 'https://github.com/sharonrcg/budget-trackr',
-			demo: 'https://budgettrackr.sharongomez.com/',
-			tools: ['React', 'Firebase', 'SCSS'],
-		},
-		{
-			title: 'RGB color game',
-			description:
-				'Test your knowledge of RGB and improve your color-matching skills with this simple yet engaging game.',
-			image: color.src,
-			github: 'https://github.com/sharonrcg/color-game',
-			demo: 'https://rgb-color.onrender.com/',
-			tools: ['JavaScript', 'HTML', 'CSS'],
-		},
-	],
+    [
+        {
+            title: 'This portfolio',
+            description: "The site you're on right now! A personal portfolio to showcase my projects and experience.",
+            image: portfolio.src,
+            github: 'https://github.com/sharonrcg/portfolio-site',
+            tools: ['Next.js', 'TypeScript', 'SCSS'],
+        },
+        {
+            title: 'Event planner',
+            description: 'A minimal calendar app to help keep your life on track.',
+            image: calendar.src,
+            github: 'https://github.com/sharonrcg/event-planner',
+            demo: 'https://event-planner-blush.vercel.app/',
+            tools: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+        },
+        {
+            title: 'Can I wear a hoodie today?',
+            description: "Find out if it's finally hoodie season.",
+            image: hoodie.src,
+            github: 'https://github.com/sharonrcg/hoodie',
+            demo: 'https://hoodie.onrender.com/',
+            tools: ['React', 'SCSS'],
+        },
+        {
+            title: 'Budget trackr',
+            description: 'A dashboard for managing your expenses.',
+            image: budget.src,
+            github: 'https://github.com/sharonrcg/budget-trackr',
+            demo: 'https://budgettrackr.sharongomez.com/',
+            tools: ['React', 'Firebase', 'SCSS'],
+        },
+        {
+            title: 'Keysounds',
+            description: 'Make some music using your computer keyboard!',
+            image: keysounds.src,
+            github: 'https://github.com/sharonrcg/keysounds',
+            demo: 'https://keysounds.onrender.com/',
+            tools: ['HTML', 'CSS', 'JavaScript', 'Howler.js', 'Paper.js'],
+        },
+    ],
+    [
+        {
+            title: 'Rinblog',
+            description: 'A simple blogging platform for sharing your thoughts with the world.',
+            image: rinblog.src,
+            github: 'https://github.com/sharonrcg/rinblog',
+            demo: 'https://rinblog.sharongomez.com/',
+            tools: ['React', 'Firebase', 'Semantic UI', 'SCSS'],
+        },
+        {
+            title: 'Marina',
+            description: 'A helpful tracker to help parents navigate the daily blur of feedings, diaper changes, and more.',
+            image: marina.src,
+            github: 'https://github.com/sharonrcg/marina',
+            demo: 'https://marina-c2ec6.web.app/welcome',
+            tools: ['React', 'Firebase', 'CSS'],
+        },
+        {
+            title: 'Task Roulette',
+            description: 'Let fate decide which task to tick off the list next.',
+            image: taskroulette.src,
+            github: 'https://github.com/sharonrcg/task-roulette',
+            demo: 'https://taskroulette.sharongomez.com/',
+            tools: ['React', 'Webpack', 'SCSS'],
+        },
+        {
+            title: 'Gamerank',
+            description: 'Rate and review your favorite games.',
+            image: gamerank.src,
+            github: 'https://github.com/sharonrcg/gamerank',
+            demo: 'https://gamerank.sharongomez.com/',
+            tools: ['EJS', 'Bootstrap', 'Express', 'MongoDB'],
+        },
+        {
+            title: 'RGB color game',
+            description: 'Guess the color based on its RGB values!',
+            image: color.src,
+            github: 'https://github.com/sharonrcg/color-game',
+            demo: 'https://rgb-color.onrender.com/',
+            tools: ['JavaScript', 'HTML', 'CSS'],
+        },
+    ],
 ]
 
 const polaroids = [
@@ -116,17 +126,17 @@ const polaroids = [
 const rows = [
 	{
 		paragraph:
-			"I love creating web applications that not only look great but also feel great to use. Whether I’m building something new or improving what’s already there, I always strive to learn new technologies and techniques to enhance my skills and stay up-to-date with industry trends.",
+			"I'm a software engineer who specializes in the front-end side of things, with plenty of experience handling the data and logic underneath.",
 		polaroid: polaroids[0],
 	},
 	{
 		paragraph:
-			"Over the past 5+ years, I've developed scalable, accessible web apps using modern front-end technologies like React, TypeScript, and GraphQL. I'm passionate about clean code and building interfaces that feel smooth and user-friendly.",
+			"I love the puzzle of turning complex ideas into smooth, responsive web applications that feel natural to interact with.",
 		polaroid: polaroids[1],
 	},
 	{
 		paragraph:
-			"When I'm not coding, you'll probably catch me reading, playing video games, or knitting. Feel free to shoot me a message if you want to learn more - I'm always up for a chat!",
+		"Outside of building web apps, you’ll usually find me caught up in a book, playing video games, or working on a knitting project. Feel free to reach out if you want to chat!",
 		polaroid: polaroids[2],
 	},
 ]
@@ -137,9 +147,9 @@ const experiences = [
 		orgName: 'USPIS (Contractor)',
 		dates: 'April 2025 - present',
 		paragraphs: [
-			`Improving the front-end experience and enhancing usability, maintainability, and consistency across the app.`,
-			`Replacing legacy patterns with modern React features.`,
-			`Writing clean, modular TypeScript code and contributing to long-term architectural improvements.`,
+			`Architected and built CSA (Compliance Self-Assessment) from scratch - a React and TypeScript application with a C# .NET backend, which digitized and replaced a legacy, Excel-driven tracking process for inspectors.`,
+			`Implemented the team's first front-end testing pipeline using Jest and React Testing Library, to ensure long-term application stability.`, 
+			`Refactored legacy code patterns in several applications into modular TypeScript components, improving codebase maintainability and application performance.`,
 		],
 	},
 	{
@@ -151,15 +161,6 @@ const experiences = [
 			`Enhanced the Casebook platform by building new features and improving existing functionality with React and TypeScript. Worked with fellow engineers to leverage GraphQL for API upgrades and ongoing maintenance.`,
 			`Used Jest and React Testing Library for unit testing and Cypress for end-to-end testing, working with the engineering team to guarantee thorough testing and high-quality code.`,
 			`Led several full-stack projects from start to finish, collaborating with team members to ensure seamless integration and the delivery of effective solutions.`,
-		],
-	},
-	{
-		title: 'Data Entry Analyst',
-		orgName: 'Almod Diamonds',
-		dates: 'September 2018 - March 2020',
-		paragraphs: [
-			`Managed and optimized the database of inventory items, implementing efficient sorting and organization practices to enhance data retrieval and accuracy.`,
-			`Maintained and validated inventory data to prevent system discrepancies, ensuring that all entries were accurately reflected against corresponding invoices.`,
 		],
 	},
 	{
@@ -180,7 +181,7 @@ const education = {
 	orgName: 'Purchase College, SUNY',
 	dates: 'September 2013 - May 2017',
 	paragraphs: [
-		`GPA: 3.5`,
+		`GPA: 3.5+`,
 		`Senior Project: Researched the connection between mathematics and art, with a focus on the works of artist M.C. Escher. Developed a web application using p5.js that enabled users to produce tessellation-inspired drawings. Presented at the SUNY Undergraduate Research Conference (SURC) 2017, showcasing the project's impact and relevance.`,
 		`Minor in Visual Arts. Completed coursework in drawing, painting, and
 		sculpture.`,
