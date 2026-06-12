@@ -45,7 +45,7 @@ export const MobileCarousel = ({
 	))
 
 	return (
-		<div className={styles.MobileCarousel}>
+		<div className={`${styles.MobileCarousel} ${isDarkMode ? styles.dark : ''}`}>
 			<Slider {...sliderSettings}>
 				{rowOne.map((project, idx) => (
 					<div key={idx}>

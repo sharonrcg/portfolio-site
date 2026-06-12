@@ -124,15 +124,16 @@ const polaroids = [
 	},
 ]
 
+// working as a full-stack engineer for USPIS, using React/TypeScript on the frontend and C# .NET on the backend
 const rows = [
 	{
 		paragraph:
-			"I'm a software engineer who specializes in the front-end side of things, with plenty of experience handling the data and logic underneath.",
+			"I'm a software engineer who specializes in the front-end side of things, with plenty of experience handling the data and logic underneath. I love the puzzle of turning complex ideas into clean, responsive web applications that feel smooth to interact with.",
 		polaroid: polaroids[0],
 	},
 	{
 		paragraph:
-			"I love the puzzle of turning complex ideas into smooth, responsive web applications that feel natural to interact with.",
+			"I'm currently working as a full-stack engineer for the USPIS, using React and TypeScript on the frontend and C# .NET on the backend, helping migrate over legacy processes into more efficient, modern applications. Before that, I spent several years at Casebook PBC, a company that builds case management software for human services agencies.",
 		polaroid: polaroids[1],
 	},
 	{

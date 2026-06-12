@@ -55,7 +55,7 @@
 	font-weight: 700;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: #938678;
+	color: #908172;
 	margin-bottom: 18px;
 	width: 100%;
 
@@ -63,7 +63,7 @@
 		content: '';
 		height: 1px;
 		flex: 1;
-		background: #d3c8ba;
+		background: #cfc0b1;
 	}
 }
 
@@ -129,7 +129,7 @@
 	display: block;
 	background: #ffffff;
 	border-radius: 14px;
-	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
+	box-shadow: 0 6px 12px -6px rgba(60, 48, 33, 0.4);
 	padding: 20px 24px;
 	max-height: 30vh;
 	overflow-y: auto;
@@ -203,10 +203,10 @@
 
 	.kicker,
 	.skillsLabel {
-		color: #b0a090;
+		color: #b4a494;
 
 		&::after {
-			background: #6b5e52;
+			background: #756860;
 		}
 	}
 }

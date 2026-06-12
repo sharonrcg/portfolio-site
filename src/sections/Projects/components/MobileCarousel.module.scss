@@ -21,9 +21,13 @@
 		
 		@media screen and (max-width: $breakpoint-tablet-lg) {
 			& {
-				padding: 0;
+				padding: 0 6px;
 			}
 		}
+	}
+
+	:global(.slick-slide.slick-active) > div > div {
+		padding-top: 10px;
 	}
 
 	:global(.slick-prev),
@@ -34,8 +38,8 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			color: #5a5249;
-			font-size: 16px;
+			color: $off-black;
+			font-size: 30px;
 			line-height: 1;
 			opacity: 1;
 		}
@@ -47,6 +51,15 @@
 
 	:global(.slick-next) {
 		right: -44px;
+	}
+
+	&.dark {
+		:global(.slick-prev),
+		:global(.slick-next) {
+			&::before {
+				color: $blue-grey;
+			}
+		}
 	}
 
 	:global(.slick-dots) {

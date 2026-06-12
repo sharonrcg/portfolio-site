@@ -33,7 +33,7 @@
 	font-weight: 700;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: #938678;
+	color: #7f6a5b;
 	margin-bottom: 18px;
 	width: 100%;
 
@@ -41,7 +41,7 @@
 		content: '';
 		height: 1px;
 		flex: 1;
-		background: #d3c8ba;
+		background: #b69e8d;
 	}
 }
 
@@ -94,7 +94,7 @@
 	gap: 18px;
 	background: #ffffff;
 	border-radius: 14px;
-	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
+	box-shadow: 0 6px 12px -6px rgba(60, 48, 33, 0.4);
 	padding: 16px 20px;
 	text-decoration: none;
 	color: $off-black;
@@ -163,10 +163,10 @@
 	}
 
 	.kicker {
-		color: #b0a090;
+		color: #a49484;
 
 		&::after {
-			background: #6b5e52;
+			background: #625549;
 		}
 	}
 

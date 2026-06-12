@@ -3,7 +3,7 @@
 .ProjectCard {
 	background: #ffffff;
 	border-radius: 16px;
-	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
+	box-shadow: 0 6px 12px -6px rgba(60, 48, 33, 0.4);
 	padding: 12px 14px 10px;
 	display: flex;
 	flex-direction: column;
@@ -13,8 +13,8 @@
 	transition: transform 0.18s ease, box-shadow 0.18s ease;
 
 	&:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 18px 40px -16px rgba(60, 48, 33, 0.45);
+		transform: translateY(-2px);
+		box-shadow: 0 9px 11px -4px rgba(60, 48, 33, 0.4);
 	}
 }
 
@@ -23,11 +23,66 @@
 	inset: 0;
 	background: #ece3df;
 	border-radius: 16px;
-	padding: 20px 22px;
+	padding: 14px 16px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	z-index: 2;
+}
+
+.overlayHead {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.overlayInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.overlayLabel {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #938678;
+}
+
+.overlayTitle {
+	font-size: 18px;
+	font-weight: 700;
+	color: #2c2824;
+	line-height: 1.2;
+}
+
+.overlayDivider {
+	height: 1px;
+	background: #d3c0b4;
+	margin: 12px 0;
+	flex-shrink: 0;
+}
+
+.closeBtn {
+	width: 28px;
+	height: 28px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.07);
+	border: none;
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	font-size: 14px;
+	color: #5a5249;
+	flex-shrink: 0;
+	transition: background 0.15s ease;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.13);
+		color: #2c2824;
+	}
 }
 
 .toolsList {
@@ -38,21 +93,6 @@
 	justify-content: flex-start;
 	gap: 8px;
 	width: 100%;
-}
-
-.closeBtn {
-	align-self: flex-end;
-	background: none;
-	border: none;
-	cursor: pointer;
-	font-size: 14px;
-	color: #5a5249;
-	width: auto;
-	padding: 4px 8px;
-
-	&:hover {
-		color: #2c2824;
-	}
 }
 
 .top {
@@ -79,6 +119,7 @@
 	margin: 0 0 7px;
 	line-height: 1.2;
 	text-align: left;
+    padding: 4px;
 }
 
 .desc {
@@ -133,17 +174,23 @@
 .tool {
 	margin-left: auto;
 	color: #938678;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
+	gap: 5px;
 	width: auto;
 	background: none;
 	border: none;
 	cursor: pointer;
 	padding: 0;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 
 	svg {
-		width: 16px;
-		height: 16px;
+		width: 13px;
+		height: 13px;
+		flex-shrink: 0;
 	}
 
 	&:hover {
@@ -160,11 +207,24 @@
 			background: $blue-grey;
 		}
 
+		.overlayLabel {
+			color: #b0a090;
+		}
+
+		.overlayTitle {
+			color: $off-white;
+		}
+
+		.overlayDivider {
+			background: #5a5a6a;
+		}
+
 		.closeBtn {
-			color: #c0b0a0;
+			background: rgba(255, 255, 255, 0.12);
+			color: $off-white;
 
 			&:hover {
-				color: $off-white;
+				background: rgba(255, 255, 255, 0.2);
 			}
 		}
 

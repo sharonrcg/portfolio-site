@@ -34,15 +34,15 @@
 	font-weight: 700;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: #938678;
+	color: #8c7c6d;
 	margin-bottom: 18px;
-	width: 100%;
+	width: 98%;
 
 	&::after {
 		content: '';
 		height: 1px;
 		flex: 1;
-		background: #d3c8ba;
+		background: #c9b9a9;
 	}
 }
 
@@ -73,6 +73,7 @@
 	width: 100%;
 	overflow-y: auto;
 	max-height: calc(100vh - 180px);
+	padding-bottom: 16px;
 }
 
 .dark {
@@ -88,7 +89,7 @@
 		color: #b0a090;
 
 		&::after {
-			background: #6b5e52;
+			background: #706358;
 		}
 	}
 }

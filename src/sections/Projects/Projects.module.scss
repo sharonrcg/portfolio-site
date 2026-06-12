@@ -46,7 +46,7 @@
 	font-weight: 700;
 	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: #5a4a3e;
+	color: #857161;
 	margin-bottom: 18px;
 	width: 100%;
 
@@ -54,7 +54,7 @@
 		content: '';
 		height: 1px;
 		flex: 1;
-		background: #c4afa6;
+		background: #bfa997;
 	}
 }
 
@@ -86,10 +86,10 @@
 	}
 
 	.kicker {
-		color: #b0a090;
+		color: #a89888;
 
 		&::after {
-			background: #6b5e52;
+			background: #665a50;
 		}
 	}
 }

@@ -18,7 +18,7 @@
 	border-left: 12px solid $white;
 	border-right: 12px solid $white;
 	border-top: 12px solid $white;
-	box-shadow: 1px 1px 1px 0 $shadow;
+	box-shadow: 0 6px 12px -6px rgba(60, 48, 33, 0.6);
 	height: auto;
 	position: absolute;
 	transition: box-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out,
@@ -26,7 +26,7 @@
 	width: 200px;
 
 	&:hover {
-		box-shadow: 15px 15px 10px 0 rgba($black, 0.15);
+		box-shadow: 0 18px 30px -10px rgba(60, 48, 33, 0.4);
 		transform: none !important;
 		width: 250px;
 		z-index: 5;
@@ -37,7 +37,7 @@
 		-moz-transform: rotate(1.5deg);
 		bottom: -65px;
 		transform: rotate(1.5deg);
-		
+
 		@media screen and (max-width: $breakpoint-desktop) {
 			& {
 				bottom: 0;
