@@ -7,6 +7,10 @@
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		display: none;
 	}
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		max-width: 400px;
+	}
 }
 
 .polaroid {
@@ -33,6 +37,12 @@
 		-moz-transform: rotate(1.5deg);
 		bottom: -65px;
 		transform: rotate(1.5deg);
+		
+		@media screen and (max-width: $breakpoint-desktop) {
+			& {
+				bottom: 0;
+			}
+		}
 	}
 
 	&:nth-child(2) {
@@ -41,6 +51,13 @@
 		right: 55px;
 		top: -10px;
 		transform: rotate(3.5deg);
+
+		@media screen and (max-width: $breakpoint-desktop) {
+			& {
+				right: 20px;
+				top: -80px;
+			}
+		}
 	}
 
 	&:nth-child(3) {
@@ -49,6 +66,13 @@
 		left: 55px;
 		top: 10px;
 		transform: rotate(-5.5deg);
+
+		@media screen and (max-width: $breakpoint-desktop) {
+			& {
+				left: 30px;
+				top: -100px;
+			}
+		}
 	}
 }
 

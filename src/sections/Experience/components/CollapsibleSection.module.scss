@@ -1,79 +1,87 @@
 @import '@/styles/var';
 
-.CollapsibleSection {
-	border-radius: 6px;
-	box-shadow: 1px 1px 1px 0 $shadow;
-	margin-bottom: $xxs;
+.open {}
+
+.item {
+	display: block;
+	background: #ffffff;
+	border-radius: 14px;
+	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
 	overflow: hidden;
-}
+	transition: box-shadow 0.2s ease;
 
-.collapsibleSummary {
-	align-items: center;
-	background: $white;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 15px;
-	width: 100%;
-	height: 100%;
-	transition: background 0.5s ease-in-out;
-}
+	&.open {
+		box-shadow: 0 18px 40px -18px rgba(60, 48, 33, 0.45);
 
-.collapsibleDetails {
-	padding: 15px;
-	background: $white;
-	border-top: 1px solid #dee2e6;
-	transition: background 0.5s ease-in-out;
-}
+		.head {
+			border-bottom: 1px solid #e0d6c8;
+		}
 
-.summaryTitle {
-	color: $off-black;
-	font-size: $xxs;
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 400;
-}
+		.chevron {
+			transform: rotate(180deg);
+			color: #2c2824;
+		}
+	}
 
-.arrow {
-	font-family: 'Inter', sans-serif;
-	font-weight: 200;
-}
+	&.dark {
+		background: $blue-grey;
+		box-shadow: 1px 1px 4px 0 $d-shadow;
 
-.detailsContainer {
-	max-height: 0;
-	transition: max-height 0.5s ease-in-out;
-}
+		.headTitle {
+			color: $off-white;
+		}
 
-.detailsContainerOpen {
-	max-height: 300px;
+		.chevron {
+			color: rgba(255, 255, 255, 0.5);
+		}
 
-	@media screen and (max-width: $breakpoint-desktop) {
-		& {
-			max-height: 385px;
+		&.open {
+			box-shadow: 1px 2px 8px 0 $d-shadow;
+
+			.head {
+				border-bottom-color: rgba(255, 255, 255, 0.1);
+			}
+
+			.chevron {
+				color: $off-white;
+			}
 		}
 	}
 }
 
-.dark {
-	&.CollapsibleSection {
-		box-shadow: 1px 1px 1px 0 $d-shadow;
-	}
+.head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 13px 20px;
+	cursor: pointer;
+	width: 100%;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.2s ease;
+}
 
-	.collapsibleDetails {
-		border-top: 0.8px solid #818181;
-	}
+.headTitle {
+	font-size: 17px;
+	font-weight: 600;
+	color: #2c2824;
+}
 
-	.collapsibleDetails,
-	.collapsibleSummary {
-		background: $blue-grey;
-	}
+.chevron {
+	width: 18px;
+	height: 18px;
+	color: #938678;
+	flex-shrink: 0;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
 
-	.arrow {
-		color: $off-white;
-	}
+.body {
+	overflow: hidden;
+	transition: max-height 0.35s ease;
+}
 
-	.summaryTitle {
-		color: $off-white;
-	}
+.content {
+	padding: 12px 20px 16px;
+	display: block;
 }

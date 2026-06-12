@@ -7,43 +7,33 @@ interface CollapsibleSectionProps {
 	index: number
 	open: boolean
 	title: string
-	toggle: (arg?: number) => void
+	toggle: (arg: number) => void
 }
-
-const upSymbol = '↑'
-const downSymbol = '↓'
 
 export const CollapsibleSection = (props: CollapsibleSectionProps) => {
 	const {children, open, index, title, toggle} = props
 	const {isDarkMode} = useContext(ThemeContext)
 
-	const handleOpenSection = () => {
-		toggle(index)
-	}
-
 	return (
 		<div
-			className={`${styles.CollapsibleSection} ${isDarkMode ? styles.dark : ''}`}
+			className={`${styles.item} ${open ? styles.open : ''} ${isDarkMode ? styles.dark : ''}`}
 		>
-			<div>
-				<button
-					type='button'
-					className={styles.collapsibleSummary}
-					onClick={handleOpenSection}
+			<div className={styles.head} onClick={() => toggle(index)}>
+				<span className={styles.headTitle}>{title}</span>
+				<svg
+					className={styles.chevron}
+					viewBox='0 0 24 24'
+					fill='none'
+					stroke='currentColor'
+					strokeWidth='2.2'
+					strokeLinecap='round'
+					strokeLinejoin='round'
 				>
-					<h4 className={styles.summaryTitle}>{title}</h4>
-					<span className={styles.arrow}>{!open ? downSymbol : upSymbol}</span>
-				</button>
+					<path d='M6 9l6 6 6-6' />
+				</svg>
 			</div>
-
-			<div
-				className={`${styles.detailsContainer} ${
-					open ? styles.detailsContainerOpen : ''
-				}`}
-			>
-				<div>
-					<div className={styles.collapsibleDetails}>{children}</div>
-				</div>
+			<div className={styles.body} style={{maxHeight: open ? '800px' : '0'}}>
+				<div className={styles.content}>{children}</div>
 			</div>
 		</div>
 	)

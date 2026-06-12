@@ -4,8 +4,6 @@ import styles from './Projects.module.scss'
 import {ThemeContext} from '@/context'
 import {useContext} from 'react'
 import {projects} from '@/utils/constants'
-import brushLight from '../../../public/images/brushLight.svg'
-import brushDark from '../../../public/images/brushDark.svg'
 import {MobileCarousel} from './components/MobileCarousel'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -21,19 +19,19 @@ const Projects = () => {
 				id='projectsContainer'
 				className={styles.Projects}
 			>
-				<div>
-					<h1 className={styles.title}>
-						Projects
-						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={isDarkMode ? brushDark.src : brushLight.src} alt='' />
-					</h1>
-					<div className={styles.mobileCarousel}>
-						<MobileCarousel isDarkMode={isDarkMode} projects={projects} />
+				<div className={styles.wrap}>
+					<div className={styles.head}>
+						<div className={styles.kicker}>Selected work</div>
+						<h2 className={styles.title}>
+							Projects <span className={styles.emoji}>🖌️</span>
+						</h2>
 					</div>
+					<MobileCarousel isDarkMode={isDarkMode} projects={projects} />
 				</div>
 			</section>
 		</div>
 	)
 }
 
+export {Projects}
 export default Projects

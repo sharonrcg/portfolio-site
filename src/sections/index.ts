@@ -1,6 +1,7 @@
 export {About} from './About'
 export {Contact} from './Contact'
 export {Home} from './Home'
+export {Education} from './Education'
 export {default as Main} from './Main/Main'
 export {Projects} from './Projects'
 export {Experiences} from './Experience'

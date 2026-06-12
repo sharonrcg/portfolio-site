@@ -1,4 +1,4 @@
-import sharon from '../../public/images/sharon.jpg'
+import fam2 from '../../public/images/fam2.jpg'
 import kai from '../../public/images/kai.jpg'
 import family from '../../public/images/fam.jpg'
 import portfolio from '../../public/projects/portfolio.svg'
@@ -16,6 +16,7 @@ const navLinks = [
 	{navLinkId: 'Home', scrollToId: 'homeContainer'},
 	{navLinkId: 'About', scrollToId: 'aboutContainer'},
 	{navLinkId: 'Experience', scrollToId: 'experienceContainer'},
+	{navLinkId: 'Education', scrollToId: 'educationContainer'},
 	{navLinkId: 'Projects', scrollToId: 'projectsContainer'},
 	{navLinkId: 'Contact', scrollToId: 'contactContainer'},
 ]
@@ -26,7 +27,7 @@ const projects = [
             description: "The site you're on right now! A personal portfolio to showcase my projects and experience.",
             image: portfolio.src,
             github: 'https://github.com/sharonrcg/portfolio-site',
-            tools: ['Next.js', 'TypeScript', 'SCSS'],
+            tools: ['Next.js', 'React', 'TypeScript', 'SCSS'],
         },
         {
             title: 'Event planner',
@@ -34,7 +35,7 @@ const projects = [
             image: calendar.src,
             github: 'https://github.com/sharonrcg/event-planner',
             demo: 'https://event-planner-blush.vercel.app/',
-            tools: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+            tools: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
         },
         {
             title: 'Can I wear a hoodie today?',
@@ -76,7 +77,7 @@ const projects = [
             image: marina.src,
             github: 'https://github.com/sharonrcg/marina',
             demo: 'https://marina-c2ec6.web.app/welcome',
-            tools: ['React', 'Firebase', 'CSS'],
+            tools: ['Vite', 'React', 'Firebase', 'CSS'],
         },
         {
             title: 'Task Roulette',
@@ -107,9 +108,9 @@ const projects = [
 
 const polaroids = [
 	{
-		displayText: 'Me',
-		imageAlt: 'A polaroid of me',
-		imageSrc: sharon.src,
+		displayText: 'Me and my girl',
+		imageAlt: 'A polaroid of me and my daughter',
+		imageSrc: fam2.src,
 	},
 	{
 		displayText: 'My pup',
@@ -136,7 +137,7 @@ const rows = [
 	},
 	{
 		paragraph:
-		"Outside of building web apps, you’ll usually find me caught up in a book, playing video games, or working on a knitting project. Feel free to reach out if you want to chat!",
+		    "Outside of building web apps, you’ll usually find me caught up in a book, playing video games, or struggling to keep my houseplants alive. Feel free to reach out if you want to chat!",
 		polaroid: polaroids[2],
 	},
 ]
@@ -157,8 +158,8 @@ const experiences = [
 		orgName: 'Casebook PBC',
 		dates: 'September 2020 - March 2025',
 		paragraphs: [
-			`Developed and maintained the design system for the Casebook platform, creating new components and refining existing ones using React, TypeScript, and MaterialUI. Partnered with the design team to ensure components were user-friendly and met product requirements.`,
-			`Enhanced the Casebook platform by building new features and improving existing functionality with React and TypeScript. Worked with fellow engineers to leverage GraphQL for API upgrades and ongoing maintenance.`,
+			`Developed and maintained the design system for the Casebook platform, creating new components and refining existing ones using React, TypeScript, and MaterialUI.`,
+			`Enhanced the Casebook platform by building new features and improving existing functionality with React and TypeScript. Leveraged GraphQL for API upgrades and ongoing maintenance.`,
 			`Used Jest and React Testing Library for unit testing and Cypress for end-to-end testing, working with the engineering team to guarantee thorough testing and high-quality code.`,
 			`Led several full-stack projects from start to finish, collaborating with team members to ensure seamless integration and the delivery of effective solutions.`,
 		],
@@ -170,7 +171,7 @@ const experiences = [
 		paragraphs: [
 			`Instructed students in Python and Java programming languages, guiding them through foundational to advanced concepts to prepare them for further education.`,
 			`Created and developed lesson plans tailored to students' academic needs, ensuring comprehensive coverage of key programming principles.`,
-			`Facilitated students' understanding of algorithms, data structures, and object-oriented programming by helping them design and implement their own projects.`,
+			`Facilitated students' understanding of algorithms, data structures, and object-oriented programming by helping them implement their own projects.`,
 			`Provided hands-on debugging support and constructive feedback on students' code, focusing on improving their problem-solving skills and coding practices.`,
 		],
 	},
@@ -183,8 +184,7 @@ const education = {
 	paragraphs: [
 		`GPA: 3.5+`,
 		`Senior Project: Researched the connection between mathematics and art, with a focus on the works of artist M.C. Escher. Developed a web application using p5.js that enabled users to produce tessellation-inspired drawings. Presented at the SUNY Undergraduate Research Conference (SURC) 2017, showcasing the project's impact and relevance.`,
-		`Minor in Visual Arts. Completed coursework in drawing, painting, and
-		sculpture.`,
+		`Minor in Visual Arts. Coursework included drawing, painting, and sculpture, which has influenced my approach to design and aesthetics in web development.`,
 	],
 }
 

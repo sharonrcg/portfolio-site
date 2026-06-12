@@ -19,14 +19,14 @@ export const MobileCarousel = ({
 		initialSlide: 0,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 900,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				},
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 768,
 				settings: {
 					arrows: false,
 					slidesToShow: 1,

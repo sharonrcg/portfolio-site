@@ -1,10 +1,66 @@
 @import '@/styles/var';
 
 .MobileCarousel {
-	width: 730px;
-	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 48px;
 
-	@media screen and (max-width: $breakpoint-tablet) {
-		width: 100%;
+	:global(.slick-slider),
+	:global(.slick-list),
+	:global(.slick-track) {
+		display: block;
+	}
+
+	:global(.slick-list) {
+		overflow: hidden;
+	}
+
+	:global(.slick-slide) > div {
+		display: block;
+		padding: 0 11px;
+		text-align: left;
+		
+		@media screen and (max-width: $breakpoint-tablet-lg) {
+			& {
+				padding: 0;
+			}
+		}
+	}
+
+	:global(.slick-prev),
+	:global(.slick-next) {
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #5a5249;
+			font-size: 16px;
+			line-height: 1;
+			opacity: 1;
+		}
+	}
+
+	:global(.slick-prev) {
+		left: -44px;
+	}
+
+	:global(.slick-next) {
+		right: -44px;
+	}
+
+	:global(.slick-dots) {
+		bottom: -36px;
+
+		li button::before {
+			font-size: 8px;
+			color: #b9ab9b;
+			opacity: 1;
+		}
+
+		li.slick-active button::before {
+			color: #6f6457;
+			opacity: 1;
+		}
 	}
 }

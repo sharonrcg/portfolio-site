@@ -30,13 +30,15 @@ const About = () => {
 						<h1 className={styles.title}>
 							About me <span className={styles.emoji}>🎨</span>
 						</h1>
-						{rows.map((row, idx) => (
-							<p
-								key={idx}
-								className={styles.paragraph}
-								dangerouslySetInnerHTML={{__html: row.paragraph}}
-							/>
-						))}
+						<div className={styles.paragraphs}>
+							{rows.map((row, idx) => (
+								<p
+									key={idx}
+									className={styles.paragraph}
+									dangerouslySetInnerHTML={{__html: row.paragraph}}
+								/>
+							))}
+						</div>
 						<div className={styles.skills}>
 							<div className={styles.skillsLabel}>Tools I work with</div>
 							<div className={styles.chips}>

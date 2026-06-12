@@ -1,7 +1,7 @@
 @import '@/styles/var';
 
-.Experiences {
-	background-color: $medium;
+.Education {
+	background-color: $dark;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -16,7 +16,6 @@
 	}
 }
 
-// Override global `section div` (flex-column + center + width: 100%)
 .head {
 	display: block;
 	max-width: 900px;
@@ -63,27 +62,74 @@
 	margin-left: 8px;
 }
 
-// Override global `section div` — must be display: grid
 .expGrid {
 	display: grid;
-	grid-template-columns: 170px 1fr;
-	gap: 14px 44px;
 	align-items: start;
 	max-width: 900px;
 	margin: 0 auto;
 	width: 100%;
+}
 
-	@media screen and (max-width: $breakpoint-tablet-lg) {
-		& {
-			grid-template-columns: 1fr;
-			gap: 6px 0;
-		}
+.rail {
+	display: block;
+	padding-top: 22px;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #938678;
+	line-height: 1.4;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	gap: 10px;
+	width: 100%;
+}
+
+.card {
+	display: block;
+	background: #ffffff;
+	border-radius: 14px;
+	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
+	padding: 20px 24px;
+}
+
+.cardTitle {
+	font-size: 17px;
+	font-weight: 600;
+	color: #2c2824;
+	margin: 0 0 10px;
+}
+
+.meta {
+	display: block;
+	font-size: 14px;
+	color: #5a5249;
+	margin-bottom: 14px;
+}
+
+.summary {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	li {
+		font-size: 14px;
+		line-height: 1.55;
+		color: #5a5249;
 	}
 }
 
 .dark {
-	.Experiences {
-		background-color: $d-medium;
+	.Education {
+		background-color: $d-dark;
 	}
 
 	.title {
@@ -96,5 +142,22 @@
 		&::after {
 			background: #6b5e52;
 		}
+	}
+
+	.card {
+		background: $blue-grey;
+		box-shadow: 1px 1px 4px 0 $d-shadow;
+	}
+
+	.cardTitle {
+		color: $off-white;
+	}
+
+	.meta {
+		color: #c0b0a0;
+	}
+
+	.summary li {
+		color: #c0b0a0;
 	}
 }

@@ -3,10 +3,6 @@ import {useState} from 'react'
 import styles from './ProjectCard.module.scss'
 import cn from 'classnames'
 import {SkillPill} from '@/components/SkillPill'
-import wrenchLight from '../../../../public/images/wrenchLight.svg'
-import wrenchDark from '../../../../public/images/wrenchDark.svg'
-import closeLight from '../../../../public/images/closeLight.svg'
-import closeDark from '../../../../public/images/closeDark.svg'
 
 export type Project = {
 	title: string
@@ -20,56 +16,52 @@ export type Project = {
 export type ProjectCardProps = {
 	project: Project
 	isDarkMode: boolean
-	showScreenshot?: boolean
 }
 
-const ProjectCard = (props: ProjectCardProps) => {
+const ProjectCard = ({project, isDarkMode}: ProjectCardProps) => {
 	const [showTools, setShowTools] = useState(false)
-	const {project, isDarkMode, showScreenshot = true} = props
 	const {title, description, image, github, demo, tools} = project
 
-	const handleToolsClick = () => {
-		setShowTools(true)
-	}
-
 	return (
-		<div className={cn(styles.ProjectCard, isDarkMode ? styles.dark : '')}>
+		<div className={cn(styles.ProjectCard, isDarkMode && styles.dark)}>
 			{showTools && (
-				<div className={styles.tools}>
-					<div className={styles.list}>
+				<div className={styles.toolsOverlay}>
+					<div className={styles.toolsList}>
 						{tools.map((tool) => (
 							<SkillPill key={tool} name={tool} dark={isDarkMode} />
 						))}
 					</div>
-					<button className={styles.close} onClick={() => setShowTools(false)}>
-						<img src={isDarkMode ? closeDark.src : closeLight.src} alt='' />
-					</button>
+					<button className={styles.closeBtn} onClick={() => setShowTools(false)}>✕</button>
 				</div>
 			)}
-			<div className={styles.infoColumn}>
+			<div className={styles.top}>
 				<div className={styles.info}>
-					<h1 className={styles.title}>{title}</h1>
-					<p className={styles.description}>{description}</p>
+					<h3 className={styles.title}>{title}</h3>
+					<p className={styles.desc}>{description}</p>
 				</div>
-				<div className={styles.linkGroup}>
-					<a className={styles.link} href={github} target='_blank' rel='noreferrer'>
-						<strong>Code</strong>
-					</a>
-					{demo && (
-						<a className={styles.link} href={demo} target='_blank' rel='noreferrer'>
-							<strong>Demo</strong>
-						</a>
-					)}
-				</div>
+				<img className={styles.icon} src={image} alt={title} />
 			</div>
-			{showScreenshot && (
-				<div className={styles.imageContainer}>
-					<img src={image} alt={title} />
-					<button className={styles.toolsButton} onClick={handleToolsClick}>
-						<img src={isDarkMode ? wrenchDark.src : wrenchLight.src} alt='' />
-					</button>
-				</div>
-			)}
+			<div className={styles.foot}>
+				<a className={styles.link} href={github} target='_blank' rel='noreferrer'>
+					<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'>
+						<path d='M16 18l6-6-6-6M8 6l-6 6 6 6' />
+					</svg>
+					CODE
+				</a>
+				{demo && (
+					<a className={styles.link} href={demo} target='_blank' rel='noreferrer'>
+						<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'>
+							<path d='M7 17L17 7M9 7h8v8' />
+						</svg>
+						DEMO
+					</a>
+				)}
+				<button className={styles.tool} onClick={() => setShowTools(true)} title='Tech stack'>
+					<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+						<path d='M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-2.1z' />
+					</svg>
+				</button>
+			</div>
 		</div>
 	)
 }

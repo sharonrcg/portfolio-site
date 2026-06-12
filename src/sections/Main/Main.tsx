@@ -1,5 +1,5 @@
 import React from 'react'
-import {Home, About, Experiences, Contact, Projects} from '@/sections'
+import {Home, About, Experiences, Education, Contact, Projects} from '@/sections'
 import styles from './Main.module.scss'
 import {useScrollSnap} from '@/hooks'
 
@@ -11,6 +11,7 @@ const Main = () => {
 			<Home />
 			<About />
 			<Experiences />
+			<Education />
 			<Projects />
 			<Contact />
 		</main>
