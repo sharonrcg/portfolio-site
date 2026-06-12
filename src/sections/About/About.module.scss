@@ -4,10 +4,12 @@
 	background-color: $light;
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
+	overflow: hidden;
+	padding: 1.5rem $xl;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
-			padding: 01.5rem $xxs;
+			padding: 1.5rem $xxs;
 		}
 	}
 }
@@ -19,14 +21,22 @@
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1250px;
-	gap: 80px;
+	gap: 60px;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		gap: 40px;
+	}
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			flex-direction: column-reverse;
 			justify-content: center;
-			gap: 40px;
+			gap: 30px;
 		}
+	}
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		gap: 20px;
 	}
 }
 
@@ -91,7 +101,7 @@
 
 .paragraph {
 	color: #5a5249;
-	font-size: 1.125rem;
+	font-size: 16px;
 	line-height: 1.66;
 	margin: 0 0 18px;
 	max-width: 56ch;
@@ -117,25 +127,38 @@
 
 .paragraphs {
 	display: block;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
-    padding: 20px 24px;
+	background: #ffffff;
+	border-radius: 14px;
+	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
+	padding: 20px 24px;
+	max-height: 30vh;
+	overflow-y: auto;
+
+	@media screen and (max-width: $breakpoint-tablet-lg) {
+		max-height: 38vh;
+	}
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		max-height: 28vh;
+		padding: 14px 16px;
+	}
 }
 
 .skills {
 	display: block;
-	margin-top: 34px;
+	margin-top: 24px;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
 			max-width: 70%;
+			margin-top: 20px;
 		}
 	}
 
 	@media screen and (max-width: $breakpoint-mobile) {
 		& {
-			max-width: 85%;
+			max-width: 90%;
+			margin-top: 14px;
 		}
 	}
 }

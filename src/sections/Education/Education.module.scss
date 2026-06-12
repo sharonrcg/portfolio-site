@@ -8,10 +8,11 @@
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
 	padding: 1.5rem $xl;
+	overflow: hidden;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
-			padding: 01.5rem $xxs;
+			padding: 1.5rem $xxs;
 		}
 	}
 }
@@ -63,11 +64,14 @@
 }
 
 .expGrid {
-	display: grid;
-	align-items: start;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 	max-width: 900px;
 	margin: 0 auto;
 	width: 100%;
+	overflow-y: auto;
+	max-height: calc(100vh - 200px);
 }
 
 .rail {

@@ -2,7 +2,7 @@
 
 .MobileCarousel {
 	width: 100%;
-	padding-bottom: 48px;
+	padding-bottom: 36px;
 
 	:global(.slick-slider),
 	:global(.slick-list),
@@ -50,7 +50,7 @@
 	}
 
 	:global(.slick-dots) {
-		bottom: -36px;
+		bottom: -26px;
 
 		li button::before {
 			font-size: 8px;

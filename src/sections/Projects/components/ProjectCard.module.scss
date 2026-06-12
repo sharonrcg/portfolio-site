@@ -4,11 +4,11 @@
 	background: #ffffff;
 	border-radius: 16px;
 	box-shadow: 0 6px 16px -8px rgba(60, 48, 33, 0.4);
-	padding: 14px 16px 12px;
+	padding: 12px 14px 10px;
 	display: flex;
 	flex-direction: column;
-	min-height: 200px;
-	margin: 0 0 16px;
+	min-height: 168px;
+	margin: 0 0 12px;
 	position: relative;
 	transition: transform 0.18s ease, box-shadow 0.18s ease;
 
@@ -91,15 +91,15 @@
 
 .icon {
 	flex-shrink: 0;
-	width: 60px;
-	height: 60px;
-	border-radius: 12px;
+	width: 52px;
+	height: 52px;
+	border-radius: 10px;
 	object-fit: contain;
 }
 
 .foot {
-	margin-top: 16px;
-	padding-top: 14px;
+	margin-top: 12px;
+	padding-top: 10px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -157,7 +157,7 @@
 		box-shadow: 1px 1px 4px 0 $d-shadow;
 
 		.toolsOverlay {
-			background: #41414f;
+			background: $blue-grey;
 		}
 
 		.closeBtn {

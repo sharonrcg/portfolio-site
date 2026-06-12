@@ -8,10 +8,11 @@
 	scroll-snap-align: start;
 	transition: background-color 0.5s ease-in-out;
 	padding: 1.5rem $xl;
+	overflow: hidden;
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		& {
-			padding: 01.5rem $xxs;
+			padding: 1.5rem $xxs;
 		}
 	}
 }
@@ -66,19 +67,12 @@
 // Override global `section div` — must be display: grid
 .expGrid {
 	display: grid;
-	grid-template-columns: 170px 1fr;
-	gap: 14px 44px;
 	align-items: start;
 	max-width: 900px;
 	margin: 0 auto;
 	width: 100%;
-
-	@media screen and (max-width: $breakpoint-tablet-lg) {
-		& {
-			grid-template-columns: 1fr;
-			gap: 6px 0;
-		}
-	}
+	overflow-y: auto;
+	max-height: calc(100vh - 180px);
 }
 
 .dark {

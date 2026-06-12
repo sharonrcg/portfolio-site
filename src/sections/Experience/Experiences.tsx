@@ -25,14 +25,14 @@ const Experiences = () => {
 				className={styles.Experiences}
 			>
 				<div className={styles.head}>
-					<div className={styles.kicker}>Work experience</div>
+					<div className={styles.kicker}>Where I&apos;ve been</div>
 					<h2 className={styles.title}>
 						Experience <span className={styles.emoji}>📁</span>
 					</h2>
 				</div>
 
 				<div className={styles.expGrid}>
-					<ExperienceSection title='Work Experience'>
+					<ExperienceSection>
 						{experiences.map((experience, idx) => (
 							<CollapsibleSection
 								index={idx}

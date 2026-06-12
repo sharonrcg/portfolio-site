@@ -21,7 +21,7 @@ const Projects = () => {
 			>
 				<div className={styles.wrap}>
 					<div className={styles.head}>
-						<div className={styles.kicker}>Selected work</div>
+						<div className={styles.kicker}>What I&apos;ve built</div>
 						<h2 className={styles.title}>
 							Projects <span className={styles.emoji}>🖌️</span>
 						</h2>

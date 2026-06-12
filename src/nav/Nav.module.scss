@@ -29,12 +29,16 @@
 	background-color: $medium;
 }
 
-.Nav.Projects {
+.Nav.Education {
 	background-color: $dark;
 }
 
-.Nav.Contact {
+.Nav.Projects {
 	background-color: $darkest;
+}
+
+.Nav.Contact {
+	background-color: $darkester;
 }
 
 .Nav button {
@@ -120,12 +124,16 @@
 	background-color: $medium-nav;
 }
 
-.popover.Projects {
+.popover.Education {
 	background-color: $dark-nav;
 }
 
-.popover.Contact {
+.popover.Projects {
 	background-color: $darkest-nav;
+}
+
+.popover.Contact {
+	background-color: $darkester-nav;
 }
 
 .sectionsList {
@@ -154,12 +162,16 @@
 		background-color: $d-medium;
 	}
 
-	&.Nav.Projects {
+	&.Nav.Education {
 		background-color: $d-dark;
 	}
 
-	&.Nav.Contact {
+	&.Nav.Projects {
 		background-color: $d-darkest;
+	}
+
+	&.Nav.Contact {
+		background-color: $d-darkester;
 	}
 
 	&.Nav button {
@@ -187,12 +199,16 @@
 		background-color: $d-medium-nav;
 	}
 
-	&.popover.Projects {
+	&.popover.Education {
 		background-color: $d-dark-nav;
 	}
 
-	&.popover.Contact {
+	&.popover.Projects {
 		background-color: $d-darkest-nav;
+	}
+
+	&.popover.Contact {
+		background-color: $d-darkester-nav;
 	}
 
 	&.popover button {
