@@ -2,7 +2,6 @@
 import {useState} from 'react'
 import styles from './ProjectCard.module.scss'
 import cn from 'classnames'
-import {SkillPill} from '@/components/SkillPill'
 
 export type Project = {
 	title: string
@@ -28,15 +27,15 @@ const ProjectCard = ({project, isDarkMode}: ProjectCardProps) => {
 				<div className={styles.toolsOverlay}>
 					<div className={styles.overlayHead}>
 						<div className={styles.overlayInfo}>
-							<span className={styles.overlayLabel}>Built with</span>
 							<span className={styles.overlayTitle}>{title}</span>
+							<span className={styles.overlayLabel}>Built with</span>
 						</div>
 						<button className={styles.closeBtn} onClick={() => setShowTools(false)}>✕</button>
 					</div>
 					<div className={styles.overlayDivider} />
 					<div className={styles.toolsList}>
 						{tools.map((tool) => (
-							<SkillPill key={tool} name={tool} dark={isDarkMode} />
+							<span key={tool} className={styles.overlayPill}>{tool}</span>
 						))}
 					</div>
 				</div>
@@ -67,7 +66,7 @@ const ProjectCard = ({project, isDarkMode}: ProjectCardProps) => {
 					<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
 						<path d='M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-2.1z' />
 					</svg>
-					STACK
+					Built with
 				</button>
 			</div>
 		</div>

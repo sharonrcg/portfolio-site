@@ -16,7 +16,7 @@
 
 	:global(.slick-slide) > div {
 		display: block;
-		padding: 0 11px;
+		padding: 0 8px;
 		text-align: left;
 		
 		@media screen and (max-width: $breakpoint-tablet-lg) {
@@ -26,7 +26,7 @@
 		}
 	}
 
-	:global(.slick-slide.slick-active) > div > div {
+	:global(.slick-slide) > div > div {
 		padding-top: 10px;
 	}
 
@@ -63,7 +63,7 @@
 	}
 
 	:global(.slick-dots) {
-		bottom: -26px;
+		bottom: -40px;
 
 		li button::before {
 			font-size: 8px;
