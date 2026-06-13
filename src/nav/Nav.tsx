@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import NavLink from './components/NavLink'
 import {navLinks} from '@/utils/constants'
 import {ThemeButton} from '.'
@@ -15,9 +15,12 @@ const Nav = () => {
 		homeSection?.scrollIntoView({behavior: 'smooth'})
 	}, [])
 
-	const handleMenuClick = () => {
-		setIsMenuOpen(!isMenuOpen)
-	}
+	useEffect(() => {
+		document.body.style.overflow = isMenuOpen ? 'hidden' : ''
+		return () => {
+			document.body.style.overflow = ''
+		}
+	}, [isMenuOpen])
 
 	const renderNavLinks = () => {
 		return navLinks.map(({navLinkId, scrollToId}, idx) =>
@@ -45,23 +48,36 @@ const Nav = () => {
 			</nav>
 
 			<button
-				className={`${styles.menuButton} ${isDarkMode ? styles.dark : ''}`}
-				onClick={handleMenuClick}
+				className={`${styles.hamburger} ${isMenuOpen ? styles.hamburgerOpen : isDarkMode ? styles.dark : ''}`}
+				onClick={() => setIsMenuOpen(!isMenuOpen)}
+				aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+				aria-expanded={isMenuOpen}
 			>
-				☰
+				<span className={styles.bars}>
+					<span />
+					<span />
+					<span />
+				</span>
 			</button>
 
 			{isMenuOpen && (
-				<nav
-					className={`${styles.popover} ${isDarkMode ? styles.dark : ''} ${
-						styles[activeNavLinkId]
-					}`}
+				<div
+					className={`${styles.mobileMenu} ${isDarkMode ? styles.mobileMenuDark : ''}`}
+					role='dialog'
+					aria-modal='true'
+					aria-label='Site menu'
 				>
-					<ul className={styles.sectionsList}>
-						{renderNavLinks()}
-						<ThemeButton onClick={() => setIsMenuOpen(false)} />
-					</ul>
-				</nav>
+					<div className={styles.mMenuInner}>
+						<div className={styles.mKicker}>Menu</div>
+						<nav className={styles.mLinks}>{renderNavLinks()}</nav>
+						<div className={styles.mFoot}>
+							<div className={styles.mThemeBtn}>
+								<ThemeButton onClick={() => setIsMenuOpen(false)} />
+							</div>
+							<span>Sharon Gomez · Portfolio</span>
+						</div>
+					</div>
+				</div>
 			)}
 		</>
 	)

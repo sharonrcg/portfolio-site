@@ -125,14 +125,47 @@
 	}
 }
 
-.paragraphs {
+@property --fade-top {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 28px;
+}
+
+@property --fade-bot {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 34px;
+}
+
+.bioCard {
 	display: block;
+	width: 100%;
 	background: #ffffff;
 	border-radius: 14px;
 	box-shadow: 0 6px 12px -6px rgba(60, 48, 33, 0.4);
+}
+
+.paragraphs {
+	--fade-top: 28px;
+	--fade-bot: 34px;
+	display: block;
 	padding: 20px 24px;
 	max-height: 30vh;
 	overflow-y: auto;
+	overscroll-behavior: contain;
+	-webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bot)), transparent 100%);
+	mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bot)), transparent 100%);
+	transition: --fade-top 0.2s linear, --fade-bot 0.2s linear;
+
+	scrollbar-width: thin;
+	scrollbar-color: #ddd2c2 transparent;
+
+	&::-webkit-scrollbar { width: 6px; }
+	&::-webkit-scrollbar-track { background: transparent; }
+	&::-webkit-scrollbar-thumb {
+		background: #ddd2c2;
+		border-radius: 4px;
+	}
 
 	@media screen and (max-width: $breakpoint-tablet-lg) {
 		max-height: 38vh;
@@ -142,6 +175,41 @@
 		max-height: 28vh;
 		padding: 14px 16px;
 	}
+}
+
+.atTop .paragraphs { --fade-top: 0px; }
+.atBottom .paragraphs { --fade-bot: 0px; }
+
+.scrollCue {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 4px;
+	padding: 0 16px 10px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #938678;
+	pointer-events: none;
+	transition: opacity 0.28s ease;
+
+	svg {
+		width: 12px;
+		height: 12px;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		svg { animation: cueBob 1.7s ease-in-out infinite; }
+	}
+}
+
+.atBottom .scrollCue { opacity: 0; }
+
+@keyframes cueBob {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(3px); }
 }
 
 .skills {
@@ -196,10 +264,18 @@
 		color: #c0b0a0;
 	}
 
-	.paragraphs {
+	.bioCard {
 		background-color: #5d5d6c;
 		box-shadow: 1px 1px 4px 0 #25252e;
 	}
+
+	.paragraphs {
+		scrollbar-color: #6a6a7a transparent;
+
+		&::-webkit-scrollbar-thumb { background: #6a6a7a; }
+	}
+
+	.scrollCue { color: #b4a494; }
 
 	.kicker,
 	.skillsLabel {
