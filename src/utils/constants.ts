@@ -35,7 +35,7 @@ const projects = [
             image: calendar.src,
             github: 'https://github.com/sharonrcg/event-planner',
             demo: 'https://event-planner-blush.vercel.app/',
-            tools: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+            tools: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
         },
         {
             title: 'Can I wear a hoodie today?',
