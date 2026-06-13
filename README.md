@@ -10,5 +10,3 @@ A personal website where I show off all my cool projects and skills.
 * Next.js
 * TypeScript
 * SCSS
-* OpenWeatherAPI
-* SendGrid
