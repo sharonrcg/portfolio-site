@@ -133,12 +133,12 @@ const rows = [
 	},
 	{
 		paragraph:
-			"I'm currently working as a full-stack engineer for the USPIS, using React and TypeScript on the frontend and C# .NET on the backend, helping migrate over legacy processes into more efficient, modern applications. Before that, I spent several years at Casebook PBC, a company that builds case management software for human services agencies.",
+			"I'm currently working as a full-stack engineer for the USPIS, using React and TypeScript on the frontend and C# .NET on the backend, helping migrate over legacy processes into more efficient, modern applications. Before that, I was a frontend engineer for several years at Casebook PBC, a company that builds case management software for human services agencies.",
 		polaroid: polaroids[1],
 	},
 	{
 		paragraph:
-		    "Outside of building web apps, you’ll usually find me caught up in a book, playing video games, or struggling to keep my houseplants alive. Feel free to reach out if you want to chat!",
+		    "Outside of building web apps, you'll usually find me caught up in a book, playing video games, or struggling to keep my houseplants alive. Feel free to reach out if you want to chat!",
 		polaroid: polaroids[2],
 	},
 ]
@@ -149,7 +149,7 @@ const experiences = [
 		orgName: 'USPIS (Contractor)',
 		dates: 'April 2025 - present',
 		paragraphs: [
-			`Architected and built CSA (Compliance Self-Assessment) from scratch - a React and TypeScript application with a C# .NET backend, which digitized and replaced a legacy, Excel-driven tracking process for inspectors.`,
+			`Architected and built a self-assessment application from scratch using React and TypeScript on the frontend with a C# .NET backend. This app digitized and replaced a legacy, Excel-driven tracking process for inspectors.`,
 			`Implemented the team's first front-end testing pipeline using Jest and React Testing Library, to ensure long-term application stability.`, 
 			`Refactored legacy code patterns in several applications into modular TypeScript components, improving codebase maintainability and application performance.`,
 		],
